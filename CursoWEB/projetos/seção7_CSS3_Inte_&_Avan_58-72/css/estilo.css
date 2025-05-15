@@ -1,0 +1,575 @@
+.border {
+	border: 1px solid red;
+}
+
+.clear {
+	clear: both;
+}
+
+/*Seletor Universal*/
+*{
+	/*color: pink;*/
+}
+
+/*Seltor de texto*/
+h4 {
+	color: #363636;
+}
+
+/*Seletor de class*/
+.verde {
+	color: green;
+}
+
+p.verde, h5.verde {
+	color: blue;
+}
+
+/*Seletor de ID*/
+#vermelho {
+	color: red;
+	background: white;
+}
+
+/*Seletor de Filho*/
+div>p {
+	color: orange;
+}
+
+/*Seletor de Descendente*/
+p a {
+	color: pink;
+	text-decoration: none;
+}
+
+/*Seletor de Irmao adjacente*/
+
+h1+p {
+	color: yellow;
+}
+
+h1~a {
+	color: red;
+}
+
+/*60. HERANÇA E ESPECIFICIDADE<*/
+.pagina {
+	border: 1px solid red;
+	background: gray;
+	font-size: 10px;
+	color: red;
+}
+
+h4#amarelo {
+	color: yellow;
+}
+
+h4.verde {
+	color: green;
+}
+
+.esp1 {
+	color: blue;
+}
+
+/*61.CRIANDO BARRA DE NAVEGACAO VERTICAL*/
+#barraLinkPrincipal {
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+.barraLink {
+	color: black;
+	width: 250px;
+	height: 40px;
+	background: #f8b500 url(../imagens/menu.png);
+	display: block;
+	text-decoration: none;
+	line-height: 40px;
+	text-indent: 40px;
+}
+
+.barraLink:hover {
+	background-position: right bottom;
+	background-color: #fb9300;
+	color: white;
+}
+
+#home #barraLinkPrincipal .home,
+#sobre #barraLinkPrincipal .sobre, 
+#servicos #barraLinkPrincipal .servicos {
+	background-position: right bottom;
+	background-color: #fb9300;
+	color: white;
+}
+
+/*63.CRIANDO BARRA DE NAVEGACAO HORIZONTAL*/
+#barraLinkPrincipalHorizontal {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	width: 720px;
+	background: #159CB0 url(imagens/fundo-horizontal.png) repeat-x;
+	float: left;
+}
+
+.float {
+	float: left;
+}
+
+.barraLinkHorizontal {
+	display: block;
+	padding: 0px 2em;
+	line-height: 2.2em;
+	text-decoration: none;
+	color: black;
+	background: url(../imagens/divisor.png) repeat-y left top;
+}
+
+ul .primeiro a{
+	background: none;
+}
+
+.barraLinkHorizontal:hover {
+	color: white;
+	background: #3ce7ff;
+}
+
+
+#home #barraLinkPrincipalHorizontal .home,
+#sobre #barraLinkPrincipalHorizontal .sobre, 
+#servicos #barraLinkPrincipalHorizontal .servicos {
+	background: #3ce7ff;
+	color: white;
+}
+
+/*64.NAVEGACAO COM ABAS*/
+
+#ul-abas {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	width: 750px;
+}
+
+.li-abas {
+	float: left;
+	background: url(../imagens/aba-direita.png) no-repeat top right;
+}
+
+.a-abas {
+	display: block;	
+	padding: 0px 2em;
+	line-height: 3em;
+	text-decoration: none;
+	background: url(../imagens/aba-esquerda.png) no-repeat top left;
+	color: white;
+}
+
+.a-abas:hover {
+	color: black;
+}
+
+ul #atual {
+	background: url(../imagens/aba-direita-atual.png) no-repeat top right;
+}
+
+ul #atual a {
+	background: url(../imagens/aba-esquerda-atual.png) no-repeat top left;
+}
+
+/*65.LAYOUT DE LARGURA FIXA*/
+
+#la-fixo {
+	clear: both;
+	font-family: "Trebuchet MS", Helvetica, sans-serif; 
+	background: #f2f2f2;
+}
+
+#container {
+	border: 1px solid blue;
+	margin: 0px auto;
+	width: 750px;
+	background: #fff;
+}
+
+#marca {
+	height: 100px;
+	background: gray;
+	text-align: center;
+	line-height: 100px;
+}
+
+
+#conteudo {
+	width: 580px;
+	float: right;
+}
+
+#conteudo-primario {
+	width: 230px;
+	float: left;
+}
+
+#conteudo-secundario {
+	width: 200px;
+	float: right;
+	background: #cccccc;
+}
+
+#conteudo-primario h4
+#conteudo-secundario h4
+#conteudo-primario p
+#conteudo-secundario p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#navegacao {
+	width: 150px;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: 1px solid yellow;
+	background: #cccccc;
+}
+
+#navegacao ul {
+	list-style-type: none;
+}
+
+#navegacao a {
+	text-decoration: none;
+}
+
+#rodape {
+	clear: both;
+	background: gray;
+	padding: 5px;
+}
+
+/*66.LAYOUT LIQUIDO*/
+
+#la-liquido {
+	clear: both;
+	font-family: "Trebuchet MS", Helvetica, sans-serif; 
+	background: #f2f2f2;
+	border: 1px solid blue;
+}
+
+#container-liquido {
+	margin: 0px auto;
+	width: 85%;
+	min-width: 750px;
+	max-width: 1800px;
+	background: #fff;
+}
+
+#marca-liquido {
+	height: 100px;
+	background: gray;
+	text-align: center;
+	line-height: 100px;
+}
+
+
+#conteudo-liquido {
+	width: 73%;
+	float: right;
+	background: white;
+}
+
+#conteudo-primario-liquido {
+	width: 60%;
+	float: left;
+}
+
+#conteudo-secundario-liquido {
+	width: 25%;
+	float: right;
+	background: #cccccc;
+}
+
+#conteudo-primario-liquido h4
+#conteudo-secundario-liquido h4
+#conteudo-primario-liquido p
+#conteudo-secundario-liquido p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#navegacao-liquido {
+	width: 25%;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border: 1px solid yellow;
+	background: #cccccc;
+}
+
+#navegacao-liquido ul {
+	list-style-type: none;
+}
+
+#navegacao-liquido a {
+	text-decoration: none;
+}
+
+#rodape-liquido {
+	clear: both;
+	background: gray;
+	padding: 5px;
+}
+
+/*67. IMAGENS LIQUIDAS*/
+
+#img-marca {
+	background: #225992 url(../imagens/cabecalho2.jpg) no-repeat center;
+	height: 200px;
+	line-height: 200px;
+	text-align: center;
+}
+
+img.img-noticia {
+	width: 96%;
+	padding: 2%;
+	max-width: 600px;
+}
+
+/*68. COLUNA FALSA*/
+
+#container-liquido-coluna-falsa {
+	margin: 0px auto;
+	width: 950px;
+	min-width: 750px;
+	max-width: 1800px;
+	background: url(../imagens/coluna.png) repeat-y left;
+}
+
+#mudar-cor-nav {
+	width: 25%;
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#mudar-cor-nav ul {
+	list-style-type: none;
+}
+
+#mudar-cor-nav a {
+	text-decoration: none;
+}
+
+/*69. ESTILIZANDO TABELAS*/
+
+table {
+	background: white;
+	width: 700px;
+}
+
+th, td {
+	padding: 7px;
+	border-collapse: separate;
+	border: 1px solid red;
+}
+
+th {
+	border-top: 1px solid blue;
+	border-bottom: 1px solid blue;
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 90%;
+	letter-spacing: 0.1em;
+}
+
+tr:hover {
+	background: blue;
+}
+
+.numero {
+	text-align: right;
+}
+
+/*70. ESTILIZANDO FORMULÁRIOS - PARARTE 1*/
+
+legend {
+	font-weight: bold;
+}
+
+label {
+	display: block;
+	cursor: pointer;
+	width: 20em;
+}
+
+input { /*input[type="text"]*/
+	width: 20em;
+}
+
+fieldset {
+	margin: 1em 0px;
+}
+
+textarea {
+	width: 20em;
+	height: 10em;
+}
+
+input.radio, input.checkbox, input.submit {
+	width: auto;
+}
+
+.radio {
+	margin-right: 1em;
+}
+
+/*71. ESTILIZANDO FORMULÁRIOS - PARARTE 2*/
+
+div.a72 {
+	
+	font-family: "Trebuchet MS",Helvetica, sans-serif;
+	background: #643d87 url(../imagens/fundo.jpg) no-repeat top;
+	border: 1px solid transparent;
+}
+
+.container2 {
+	width: 400px;
+	height: 300px;
+	-webkit-border-radios: 10px;
+	-moz-border-radios: 10px;
+	border-radius: 10px;
+	background-color: rgba(255,255,255,0.3);
+	margin: 120px auto;
+	margin-top: 120px;
+	text-align: center;
+}
+
+.container2 img{
+	width: 120px;
+	height: 120px;
+	margin-top: -60px;
+	margin-bottom: 30px;
+}
+
+.container2 input {
+	width: 80%;
+	height: 40px;
+	font-size: 18px;
+	margin-bottom: 10px;
+	background-color: #fff;
+	padding-left: 40px;
+	border: none;
+	background-repeat: no-repeat;
+	background-position: 10px;
+}
+
+input.email {
+	background-image: url(../imagens/icone-usuario.png);
+}
+
+input.senha {
+	background-image: url(../imagens/icone-cadeado.png);
+}
+
+input.submit3 {
+	color: #fff;
+	background-color: #f79300;
+	border: 2px solid #db7d00;
+	padding: 5px 20px;
+	height: 45px;
+	width: 90%;
+
+	background: -webkit-linear-gradient(to bottom, #faa600, #f68a00);
+	background: -moz-linear-gradient(to bottom, #faa600, #f68a00);
+	background: -o-linear-gradient(to bottom, #faa600, #f68a00);
+	background: linear-gradient(to bottom, #faa600, #f68a00);
+}
+
+/*72. ARREDONDAMENTO COM IMAGENS*/
+
+div.a72 {
+	font-family: "Trebuchet MS",Helvetica, sans-serif;
+}
+
+.caixa {
+	background: #dedede url(../imagens/topo.png) no-repeat left top;
+	width: 400px;
+	margin: 0px;
+}
+
+.caixa h3 {
+	border: 1px solid red;
+	padding: 10px 20px 0px 20px;
+}
+
+.caixa p {
+/*	border: 1px solid red;*/
+	background: #dedede url(../imagens/baixo.png) no-repeat left bottom;
+	padding: 0px 20px 20px 20px;
+}
+
+/*ARREDONDAMENTO COM IMAGENS 2*/
+
+.caixa2 {
+	
+	width: 400px;
+/*	border: 1px solid red;*/
+}
+
+.cima {
+	background: url(../imagens/topo2.png) no-repeat left top;
+	width: 400px;
+	height: 24px;
+	margin: 0px;
+}
+
+.meio {
+/*	border: 1px solid red;*/
+	background: url(../imagens/fundo-arredondamento.png) repeat-y;
+	width: 400px;
+}
+
+.baixo {
+	background: url(../imagens/baixo2.png) no-repeat left bottom;
+	width: 400px;
+	height: 24px;
+}
+
+/*ARREDONDAMENTO COM IMAGENS 3*/
+
+.caixa3 {
+	border: 1px solid blue;
+	width: 360px;
+	padding: 0px 20px;
+	background: url(../imagens/topo2.png) no-repeat left top;
+	/*background-color: #dedede;*/
+/*	margin: 20px 0px;*/*/
+	
+	/*border-radius: 20px;
+	-webkit-border-radios: 20px;
+	-moz-border-radios: 20px;*/
+
+}
+
+.cima1 {
+	border: 1px solid red;
+	background: url(../imagens/topo2.png) no-repeat left top;
+/*	width: 400px;
+	height: 24px;*/
+}
+
+.meio1 {
+	border: 1px solid red;
+/*	background: url(../imagens/fundo-arredondamento.png) repeat-y;*/
+/*	width: 400px;*/
+}
+
+.baixo1 {
+	border: 1px solid red;
+	background: url(../imagens/baixo2.png) no-repeat left bottom;
+	width: 400px;
+	height: 24px;
+	margin: 0px -20px;
+}
