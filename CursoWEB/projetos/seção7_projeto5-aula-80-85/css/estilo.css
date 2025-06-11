@@ -10,7 +10,7 @@ body {
 }
 
 #container {
-    background: #ede9cc;
+    background: #ede9cc url(../imagens/bg-container.png) top center repeat-y;
     margin: 0 auto;
     min-width: 740px;
     max-width: 1180px;
@@ -116,4 +116,65 @@ ul#navegacao a:hover {
     float: right;
 }
 
+/* Parte do conteúdo */
 
+#area-principal {
+    width: 50%;
+    float: left;
+    background: url(../imagens/bg-area-principal.png) top left repeat-x;
+    padding: 15px 0px;
+}
+
+#area-lateral {
+    width: 50%;
+    float: right;   
+    background: url(../imagens/bg-area-lateral.png) top left repeat-x;
+    padding: 20px 0px;
+}
+
+.conteudo {
+    margin: 0 auto;
+    width: 90%;
+}
+
+h2 {
+    margin: 5px 0px;
+    font-size: 1.1em;
+    color: #7d7640;
+}
+
+p {
+    font-size: 1.0em;
+    margin-bottom: 10px;
+}
+
+#rodape {
+    clear: both;
+    padding: 16px;
+    color: #7d7640;
+    background: #fff url(../imagens/bg-rodape.png) repeat-x top;
+}
+
+/* Conteudo lateral */
+
+#area-lateral li {
+    padding: 5px 40px;
+}
+
+.imagem {
+    float: left;
+    width: 150px;
+    height: 100px;
+
+}
+
+.conteudo-lateral {
+    float: right;
+    padding: 20px;
+    background: black;
+    line-height: auto;
+}
+
+h4 {
+
+}
