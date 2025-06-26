@@ -1,0 +1,26 @@
+body, html {
+    margin: 0;
+    color: #777;
+    font: 16px "Lato", sans-serif;;
+    height: 100%;
+}
+
+.conteudo {
+    color: #777;
+    background: white;
+    text-align: justify;
+    padding: 50px 80px;
+}
+
+.caixa1, .caixa2 {
+    border: 1px solid red;
+    height: 100%;
+}
+
+.caixa1 {
+    background-image: url(../imagens/imagem1.jpg);
+}
+
+.caixa2 {
+    background-image: url(../imagens/imagem2.jpg);
+}
