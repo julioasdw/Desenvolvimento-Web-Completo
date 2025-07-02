@@ -1,4 +1,4 @@
-body, html {
+body, html, #teste {
     margin: 0;
     color: #777;
     font: 16px "Lato", sans-serif;;
@@ -68,4 +68,12 @@ p {
 h1 {
     font-size: 6em;
     font-family: Ancient;
+}
+
+.clear {
+    position: relative;
+    clear: both;
+    background: white;
+    padding: 50px 80px;
+    text-align: center;
 }
