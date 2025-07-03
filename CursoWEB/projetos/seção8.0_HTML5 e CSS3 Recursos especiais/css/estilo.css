@@ -1,0 +1,40 @@
+
+h2 {
+    text-transform: uppercase;
+}
+
+#caixa {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+    background: #b9c941;
+    border-radius: 200px;
+}
+
+#caixa1 {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    padding: 50px;
+    background: #b9c941;
+}
+
+#caixa2 {
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    padding: 50px;
+    background: #b9c941;
+    box-sizing: border-box;
+}
+
+.borda {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px 80px;
+}
+
+.borda2 {
+    border: 1px solid red;
+}
