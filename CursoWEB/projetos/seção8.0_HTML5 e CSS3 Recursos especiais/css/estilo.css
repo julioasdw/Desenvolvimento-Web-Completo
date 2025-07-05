@@ -38,3 +38,55 @@ h2 {
 .borda2 {
     border: 1px solid red;
 }
+
+/* 92. Degradês & Transparências */
+
+.caixa3 {
+    width: 300px;
+    height: 300px;
+    /* background: url("../imagens/camera.png"); */
+    /* background: linear-gradient(red, green); */
+    background: linear-gradient(to left, red, green);
+}
+
+.caixa4 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(50deg, red, green, yellow);
+}
+
+.caixa5 {
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(red, green, yellow);
+}
+
+.caixa3 h3 {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* 93. Sombras */
+
+.caixa6 {
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+    margin: 20px;
+    background: #009670;
+    box-shadow: -8px 8px 5px rgba(0, 0, 0, 0.5);
+}
+
+.caixa6 .sombra {
+    color: white;
+    /* text-shadow: 4px 4px black; */
+    text-shadow: 8px 8px 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* 94. Animações */
+
+.caixa7 {
+    width: 300px;
+    height: 300px;
+    background: red;
+}
+
