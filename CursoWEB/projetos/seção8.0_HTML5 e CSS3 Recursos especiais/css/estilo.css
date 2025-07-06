@@ -79,14 +79,75 @@ h2 {
 .caixa6 .sombra {
     color: white;
     /* text-shadow: 4px 4px black; */
-    text-shadow: 8px 8px 5px 20px rgba(0, 0, 0, 0.5);
+    text-shadow: 8px 8px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* 94. Animações */
 
+@keyframes animacao-caixa {
+    from {/*Estado inicial*/
+        background: red;
+        border-radius: 0px;
+        margin-top: 0px;
+        left: 0px;
+    }
+    to {
+        background: green;
+        border-radius: 300px;
+        margin-top: 200px;
+        left: 200px;
+    }
+}
+
 .caixa7 {
+    position: relative;
     width: 300px;
     height: 300px;
     background: red;
+    /* animation-name: animacao-caixa;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-iteration-count: 4;
+    /* animation-direction: reverse; */
+    /* animation-direction: alternate-reverse; 
+    animation-direction: alternate; */
+    animation: animacao-caixa 5s 3s 4 alternate;
 }
+
+/* 96. Novas tags html 5 Header, Nav e Footer */
+
+header {
+    border: 2px solid red;
+    padding: 10px;
+}
+
+nav {
+    border: 2px solid green;
+    padding: 10px;
+}
+
+footer {
+    border: 2px solid blue;
+    padding: 10px;
+}
+
+/* 97. Novas tags html 5 Article, Section, Aside e time */
+
+article {
+    background-color: rgba(255, 165, 0, 0.2);
+    border: 2px solid yellow;
+    padding: 10px;
+    float: height;
+}
+
+section {  
+    border: 2px dotted black;
+    margin: 5px;
+}
+
+aside {
+    background: blue;
+    float: left;
+}
+
 
