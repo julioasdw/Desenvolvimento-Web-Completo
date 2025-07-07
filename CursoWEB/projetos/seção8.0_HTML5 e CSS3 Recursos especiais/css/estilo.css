@@ -150,4 +150,40 @@ aside {
     float: left;
 }
 
+/* 98. Compatibilidade Html 5 */
+
+/* 99. Novas tags de Input Html 5 */
+
+/* 100. Flexbox - container */
+
+#conteudo {
+    background: #dcdcdc;
+    height: 400px;
+    display: flex;
+
+    /* row/row-reverse/column/column-reverse */
+    flex-direction: row-reverse;
+
+    /* nowrap/wrap/wrap-reverse */
+    flex-wrap: nowrap;
+
+    /*flex-start|flex-end|center|space-between | space-around*/
+    justify-content:space-around;
+
+    /*stretch|center|flex-start|flex-end|baseline*/
+    align-items: baseline;
+}
+
+.item {
+    /* width: 100px;
+    height: 100px; */
+    margin: 10px;
+    background: white;
+    border: 1px solid gray;
+}
+
+
+
+
+
 
