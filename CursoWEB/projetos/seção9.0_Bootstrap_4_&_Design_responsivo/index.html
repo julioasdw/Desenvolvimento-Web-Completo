@@ -499,22 +499,169 @@
 
       <h3>Botões dropdown</h3>
       <div class="dropdown">
-          <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" type="button">
-              Clique
-          </button>
-          <div class="dropdown-menu">
-              <a href="#" class="dropdown-item bg-primary">Link 1</a>
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item bg-secondary">Link 2</a>
-              <a href="#" class="dropdown-item bg-dark">Link 3</a>
-          </div>      </div>
-      <br><br>
+        <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" type="button">
+            Clique
+        </button>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item bg-primary">Link 1</a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item bg-secondary">Link 2</a>
+          <a href="#" class="dropdown-item bg-dark">Link 3</a>
+        </div>
+      </div>  
     </div>
 
-    <div class="padding-bottom: 200px; width: 600px; margin: 0 auto;">
+    <div>
       <h2 class="text-primary">121. Introdução - barra de navegação</h2>
+      <!-- Navegação
+      Tipos de navegação:
+          nav-pills
+          nav-tabs
+      opções de alinhamento: 
+          justify-content-center 
+          justify-content-end
+          flex-column
+      Desabilitar o link
+          disabled-->
+      <h2>Navegação simples / abas</h2>
+      <ul class="nav nav-pills justify-content-center">
+        <li class="nav-item">
+          <a  class="nav-link active" href="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a  class="nav-link" href="">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a  class="nav-link" href="">Serviços</a>
+        </li>
+      </ul>
+
+      <ul class="nav nav-tabs justify-content-end">
+        <li class="nav-item">
+          <a  class="nav-link " href="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a  class="nav-link active" href="">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a  class="nav-link" href="">Serviços</a>
+        </li>
+      </ul>
+
+      <ul class="nav nav-tabs flex-column">
+        <li class="nav-item">
+          <a  class="nav-link " href="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a  class="nav-link active" href="">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a  class="nav-link" href="">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a  class="nav-link disabled" href="">Serviços</a>
+        </li>
+      </ul>
       
+      <br>
+
+      <h2>Barra de navegação simples</h2>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> <!-- sm - md - lg - xg -->
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="">Chalé Hotel</a>
+
+        <!-- Navegacao -->
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Serviços</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h2>Barra de navegação com menu responsivo</h2>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> <!-- sm - md - lg - xg -->
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="">Chalé Hotel</a>
+
+        <!-- Menu Hamburger -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navegacao -->
+        <div class="collapse navbar-collapse" id="nav-target">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Serviços</a> 
+            </li>
+          </ul>
+        </div>
+      </nav>      
+
+
+      <h2>Barra de navegação com formulário</h2>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> <!-- sm - md - lg - xg -->
+
+        <!-- Logo -->
+        <a class="navbar-brand" href="">Chalé Hotel</a>
+
+        <!-- Menu Hamburger -->
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navegacao -->
+        <div class="collapse navbar-collapse" id="nav-target">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="">Serviços</a> 
+            </li>
+          </ul>
+        </div>
+      </nav>           
+
+      
+      <h2>Barra de navegação com menu dropdown</h2>
+      
+      
+      <!--Cores
+      opções: bg-primary, bg-secondary, bg-success, bg-info,
+      bg-warning, bg-danger, bg-light, bg-dark
+      -->
+      <h2>Cores</h2>
+      
+
+      <!--Alinhamentos
+      opções: fixed-top, fixed-bottom, sticky
+      -->
+      <h2>Alinhamentos</h2>
+      
+
+      <h1>Lorem ipsum dolor sit amet</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et libero id erat tristique fermentum placerat a  erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed ac lobortis quam.  Nunc vestibulum tincidunt arcu, at scelerisque velit ornare et. Vestibulum ut malesuada nibh.</p>
     </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
