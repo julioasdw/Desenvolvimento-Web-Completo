@@ -11,9 +11,42 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="bootstrap-4.1.3/css/bootstrap.min.css">
 
+  <!-- Iconic CSS -->
+  <link href="iconic/font/css/open-iconic-bootstrap.css" rel=" stylesheet">
+
+  <!-- Fontawesome CSS -->
+  <script src="https://kit.fontawesome.com/e1b86b0aaa.js" crossorigin="anonymous"></script>
+
+  <style type="text/css">
+    .marcador {
+      background: #df8282;
+      border: 1px solid #f94646;
+    }
+    .marcadorh {
+      background: #df8282;
+      border: 1px solid #f94646;
+      height: 120px;
+    }
+    .marcador-container {
+      background: #5bf946;
+      border: 1px solid #36ae26;
+    }
+    .borda{
+        border: 1px solid blue;
+      }
+      .caixa {
+        background: #f5f5f5;
+        height: 200px;
+      }
+      .item {
+        border:1px solid black;
+        padding: 5px;
+      }
+  </style>
+
 </head>
 
-<body style="margin-bottom: 200px; padding: 16px; background: rgb(221, 209, 209);">
+<body style="padding: 16px; background: rgb(221, 209, 209);">
 
   <h2 class="text-primary">111. Formatações de textos: </h2>
   <br>
@@ -1621,7 +1654,7 @@
     <br><br>
 
     <h3 class="border-bottom">Cartão com imagem sobreposta</h3>
-    <div class="card">
+    <div class="card text-white">
       <img class="card-img" src="https://picsum.photos/600/100">
       <div class="card-img-overlay text-white">
         <h4 class="card-title">Título do cartão</h4>
@@ -1689,52 +1722,541 @@
       <a class="btn btn-outline-danger" href="">Leia mais</a>
     </div>
 
+    <h3 class="border-bottom">Cartão com cores de fundo</h3>
+    <div class="card bg-primary text-white md-2">
+      <div class="card-header">
+        Cabeçalho do cartão
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a class="btn btn-outline-light" href="">Leia mais</a>
+      </div>
+    </div> 
+
+    <br>
+    <div class="card bg-danger text-white md-2">
+      <div class="card-header">
+        Cabeçalho do cartão
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a class="btn btn-outline-light" href="">Leia mais</a>
+      </div>
+    </div> 
+
+    <br>
+
+    <h3 class="border-bottom">Cartão com bordas</h3>
+    <div class="card border-primary md-2">
+      <div class="card-header">
+        Cabeçalho do cartão
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a class="btn btn-outline-light" href="">Leia mais</a>
+      </div>
+    </div> 
+
+    <br>
+
+    <h3 class="border-bottom">Cartão com colunas</h3>
+    <div class="card-columns">
+      <!--Começo do cartão-->
+      <div class="card text-white">
+        <img class="card-img" src="https://picsum.photos/600/400">
+        <div class="card-img-overlay text-white">
+          <h4 class="card-title">Título do cartão</h4>
+          <h6 class="card-subtitle">Subtítulo do cartão</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+          <a class="btn btn-outline-light" href="">Leia mais</a>
+        </div>
+      </div> 
+      <!--Fim do cartão-->
+
+      <!--Início do cartão-->
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Título do cartão</h4>
+          <h6 class="card-subtitle">Subtítulo do cartão</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+          <a class="btn btn-outline-primary" href="">Leia mais</a>
+        </div>
+      </div> 
+      <!--Fim do cartão-->
+
+      <!--Começo do cartão-->
+      <div class="card bg-primary text-white">
+        <div class="card-header">
+          Cabeçalho do cartão
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Título do cartão</h4>
+          <h6 class="card-subtitle">Subtítulo do cartão</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui,   feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit. </p>
+          <a class="btn btn-outline-light" href="">Leia mais</a>
+        </div>
+      </div> 
+      <!--Fim do cartão-->
+
+      <!--Começo do cartão-->
+      <div class="card">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link active">Link 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Link 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Link 3</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <h4>Título do cartão</h4>
+          <h6>Subtítulo do cartão</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+          <a href="">Leia mais</a>
+        </div>
+        <a class="btn btn-outline-danger" href="">Leia mais</a>
+      </div>
+      <!--Fim do cartão-->
+
+      <!--Começo do cartão-->
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Título do cartão</h4>
+          <h6 class="card-subtitle">Subtítulo do cartão</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+          <a class="btn btn-outline-primary" href="">Leia mais</a>
+        </div>
+      </div> 
+      <!--Fim do cartão-->
+
+      <!--Começo do cartão-->
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Título do cartão</h4>
+          <h6 class="card-subtitle">Subtítulo do cartão</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+          <a class="btn btn-outline-primary" href="">Leia mais</a>
+        </div>
+      </div> 
+      <!--Fim do cartão-->
+
   </div>
 
-  <h3 class="border-bottom">Cartão com cores de fundo</h3>
-  <div class="card bg-primary text-white md-2">
-    <div class="card-header">
-      Cabeçalho do cartão
-    </div>
-    <div class="card-body">
-      <h4 class="card-title">Título do cartão</h4>
-      <h6 class="card-subtitle">Subtítulo do cartão</h6>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
-      <a class="btn btn-outline-light" href="">Leia mais</a>
-    </div>
-  </div> 
+    <div style="margin-bottom: 50px;padding: 16px;"> <!--*************************************************-->
 
-  <br>
-  <div class="card bg-danger text-white md-2">
-    <div class="card-header">
-      Cabeçalho do cartão
+    <h3 class="border-bottom">Jumbotron</h3>
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-4">Música para todos.</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiatet lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a class="btn btn-primary btn-lg" href="">Leia mais</a>
+      </div>
     </div>
-    <div class="card-body">
-      <h4 class="card-title">Título do cartão</h4>
-      <h6 class="card-subtitle">Subtítulo do cartão</h6>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
-      <a class="btn btn-outline-light" href="">Leia mais</a>
+
+    <h3 class="border-bottom">Estrutura para imagens</h3>
+    <div class="media">
+      <img class="mr-3" src="https://picsum.photos/60/60" alt="Imagem aleatória">
+      <div class="media-body">
+        <h5>Título do conteúdo</h5>
+        <p>Lorem ipsum dolor sit duaiduaioamet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+      </div>
     </div>
-  </div> 
 
-  <br>
+    <br><br>
 
-  <h3 class="border-bottom">Cartão com cores de fundo</h3>
-  <div class="card bg-primary text-white md-2">
-    <div class="card-header">
-      Cabeçalho do cartão
+    <h3 class="border-bottom">Alinhamentos: align-self-ALINHAMENTO (start, center, end) </h3>
+    <div class="media">
+      <img class="mr-3 align-self-center" src="https://picsum.photos/60/60" alt="Imagem aleatória">
+      <div class="media-body border">
+        <h5>Título do conteúdo</h5>
+        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+      </div>
     </div>
-    <div class="card-body">
-      <h4 class="card-title">Título do cartão</h4>
-      <h6 class="card-subtitle">Subtítulo do cartão</h6>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
-      <a class="btn btn-outline-light" href="">Leia mais</a>
+
+
+    <h3 class="border-bottom">Listas com imagens</h3>
+    <ul class="list-unstyled">
+      
+      <li class="media border-bottom pb-2">
+        <img class="mr-3 align-self-center" src="https://picsum.photos/60/60" alt="Imagem aleatória">
+        <div class="media-body">
+          <h5>Título do conteúdo</h5>
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl.</p>
+        </div>
+      </li>
+
+      <li class="media border-bottom pb-2 pt-2">
+        <img class="mr-3 align-self-center" src="https://picsum.photos/60/60" alt="Imagem aleatória">
+        <div class="media-body">
+          <h5>Título do conteúdo</h5>
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+
+  <div style="margin-bottom: 100px;padding: 16px;"> <!--***************************************************-->
+    <h2 class="text-primary">133. Ícones</h2>
+
+    <h3 class="border-bottom">Font awesome</h3>
+    <i class="fas fa-battery-half display-3 text-danger"></i>
+    <span class="fas fa-bomb display-3 text-warning"></span>
+
+    <button class="btn btn-danger btn-lg">
+      <i class="fas fa-bomb"></i>
+      Clique aqui
+    </button>
+
+    <button class="btn btn-danger btn-lg">
+      <i class="fa-solid fa-users fa-bounce fa-2xs" style="color: #2b166a;"></i>
+      Clique aqui
+    </button>
+
+    <i class="fa-solid fa-circle-user fa-fade fa-2xl" style="color: #74C0FC;"></i>
+
+    <h3 class="border-bottom">Iconic</h3>
+    <span class="oi oi-bell display-3 text-danger"></span>
+    <i class="oi oi-clock display-3 text-success"></i>
+
+    <button class="btn btn-dark btn-lg">
+      <i class="oi oi-clock"></i>
+      Clique aqui
+    </button>
+
+    
+  </div>
+
+  <div style="margin-bottom: 100px;"> <!--**********************************************-->
+    <h2 class="text-primary">135. Sistema de grid - parte 1/2/3</h2>
+
+    <img src="img/1-grid-bootstrap.jpg" width="900px" alt="">
+
+    <img class="mt-2" src="img/2-grid-exemplo.png" width="900px" alt="">
+
+    <img class="mt-2 mb-5" src="img/img_grid.png" width="900px" alt="">
+
+    <div class="container marcador-container mb-4">
+      <div class="row">
+        <div class="marcador col-6 col-sm-2 col-md-10 col-lg-2 col-xl-10">
+          área 1
+        </div>
+        <div class="marcador col-6 col-sm-10 col-md-2 col-lg-10 col-xl-2">
+          área 2
+        </div>
+      </div>
     </div>
-  </div> 
 
-  <br>
+    <div class="container marcador-container">
+      <div class="row">
+        <div class="marcador col-sm-6 col-xl-4">
+            <h2>Lorem ipsum dolorem sit amet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper ullamcorper lorem eu tempor. Mauris ut ultricies diam, eu vestibulum lectus.</p>
+            <button class="btn btn-warning">Leia mais</button>
+        </div>
 
-  <!-- Optional JavaScript -->
+        <div class="marcador col-sm-6 col-xl-4">
+          <h2>Lorem ipsum dolorem sit amet</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper ullamcorper loremeu tempor. Mauris ut ultricies diam, eu vestibulum lectus.</p>
+          <button class="btn btn-warning">Leia mais</button>
+        </div>
+
+        <div class="marcador col-sm-6 col-xl-4">
+          <h2>Lorem ipsum dolorem sit amet</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper ullamcorper loremeu tempor. Mauris ut ultricies diam, eu vestibulum lectus.</p>
+          <button class="btn btn-warning">Leia mais</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-4"> <!--**************************************************-->
+    <h2 class="text-primary">138. Configurações do grid</h2>
+        
+    <div class="container-fluid marcador-container" >
+    
+      <h3>Largura fixa</h3>
+      <div class="row" style="border: 1px solid red;">
+        <div class="marcador col">ÁREA 1</div>
+        <div class="marcador col">ÁREA 2</div>
+        <div class="marcador col">ÁREA 3</div>
+        <div class="marcador col">ÁREA 4</div>
+      </div>
+
+      <h3>Largura automática (auto-layout)</h3>
+      <div class="row">
+        <div class="marcador col">ÁREA 1</div>
+        <div class="marcador col">ÁREA 2</div>
+        <div class="marcador col-6">ÁREA 3 com COL-6</div>
+      </div>
+
+      <h3>Largura igual empilhada</h3>
+      <div class="row">
+        <div class="marcador col-sm">ÁREA 1</div>
+        <div class="marcador col-sm">ÁREA 2</div>
+        <div class="marcador col-sm">ÁREA 3</div>
+      </div>
+
+      <h3>Ordenando</h3>
+      <div class="row">
+        <div class="marcador col-md-4 order-3">ÁREA 1</div>
+        <div class="marcador col-md-4 order-1">ÁREA 2</div>
+        <div class="marcador col-md-4 order-2">ÁREA 3</div>
+      </div>
+      
+      <h3>offset</h3>
+      <div class="row">
+        <div class="marcador col-md-6 offset-md-3">Login...</div>
+      </div>
+      
+      <h3>offset múltiplos alinhamentos</h3>
+      <div class="row">
+        <div class="marcador col-md-3 offset-md-3">Conteúdo 1</div>
+        <div class="marcador col-md-3 offset-md-3">Conteúdo 2</div>
+      </div>
+      
+      <h3>Aninhamento</h3>
+      <div class="row">
+        <div class="marcador col-md-6">
+          marcador col-md-6
+          <div class="row">
+            <div class="marcador col-md-6">
+              marcador col-md-6
+              <div class="row">
+                <div class="marcador col-md-6">
+                  marcador col-md-6
+                </div>
+                <div class="marcador col-md-6">
+                  marcador col-md-6
+                </div>
+              </div>
+            </div>
+            <div class="marcador col-md-6">
+              marcador col-md-6
+            </div>
+          </div>
+          
+        </div>
+        <div class="marcador col-md-6">
+          marcador col-md
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="mb-4"> <!--**************************************************-->
+    <h2 class="text-primary">139. Alinhamento no grid</h2>
+
+    <div class="container">
+
+      <h3 class="mt-5 text-info">Alinhamento vertical (align-items-ALINHAMENTO: start, center, end)</h3>
+      <div class="marcadorh row align-items-center">
+        <div class="col borda">Área 1</div>
+        <div class="col borda">Área 2</div>
+        <div class="col borda">Área 3</div>
+      </div>
+
+      <h3 class="mt-5 text-info">Alinhamento vertical individual (align-self-ALINHAMENTO: start, center, end)</h3>
+      <div class="row marcadorh ">
+        <div class="col borda align-self-start">Área 1</div>
+        <div class="col borda align-self-center">Área 2</div>
+        <div class="col borda align-self-end">Área 3</div>
+      </div>
+
+      <h3 class="mt-5 text-info">Alinhamento horizontal colunas (justify-content-ALINHAMENTO: start, center, end)</h3>
+      <div class="row justify-content-center">
+        <div class="marcadorh col-2">Área 1</div>
+        <div class="marcadorh col-2">Área 2</div>
+        <div class="marcadorh col-2">Área 3</div>
+      </div>
+
+
+
+      <h3 class="mt-5 text-info">Distribuição (justify-content-ALINHAMENTO: around, between, end)</h3>
+      <div class="row borda justify-content-around">
+        <div class="marcadorh col-2">Área 1</div>
+        <div class="marcadorh col-2">Área 2</div>
+        <div class="marcadorh col-2">Área 3</div>
+      </div>
+      <h3 class="mt-5 text-info">Distribuição (justify-content-ALINHAMENTO: around, between, end)</h3>
+      <div class="row borda justify-content-between">
+        <div class="marcadorh col-2">Área 1</div>
+        <div class="marcadorh col-2">Área 2</div>
+        <div class="marcadorh col-2">Área 3</div>
+      </div>
+      <h3 class="mt-5 text-info">Distribuição (justify-content-ALINHAMENTO: around, between, end)</h3>
+      <div class="row borda justify-content-end">
+        <div class="marcadorh col-2">Área 1</div>
+        <div class="marcadorh col-2">Área 2</div>
+        <div class="marcadorh col-2">Área 3</div>
+      </div>
+
+
+
+      <h3 class="mt-5 text-info">Removendo espaçamento</h3>
+      <div class="row">
+        <div class="borda col-2 mb-4">Área 1</div>
+        <div class="borda col-2 mb-4">Área 2</div>
+        <div class="borda col-2 mb-4">Área 3</div>
+      </div>
+
+      <div class="row no-gutters">
+        <div class="borda col-2">Área 1</div>
+        <div class="borda col-2">Área 2</div>
+        <div class="borda col-2">Área 3</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div> <!--**************************************************-->
+    <h2 class="text-primary">140. Classes do Flexbox</h2>
+
+    <div class="container">
+
+      <h3>Flex container e flex itens (d-flex, flex-row, flex-column, flex-row-reverse)</h3>
+      <div class="caixa d-flex flex-row">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+      </div>
+      <br><br>
+      <div class="caixa d-flex flex-row-reverse">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+      </div>
+      <br><br>
+
+      <h3>Alinhamento horizontal: justify-content-ALINHAMENTO (start, center, end, around e between)</h3>
+      <div class="caixa d-flex justify-content-center">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+      </div>
+      <br><br>
+      <div class="caixa d-flex justify-content-around">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+      </div>
+      <br><br>
+      <div class="caixa d-flex justify-content-between">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+      </div>
+      <br><br>
+
+      <h3>Colunas (d-flex, flex-column, flex-column-reverse)</h3>
+      <div class="caixa d-flex flex-column-reverse">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+      </div>
+      <br><br>
+
+      <h3>Alinhamento vertical: align-items-ALINHAMENTO (start, center, end, baseline e stretch)</h3>
+      <div class="caixa d-flex align-items-center">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+      </div>
+      <br><br>
+      <div class="caixa d-flex align-items-end">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+      </div>
+      <br><br>
+      <div class="caixa d-flex align-items-baseline">
+        <div class="item pt-4">Julio</div>
+        <div class="item">Cesar</div>
+        <div class="item pb-4">Xavier</div>
+      </div>
+      <br><br>
+      <div class="caixa d-flex align-items-stretch">
+        <div class="item pt-4">Julio</div>
+        <div class="item">Cesar</div>
+        <div class="item pb-4">Xavier</div>
+      </div>
+      <br><br>
+
+      <h3>Alinhamento self: align-self-ALINHAMENTO (start, center, end, baseline e stretch)</h3>
+      <div class="caixa d-flex">
+        <div class="item align-self-start">Flex item 1</div>
+        <div class="item align-self-center">Flex item 2</div>
+        <div class="item align-self-end">Flex item 3</div>
+        <div class="item align-self-baseline">Flex item 4</div>
+        <div class="item align-self-stretch">Flex item 5</div>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+  <div> <!--**************************************************-->
+    <h2 class="text-primary">141. Margin & Wrap</h2>
+
+    <div class="container">
+
+      <h2>Margin right/left auto (mr-auto, ml-auto)</h2>
+      <div class="caixa d-flex">
+        <div class="item mr-auto ml-auto">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+      </div>
+      <br><br>
+
+      <h2>Margin bottom/top auto (mt-auto, mb-auto)</h2>
+      <div class="caixa d-flex flex-column">
+        <div class="item mt-auto mb-auto">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+      </div>
+      <br><br>
+
+      <h2>Wrap (flex-wrap, flex-nowrap)</h2>
+      <div class="caixa d-flex flex-wrap">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+        <div class="item">Flex item 4</div>
+        <div class="item">Flex item 5</div>
+        <div class="item">Flex item 6</div>
+        <div class="item">Flex item 7</div>
+        <div class="item">Flex item 8</div>
+        <div class="item">Flex item 9</div>
+        <div class="item">Flex item 10</div>
+        <div class="item">Flex item 11</div>
+        <div class="item">Flex item 12</div>
+        <div class="item">Flex item 13</div>
+        <div class="item">Flex item 14</div>
+        <div class="item">Flex item 15</div>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+
+
+   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
