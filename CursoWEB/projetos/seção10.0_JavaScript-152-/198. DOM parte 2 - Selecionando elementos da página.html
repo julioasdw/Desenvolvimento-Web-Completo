@@ -439,9 +439,21 @@
 
         // 195. Eventos parte 4 - Janela  *************************************
 
+
+        // 196. Eventos parte 5 - Formulários *************************************
+
+
+        // 197. DOM parte 1 - Introdução *************************************
+
+
+        // 198. DOM parte 2 - Selecionando elementos da página *************************************
+        // console.log(document.getElementById('nome_usuario')) não vai encontrar o id pois ele n foi criado ainda
+
+
+
         
         </script>    
-        <title>195. Eventos parte 4 - Janela</title>
+        <title>198. DOM parte 2 - Selecionando elementos da página</title>
   </head>
   <!-- <body> -->
     <!-- 167. Ifelse parte 2 - Praticando com operadores de comparação *************************************
@@ -520,10 +532,42 @@
 
     <!-- 195. Eventos parte 4 - Janela ************************************* -->
     <!-- <body onresize="console.log('Evento disparado ao mudar o tamanho da janala do body')"> -->
-    <div style="height: 3000px; width: 125px; background: #ccc;"></div>
-    <body onscroll="console.log('Evento disparado ao rolar no scroll nessa div')">tete</div>
-     
+    <!-- <div style="height: 3000px; width: 125px; background: #ccc;"></div>
+    <body onscroll="console.log('Evento disparado ao rolar no scroll nessa div')">tete</div> -->
 
+
+    <!-- 196. Eventos parte 5 - Formulários -->
+    <!-- <input onfocus="console.log('Você aplicou o foco!')" onblur="console.log('Perdeu o foco!')" type="text">
+
+    <select onchange="console.log('o Estádo foi modificado!')">
+        <option >-- Selecione --</option>
+        <option value="1">Primeira opção</option>
+        <option value="2">Segunda opção</option>
+    </select> -->
+
+
+    <!-- 197. DOM parte 1 - Introdução -->
+    <!-- <img src="img/DOM.jpg" width="1000px"> -->
+
+
+    <!-- 198. DOM parte 2 - Selecionando elementos da página  ************************************* -->
+    <input 
+        type="text"
+        placeholder="Digite seu nome"
+        id="nome_usuario"
+        class="campo_texto"
+        name="nome"
+    >
+    
+        
+    
+    <script>
+        // 198. DOM parte 2 - Selecionando elementos da página *************************************
+        console.log(document.getElementById('nome_usuario'))        // Seleciona UM elemento pelo ID (único na página).
+        console.log(document.getElementsByTagName('input'))         // Retorna todos os elementos <input> da página em uma coleção HTML.
+        console.log(document.getElementsByClassName('campo_texto')) // Retorna todos os elementos que possuem a classe "campo_texto".
+        console.log(document.getElementsByName('nome'))             // Retorna todos os elementos que possuem o atributo name="nome".
+    </script>
 
     
     <!-- JavaScript (Opcional) -->
