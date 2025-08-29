@@ -450,40 +450,81 @@
         // console.log(document.getElementById('nome_usuario')) não vai encontrar o id pois ele n foi criado ainda
 
 
-        // 199. DOM parte 3 - Manipulando valores de inputs (text) *************************************
-        function distribuirCaractere() {
-            // Selecionar valor digitado
-            var caractere = document.getElementById('entrada').value
-            // Limpar o campo de digitação
-            document.getElementById('entrada').value = ''
+        // // 199. DOM parte 3 - Manipulando valores de inputs (text) *************************************
+        // function distribuirCaractere() {
+        //     // Selecionar valor digitado
+        //     var caractere = document.getElementById('entrada').value
+        //     // Limpar o campo de digitação
+        //     document.getElementById('entrada').value = ''
 
-            // limpara espaços em branco nas extremidades
-            caractere.trim()
+        //     // limpara espaços em branco nas extremidades
+        //     caractere.trim()
 
-            switch(caractere) {
-                case '0':
-                case '1':
-                case '2':
-                case '3':
-                case '4':
-                case '5':
-                case '6':
-                case '7':
-                case '8':
-                case '9':
-                // Adicionar o caractere campo referente a números
-                document.getElementById('apenas_numeros').value = caractere
-                break
-                default: 
-                // adicionar o caractere no campo referente a letras
-                document.getElementById('apenas_letras').value += caractere
+        //     switch(caractere) {
+        //         case '0':
+        //         case '1':
+        //         case '2':
+        //         case '3':
+        //         case '4':
+        //         case '5':
+        //         case '6':
+        //         case '7':
+        //         case '8':
+        //         case '9':
+        //         // Adicionar o caractere campo referente a números
+        //         document.getElementById('apenas_numeros').value = caractere
+        //         break
+        //         default: 
+        //         // adicionar o caractere no campo referente a letras
+        //         document.getElementById('apenas_letras').value += caractere
+        //     }
+
+        // }
+
+
+        // // 200. DOM parte 4 - Manipulando estilos de elementos*************************************
+        // function modificaEstilo(corDeFundo, mg) {
+        //     document.getElementById('quadrado').style.background = corDeFundo
+        //     document.getElementById('quadrado').style.margin = mg
+        //     document.getElementById('quadrado').textContent  = 'OLÁ JÚLIO'
+        //     // document.getElementById('quadrado').className = 'mt-1'
+        // }
+
+
+        // 201. DOM parte 5 - Manipulando classes de*************************************
+            var i = 1
+
+            function modificaClasse() {
+                if ((i % 2) === 1) {
+                    document.getElementById('mensagem').className = 'estilo2'
+                    i++
+                    console.log(i)
+                } else {
+                    document.getElementById('mensagem').className = 'estilo1'
+                    i--
+                    console.log(i)
+                }
             }
+        </script>
 
-        }
+        <style>
+            .estilo1 {
+                background: #FF0000;
+                color: #FFF;
+            }    
+            .estilo2 {
+                width: 400px;
+                height: 90px;
+                background-color: #FF0000;
+                text-align: center;
+                font-size: 25px;
+                color: #FFF;
+                padding: 25px;
+            }    
+        </style>
 
 
-        </script>    
-        <title>199. DOM parte 3 - Manipulando valores de inputs (text)</title>
+        <title>201. DOM parte 5 - Manipulando classes de Elementos</title>
   </head>
   <!-- <body> -->
     <!-- 167. Ifelse parte 2 - Praticando com operadores de comparação *************************************
@@ -492,7 +533,7 @@
       <img src="img/op-comparacao.jpg" width="600">
     </div> -->
     
-    
+
     <!-- 173. Atividades para fixação do *************************************
     <div>
         <h5>
@@ -599,7 +640,7 @@
 
 
     <!-- 199. DOM parte 3 - Manipulando valores de inputs (text) *************************************-->
-    <input 
+    <!-- <input 
         type="text"
         placeholder="Digite um caractere aqui"
         onkeyup="distribuirCaractere()"
@@ -621,8 +662,27 @@
         type="text" 
         disabled="disabled" 
         id="apenas_numeros"
-    >
+    > -->
 
+
+    <!-- 200. DOM parte 4 - Manipulando estilos de elementos ************************************* -->
+    <!-- <h3>Manipulando Estilo</h3>
+
+    <button  onclick="modificaEstilo('#FF0000', '50px')" class="bg-danger" type="button">Vermelho</button>
+    <button  onclick="modificaEstilo('#00FF00', '100px')" class="bg-success" type="button">Verde</button>
+    <button  onclick="modificaEstilo('#0000FF', '200px')" class="bg-primary" type="button">Azul</button>
+
+    <div class="mt-5" style="border: 10px solid #000; width: 200px; height: 200px;" id="quadrado">
+        OLÁ
+    </div> -->
+
+
+    <!-- 201. DOM parte 5 - Manipulando classes de ************************************* -->
+    <div id="mensagem" class="estilo1">
+        Modificando classe
+    </div>
+    <hr>
+    <button onclick="modificaClasse()" type="button">Aoplicar classe</button>
     
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->

@@ -450,180 +450,342 @@
         // console.log(document.getElementById('nome_usuario')) não vai encontrar o id pois ele n foi criado ainda
 
 
-        // 199. DOM parte 3 - Manipulando valores de inputs (text) *************************************
-        function distribuirCaractere() {
-            // Selecionar valor digitado
-            var caractere = document.getElementById('entrada').value
-            // Limpar o campo de digitação
-            document.getElementById('entrada').value = ''
+        // // 199. DOM parte 3 - Manipulando valores de inputs (text) *************************************
+        // function distribuirCaractere() {
+        //     // Selecionar valor digitado
+        //     var caractere = document.getElementById('entrada').value
+        //     // Limpar o campo de digitação
+        //     document.getElementById('entrada').value = ''
 
-            // limpara espaços em branco nas extremidades
-            caractere.trim()
+        //     // limpara espaços em branco nas extremidades
+        //     caractere.trim()
 
-            switch(caractere) {
-                case '0':
-                case '1':
-                case '2':
-                case '3':
-                case '4':
-                case '5':
-                case '6':
-                case '7':
-                case '8':
-                case '9':
-                // Adicionar o caractere campo referente a números
-                document.getElementById('apenas_numeros').value = caractere
-                break
-                default: 
-                // adicionar o caractere no campo referente a letras
-                document.getElementById('apenas_letras').value += caractere
-            }
+        //     switch(caractere) {
+        //         case '0':
+        //         case '1':
+        //         case '2':
+        //         case '3':
+        //         case '4':
+        //         case '5':
+        //         case '6':
+        //         case '7':
+        //         case '8':
+        //         case '9':
+        //         // Adicionar o caractere campo referente a números
+        //         document.getElementById('apenas_numeros').value = caractere
+        //         break
+        //         default: 
+        //         // adicionar o caractere no campo referente a letras
+        //         document.getElementById('apenas_letras').value += caractere
+        //     }
 
-        }
+        // }
 
 
-        </script>    
-        <title>199. DOM parte 3 - Manipulando valores de inputs (text)</title>
+        // // 200. DOM parte 4 - Manipulando estilos de elementos*************************************
+        // function modificaEstilo(corDeFundo, mg) {
+        //     document.getElementById('quadrado').style.background = corDeFundo
+        //     document.getElementById('quadrado').style.margin = mg
+        //     document.getElementById('quadrado').textContent  = 'OLÁ JÚLIO'
+        //     // document.getElementById('quadrado').className = 'mt-1'
+        // }
+
+
+        // // 201. DOM parte 5 - Manipulando classes de*************************************
+        //     var i = 1
+
+        //     function modificaClasse() {
+        //         if ((i % 2) === 1) {
+        //             document.getElementById('mensagem').className = 'estilo2'
+        //             i++
+        //             console.log(i)
+        //         } else {
+        //             document.getElementById('mensagem').className = 'estilo1'
+        //             i--
+        //             console.log(i)
+        //         }
+        //     }
+        // <script>
+
+        // <style>
+        //     .estilo1 {
+        //         background: #FF0000;
+        //         color: #FFF;
+        //     }    
+        //     .estilo2 {
+        //         width: 400px;
+        //         height: 90px;
+        //         background-color: #FF0000;
+        //         text-align: center;
+        //         font-size: 25px;
+        //         color: #FFF;
+        //         padding: 25px;
+        //     }    
+        // </style>
+
+
+        // // 202. Atividades para fixação do conteúdo ************************************* 
+        // function mudarFundo() {
+        //     document.getElementById('tarefa').style.background = 'yellow'
+        // }
+        // function mudarFundo2() {
+        //     qtdChar = document.getElementById('tarefa').value.length
+        //     console.log(qtdChar)
+        //     if (qtdChar < 3) {
+        //         document.getElementById('tarefa').style.background = 'red'
+        //     } else if (qtdChar >= 3) {
+        //         document.getElementById('tarefa').style.background = 'green'
+        //     }
+        // }
+
+
+        // 205. Array básico - Introdução *************************************
+
+
+        // // 206. Array básico - Prática  *************************************
+        // // var array_nome = Array()
+        // var array_nome = []
+
+        // array_nome[1] = 'Julio'
+        // array_nome[2] = 'Cesar'
+        // array_nome['x'] = true
+        // array_nome[4] = 10
+  
+        // console.log(array_nome)
+
+        // // var teste = Array('Julio', 'Cesar', true, 10)
+        // var teste = ['Julio', 'Cesar', true, 10]
+        // console.log(teste[0])
+        // console.log(teste[1])
+        // console.log(teste[2])
+        // console.log(teste[3])
+
+        // var var1 = []
+        // var1['x'] = 2
+        // var1[1] = 2
+        // console.log(var1) // length = 2
+
+
+        // 208. Array multidimensional  *************************************
+        var listaDeCoisas = []
+        listaDeCoisas['frutas'] = []
+        listaDeCoisas['pessoas'] = []
+        
+        listaDeCoisas['frutas'][1] = 'caçã'
+        listaDeCoisas['frutas'][2] = 'goiaba'
+        listaDeCoisas['frutas'][3] = 'banana'
+        listaDeCoisas['frutas'][4] = 'mamão'
+        
+        listaDeCoisas['pessoas'][1] = 'Júlio'
+        listaDeCoisas['pessoas'][2] = 'César'
+        listaDeCoisas['pessoas'][3] = 'Xavier'
+        listaDeCoisas['pessoas'][4] = 'Dutra'
+
+        console.log(listaDeCoisas)
+        document.write(listaDeCoisas['frutas'][2])
+
+    </script>
+        <title>208. Array multidimensional</title>
   </head>
-  <!-- <body> -->
-    <!-- 167. Ifelse parte 2 - Praticando com operadores de comparação *************************************
-    <div class="mt-5">
-      <img src="img/if-else.png" width="300">
-      <img src="img/op-comparacao.jpg" width="600">
-    </div> -->
-    
-    
-    <!-- 173. Atividades para fixação do *************************************
+  <body>
     <div>
-        <h5>
-            1. Crie uma aplicação capaz de identificar a faixa etária com base na idade informada pelo usuário. Considere os seguintes critérios:
-        </h5> 
-        <ul>
-            <li>Se a idade informada for maior ou igual a 0 e menor que 15, exibir a mensagem “Criança”.</li>
-            <li>Se a idade informada for maior ou igual a 15 e menor que 30, exibir a mensagem “Jovem”.</li>
-            <li>Se a idade informada for maior ou igual a 30 e menor que 60, exibir a mensagem “Adulto”.</li>
-            <li>Se a idade informada for maior ou igual a 60, exibir a mensagem “Idoso”.</li>
-            <li>Fique à vontade para utilizar qualquer uma das funções aprendidas para exibição de dados para o usuário.</li>
-        </ul> 
-    </div> -->
 
+        <!-- 167. Ifelse parte 2 - Praticando com operadores de comparação *************************************
+        <div class="mt-5">
+          <img src="img/if-else.png" width="300">
+          <img src="img/op-comparacao.jpg" width="600">
+        </div> -->
+        
     
-    <!-- 180. Atividades para fixação do conteúdo *************************************
-    <div>
-        <img class="img-fluid mx-auto d-block" src="img/180. Atividades para fixação do conteúdo.png" width="50%">
-    </div> -->
+        <!-- 173. Atividades para fixação do *************************************
+        <div>
+            <h5>
+                1. Crie uma aplicação capaz de identificar a faixa etária com base na idade informada pelo usuário. Considere os seguintes critérios:
+            </h5> 
+            <ul>
+                <li>Se a idade informada for maior ou igual a 0 e menor que 15, exibir a mensagem “Criança”.</li>
+                <li>Se a idade informada for maior ou igual a 15 e menor que 30, exibir a mensagem “Jovem”.</li>
+                <li>Se a idade informada for maior ou igual a 30 e menor que 60, exibir a mensagem “Adulto”.</li>
+                <li>Se a idade informada for maior ou igual a 60, exibir a mensagem “Idoso”.</li>
+                <li>Fique à vontade para utilizar qualquer uma das funções aprendidas para exibição de dados para o usuário.</li>
+            </ul> 
+        </div> -->
+    
+        
+        <!-- 180. Atividades para fixação do conteúdo *************************************
+        <div>
+            <img class="img-fluid mx-auto d-block" src="img/180. Atividades para fixação do conteúdo.png" width="50%">
+        </div> -->
+        
+        
+        <!-- 182. Funções - Prática ************************************* -->
+        <!-- <div>
+            <img class="img-fluid mx-auto d-block" src="img/181. Funções - Introdução.png" width="50%">
+        </div> -->
     
     
-    <!-- 182. Funções - Prática ************************************* -->
-    <!-- <div>
-        <img class="img-fluid mx-auto d-block" src="img/181. Funções - Introdução.png" width="50%">
-    </div> -->
-
-
-    <!-- 193. Eventos parte 2 - Mouse  *************************************-->
-    <!-- <div onclick="acao()" style="background: #ccc; height: 150px; width: 150px;">
-        onclick(Clique 1 vez)
-    </div> 
-    <br>
-    <div ondblclick="acao()" style="background: #ccc; height: 150px; width: 150px;">
-        ondblclick(Clique 2 vezes)
-    </div> 
-    <br>
-    <div onmouseup="acao()" style="background: #ccc; height: 150px; width: 150px;">
-        onmouseup(segure e dps solte)
-    </div> 
-    <br>
-    <div onmouseover="acao()" style="background: #ccc; height: 150px; width: 150px;">
-        onmouseover(mouse dentro da div)
-    </div> 
-    <br>
-    <div onmouseout="acao()" style="background: #ccc; height: 150px; width: 150px;">
-        onmouseout(quando o mouse sai da div)
-    </div> -->
-
-    <!-- Testando com mais de um evento -->
-    <!-- <br>
-    <div onclick="acao()" onmouseout="acao2()" style="background: red; height: 150px; width: 150px;">
-        onmouseout(quando o mouse sai da div)
-    </div>  -->
-
-
-    <!-- 194. Eventos parte 3 - Teclado  ************************************* -->
-
-    <!--quando a tecla é precionada-->
-    <!-- <input onkeydown="acao()" type="text">  -->
-
-    <!--enquanto a tecla de um caractere está precionada, n pode ser ENTRER, TAB...-->
-    <!-- <input onkeypress="acao()" type="text">  -->
-
-    <!--quando a tecla for desprecionada -->
-    <!-- <input onkeyup="acao()" type="text">  -->
-
-
-    <!-- 195. Eventos parte 4 - Janela ************************************* -->
-    <!-- <body onresize="console.log('Evento disparado ao mudar o tamanho da janala do body')"> -->
-    <!-- <div style="height: 3000px; width: 125px; background: #ccc;"></div>
-    <body onscroll="console.log('Evento disparado ao rolar no scroll nessa div')">tete</div> -->
-
-
-    <!-- 196. Eventos parte 5 - Formulários -->
-    <!-- <input onfocus="console.log('Você aplicou o foco!')" onblur="console.log('Perdeu o foco!')" type="text">
-
-    <select onchange="console.log('o Estádo foi modificado!')">
-        <option >-- Selecione --</option>
-        <option value="1">Primeira opção</option>
-        <option value="2">Segunda opção</option>
-    </select> -->
-
-
-    <!-- 197. DOM parte 1 - Introdução -->
-    <!-- <img src="img/DOM.jpg" width="1000px"> -->
-
-
-    <!-- 198. DOM parte 2 - Selecionando elementos da página  ************************************* -->
-    <!-- <input 
-        type="text"
-        placeholder="Digite seu nome"
-        id="nome_usuario"
-        class="campo_texto"
-        name="nome"
-    >
+        <!-- 193. Eventos parte 2 - Mouse  *************************************-->
+        <!-- <div onclick="acao()" style="background: #ccc; height: 150px; width: 150px;">
+            onclick(Clique 1 vez)
+        </div> 
+        <br>
+        <div ondblclick="acao()" style="background: #ccc; height: 150px; width: 150px;">
+            ondblclick(Clique 2 vezes)
+        </div> 
+        <br>
+        <div onmouseup="acao()" style="background: #ccc; height: 150px; width: 150px;">
+            onmouseup(segure e dps solte)
+        </div> 
+        <br>
+        <div onmouseover="acao()" style="background: #ccc; height: 150px; width: 150px;">
+            onmouseover(mouse dentro da div)
+        </div> 
+        <br>
+        <div onmouseout="acao()" style="background: #ccc; height: 150px; width: 150px;">
+            onmouseout(quando o mouse sai da div)
+        </div> -->
     
-    <script>
-        // 198. DOM parte 2 - Selecionando elementos da página *************************************
-        console.log(document.getElementById('nome_usuario'))        // Seleciona UM elemento pelo ID (único na página).
-        console.log(document.getElementsByTagName('input'))         // Retorna todos os elementos <input> da página em uma coleção HTML.
-        console.log(document.getElementsByClassName('campo_texto')) // Retorna todos os elementos que possuem a classe "campo_texto".
-        console.log(document.getElementsByName('nome'))             // Retorna todos os elementos que possuem o atributo name="nome".
-    </script> -->
+        <!-- Testando com mais de um evento -->
+        <!-- <br>
+        <div onclick="acao()" onmouseout="acao2()" style="background: red; height: 150px; width: 150px;">
+            onmouseout(quando o mouse sai da div)
+        </div>  -->
+    
+    
+        <!-- 194. Eventos parte 3 - Teclado  ************************************* -->
+    
+        <!--quando a tecla é precionada-->
+        <!-- <input onkeydown="acao()" type="text">  -->
+    
+        <!--enquanto a tecla de um caractere está precionada, n pode ser ENTRER, TAB...-->
+        <!-- <input onkeypress="acao()" type="text">  -->
+    
+        <!--quando a tecla for desprecionada -->
+        <!-- <input onkeyup="acao()" type="text">  -->
+    
+    
+        <!-- 195. Eventos parte 4 - Janela ************************************* -->
+        <!-- <body onresize="console.log('Evento disparado ao mudar o tamanho da janala do body')"> -->
+        <!-- <div style="height: 3000px; width: 125px; background: #ccc;"></div>
+        <body onscroll="console.log('Evento disparado ao rolar no scroll nessa div')">tete</div> -->
+    
+    
+        <!-- 196. Eventos parte 5 - Formulários -->
+        <!-- <input onfocus="console.log('Você aplicou o foco!')" onblur="console.log('Perdeu o foco!')" type="text">
+    
+        <select onchange="console.log('o Estádo foi modificado!')">
+            <option >-- Selecione --</option>
+            <option value="1">Primeira opção</option>
+            <option value="2">Segunda opção</option>
+        </select> -->
+    
+    
+        <!-- 197. DOM parte 1 - Introdução -->
+        <!-- <img src="img/DOM.jpg" width="1000px"> -->
+    
+    
+        <!-- 198. DOM parte 2 - Selecionando elementos da página  ************************************* -->
+        <!-- <input 
+            type="text"
+            placeholder="Digite seu nome"
+            id="nome_usuario"
+            class="campo_texto"
+            name="nome"
+        >
+        
+        <script>
+            // 198. DOM parte 2 - Selecionando elementos da página *************************************
+            console.log(document.getElementById('nome_usuario'))        // Seleciona UM elemento pelo ID (único na página).
+            console.log(document.getElementsByTagName('input'))         // Retorna todos os elementos <input> da página em uma coleção HTML.
+            console.log(document.getElementsByClassName('campo_texto')) // Retorna todos os elementos que possuem a classe "campo_texto".
+            console.log(document.getElementsByName('nome'))             // Retorna todos os elementos que possuem o atributo name="nome".
+        </script> -->
+    
+    
+        <!-- 199. DOM parte 3 - Manipulando valores de inputs (text) *************************************-->
+        <!-- <input 
+            type="text"
+            placeholder="Digite um caractere aqui"
+            onkeyup="distribuirCaractere()"
+            id="entrada"
+        />
+        
+        <hr>
+        <span>Letras</span>
+    
+        <input 
+            type="text" 
+            disabled="disabled" 
+            id="apenas_letras"
+        >
+        
+        <span>Números</span>
+        
+        <input 
+            type="text" 
+            disabled="disabled" 
+            id="apenas_numeros"
+        > -->
+    
+    
+        <!-- 200. DOM parte 4 - Manipulando estilos de elementos ************************************* -->
+        <!-- <h3>Manipulando Estilo</h3>
+    
+        <button  onclick="modificaEstilo('#FF0000', '50px')" class="bg-danger" type="button">Vermelho</button>
+        <button  onclick="modificaEstilo('#00FF00', '100px')" class="bg-success" type="button">Verde</button>
+        <button  onclick="modificaEstilo('#0000FF', '200px')" class="bg-primary" type="button">Azul</button>
+    
+        <div class="mt-5" style="border: 10px solid #000; width: 200px; height: 200px;" id="quadrado">
+            OLÁ
+        </div> -->
+    
+    
+        <!-- 201. DOM parte 5 - Manipulando classes de ************************************* -->
+        <!-- <div id="mensagem" class="estilo1">
+            Modificando classe
+        </div>
+        <hr>
+        <button onclick="modificaClasse()" type="button">Aoplicar classe</button> -->
 
 
-    <!-- 199. DOM parte 3 - Manipulando valores de inputs (text) *************************************-->
-    <input 
-        type="text"
-        placeholder="Digite um caractere aqui"
-        onkeyup="distribuirCaractere()"
-        id="entrada"
-    />
+        <!-- 202. Atividades para fixação do conteúdo *************************************-->
+         <!-- <div>
+             <h2>1- Crie um campo -input type="text"- e aplique os seguintes controles com base nos eventos abaixo:</h2>
+             <ul>
+                <li>
+                    No evento de foco modifique o background do input para amarelo.
+                </li>
+                <li>
+                    Quando o campo perder o foco, recupere o seu respectivo valor e:
+                </li>
+                <li>
+                    Caso o conteúdo contido no campo tenha menos de 3 caracteres o mesmo
+                    deve ter seu background alterado para vermelho.
+                    o Caso o conteúdo contido no camp
+                </li>
+             </ul>
+         </div>
+        <input id="tarefa" onfocus="mudarFundo()" onblur="mudarFundo2()" type="text">
     
-    <hr>
-    <span>Letras</span>
+        <select onchange="console.log('o Estádo foi modificado!')">
+            <option >-- Selecione --</option>
+            <option value="1">Primeira opção</option>
+            <option value="2">Segunda opção</option>
+        </select> -->
 
-    <input 
-        type="text" 
-        disabled="disabled" 
-        id="apenas_letras"
-    >
-    
-    <span>Números</span>
-    
-    <input 
-        type="text" 
-        disabled="disabled" 
-        id="apenas_numeros"
-    >
 
+        <!-- 205. Array básico - Introdução *************************************  -->
+        <!-- <img src="img/205. Array básico - Introdução.jpg" width="1700px" alt=""> -->
+
+
+        <!-- 206. Array básico - Prática  ************************************* --> 
+
+    </div>
+
+    <!-- 208. Array multidimensional ************************************* -->
     
+    
+
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
