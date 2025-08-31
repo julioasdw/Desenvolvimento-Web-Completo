@@ -633,21 +633,92 @@
         // }
 
 
-        // 211. Array - Ordenação de elementos*************************************
-        var listaNome = ['Douglas', 'César', 'Baitola', 'Amanda']
+        // // 211. Array - Ordenação de elementos*************************************
+        // var listaNome = ['Douglas', 'César', 'Baitola', 'Amanda']
         
-        console.log(listaNome.sort()) // ordena em ordem alfabética
+        // console.log(listaNome.sort()) // ordena em ordem alfabética
 
-        var listaNumeros = [10, 2, 30, '10', '15']
+        // var listaNumeros = [10, 2, 30, '10', '15']
 
-        console.log(listaNumeros.sort(ordenaNumeros))  //o método sort do JavaScript vai chamar a sua função de comparação (ordenaNumeros) várias vezes, passando dois valores do array por vez (o a e o b).
+        // console.log(listaNumeros.sort(ordenaNumeros))  //o método sort do JavaScript vai chamar a sua função de comparação (ordenaNumeros) várias vezes, passando dois valores do array por vez (o a e o b).
 
-        function ordenaNumeros(a, b) {
-            return a - b
+        // function ordenaNumeros(a, b) {
+        //     return a - b
+        // }
+
+
+        // // 212. Atividades para fixação do conteúdo *************************************
+        // var objetos = ['Cadeira', 'Impressora', 'Garfo']
+        
+        // function verificarTexto() {
+        //     var valor = document.getElementById('adicionar').value
+        //     if (valor === '') {
+        //         alert("Informe um valor válido")
+        //     } else if (objetos.indexOf(valor) != -1) {
+        //             alert("Objeto já foi adicionado")
+        //     } else if(objetos.indexOf(valor) === -1) {
+        //         objetos.unshift(valor)
+        //     }
+        //     console.log(objetos)
+        //     document.getElementById('adicionar').value = ''
+        // }
+
+        // function ordenarArray() {
+        //     objetos.sort()
+        //     console.log(objetos.sort())
+        // }
+
+
+        // // 214. Estrutura de repetição parte 2 - While *************************************
+        // var x = 1
+
+        // document.write('inicio <br>')
+        // while (x <= 10) {
+        //     x++
+        //     if (x === 5){
+        //         continue // vai pular o document.write(x + '<br>')
+        //     }
+        //     document.write(x + '<br>')
+        //     if (x === 10) {
+        //         break
+        //     }
+        // }
+        // document.write('fim <br>')
+
+
+        // // 215. Estrutura de repetição parte 3 - Do while
+        // var x = 1
+        // do {
+        //     if (x === 5){
+        //         x++      // precisa incrementar antes senão entra em loop infinito
+        //         continue
+        //     }
+        //     document.write(x + '<br>')
+        //     x++
+        // } while (x <= 10)
+
+
+        // // 216. Estrutura de repetição parte 4 - For *************************************
+        // for (var x = 10; x >= 0; x--) {
+        //     if (x === 5) {
+        //         continue
+        //     }
+        //     document.write(x + '<br>')
+        // }
+
+
+        // 217. Praticando um pouco - Percorrendo e listando itens de Arrays *************************************
+        var listaNome = ['Júlio', 'César', 'Xavier', 'Dutra']
+
+        var y = 0
+        while (y < listaNome.length) {
+            document.writeln(listaNome[y] + '<br>')
+            y++
         }
+        
 
     </script>
-        <title>211. Array - Ordenação de elementos</title>
+        <title>217. Praticando um pouco - Percorrendo e listando itens de Arrays</title>
   </head>
   <body>
     <div>
@@ -850,9 +921,36 @@
         
         
         <!-- 210. Array - Método de pesquisa *************************************     -->
+        
+        
+        <!-- 211. Array - Ordenação de elementos ************************************* -->
+
+
+        <!-- 212. Atividades para fixação do conteúdo  ************************************* -->
+        <!-- <div style="margin: 100px;">
+            <input id="adicionar" type="text">
+    
+            <button onclick="verificarTexto()" type="button">Adicionar</button>
+            <button onclick="ordenarArray()" type="button">Ordebnar</button>
+        </div>
+    
+        <img src="img/212. Atividades para fixação do conteúdo.png" width="500px" alt=""> -->
+        
+        
+        <!-- 214. Estrutura de repetição parte 2 - While ************************************* -->
+        
+        
+        <!-- 215. Estrutura de repetição parte 3 - Do while ************************************* -->
+        
+        
+        <!-- 216. Estrutura de repetição parte 4 - For ************************************* -->
     </div>
 
-    <!-- 211. Array - Ordenação de elementos ************************************* -->
+    <!-- 217. Praticando um pouco - Percorrendo e listando itens de Arrays ************************************* -->
+
+
+    
+
     
 
     

@@ -633,21 +633,227 @@
         // }
 
 
-        // 211. Array - Ordenação de elementos*************************************
-        var listaNome = ['Douglas', 'César', 'Baitola', 'Amanda']
+        // // 211. Array - Ordenação de elementos*************************************
+        // var listaNome = ['Douglas', 'César', 'Baitola', 'Amanda']
         
-        console.log(listaNome.sort()) // ordena em ordem alfabética
+        // console.log(listaNome.sort()) // ordena em ordem alfabética
 
-        var listaNumeros = [10, 2, 30, '10', '15']
+        // var listaNumeros = [10, 2, 30, '10', '15']
 
-        console.log(listaNumeros.sort(ordenaNumeros))  //o método sort do JavaScript vai chamar a sua função de comparação (ordenaNumeros) várias vezes, passando dois valores do array por vez (o a e o b).
+        // console.log(listaNumeros.sort(ordenaNumeros))  //o método sort do JavaScript vai chamar a sua função de comparação (ordenaNumeros) várias vezes, passando dois valores do array por vez (o a e o b).
 
-        function ordenaNumeros(a, b) {
-            return a - b
+        // function ordenaNumeros(a, b) {
+        //     return a - b
+        // }
+
+
+        // // 212. Atividades para fixação do conteúdo *************************************
+        // var objetos = ['Cadeira', 'Impressora', 'Garfo']
+        
+        // function verificarTexto() {
+        //     var valor = document.getElementById('adicionar').value
+        //     if (valor === '') {
+        //         alert("Informe um valor válido")
+        //     } else if (objetos.indexOf(valor) != -1) {
+        //             alert("Objeto já foi adicionado")
+        //     } else if(objetos.indexOf(valor) === -1) {
+        //         objetos.unshift(valor)
+        //     }
+        //     console.log(objetos)
+        //     document.getElementById('adicionar').value = ''
+        // }
+
+        // function ordenarArray() {
+        //     objetos.sort()
+        //     console.log(objetos.sort())
+        // }
+
+
+        // // 214. Estrutura de repetição parte 2 - While *************************************
+        // var x = 1
+
+        // document.write('inicio <br>')
+        // while (x <= 10) {
+        //     x++
+        //     if (x === 5){
+        //         continue // vai pular o document.write(x + '<br>')
+        //     }
+        //     document.write(x + '<br>')
+        //     if (x === 10) {
+        //         break
+        //     }
+        // }
+        // document.write('fim <br>')
+
+
+        // // 215. Estrutura de repetição parte 3 - Do while
+        // var x = 1
+        // do {
+        //     if (x === 5){
+        //         x++      // precisa incrementar antes senão entra em loop infinito
+        //         continue
+        //     }
+        //     document.write(x + '<br>')
+        //     x++
+        // } while (x <= 10)
+
+
+        // // 216. Estrutura de repetição parte 4 - For *************************************
+        // for (var x = 10; x >= 0; x--) {
+        //     if (x === 5) {
+        //         continue
+        //     }
+        //     document.write(x + '<br>')
+        // }
+
+
+        // // 217. Praticando um pouco - Percorrendo e listando itens de Arrays *************************************
+        // var listaNome = ['Júlio', 'César', 'Xavier', 'Dutra']
+
+        // var y = 0
+        // while (y < listaNome.length) {
+        //     document.writeln(listaNome[y] + '<br>')
+        //     y++
+        // }
+
+
+        // // 218. Praticando um pouco - Criando uma tabuada de 1 a 10 (laços encadeados) *************************************
+        // for (var y = 1; y <= 10; y++) {
+        //     for (var x = 1; x <= 10; x++) {
+        //         document.write(y + ' * ' + x + ' = ' + (y * x) + '<br>')
+        //     }
+        //     document.write('<hr>')
+        // }
+
+
+        // // 219. Estrutura de repetição parte 5 - For in *************************************
+        // var listaConvidados = []
+
+        // listaConvidados['a'] = 'Jorge'
+        // listaConvidados[10] = 'Jamilton'
+        // listaConvidados['zebra'] = 'julio'
+        // listaConvidados[-1] = '10'
+        // listaConvidados[true] = 10
+        // listaConvidados[false] = 'Maria'
+        
+        // console.log(listaConvidados)
+
+        // for (var x in listaConvidados){
+        //     console.log('Índice ' + x + ' valor = ' + listaConvidados[x])
+        // }
+
+        
+        // // 220. Estrutura de repetição parte 6 - Foreach *************************************
+        // var listaFuncionarios = ['Julio', 'Cesar', 'Xavier', 'Dutra', 'Teste']
+
+        // console.log(listaFuncionarios)
+
+        // listaFuncionarios.forEach(function(valor, indice, array) { // na function(valor, indice, array) os parametros podem qualquer nome, simplesmente vai repetir a no tamanho do array
+        //     console.log('Valor: ' + valor + 'índice: ' + indice + 'array: ' + array + '<br>')
+
+        //     if (valor === 'Xavier') {
+        //         listaFuncionarios[indice] = 'Novo valor'
+        //     }
+        // })
+
+        // console.log(listaFuncionarios)
+
+        // var listaCoisas = []
+
+        // listaCoisas['x'] = 'Julio'
+        // listaCoisas[false] = 'Cesar'
+        // listaCoisas[2] = 'Xavier'
+        // listaCoisas[15] = 'Dutra'
+        // listaCoisas[-1] = 2
+
+        // console.log(listaCoisas)
+
+        // var f = function(indice, valor) {
+        //     console.log(indice, valor)
+        // }
+
+        // listaCoisas.forEach(f) // forEach atua somente sobre índices numericos, no caso o "listaCoisas[2]" e "listaCoisas[15]"        
+
+
+        // // 221. Atividades para fixação do conteúdo *************************************
+        // document.write('<img src="img/221. Atividades para fixação do conteúdo.png" width="500" alt=""><br><br>')
+        // var listaNome = ['Júlio', 'César', 'Xavier', 'Dutra']
+
+        // // var y = 0
+        // // while (y < listaNome.length) {
+        // //     document.writeln(listaNome[y] + '<br>')
+        // //     y++
+        // // }
+
+        // for (var x = 0; x < listaNome.length; x++) {
+        //     document.writeln(listaNome[x] + '<br>')
+        // }
+
+        // // for (var y = 1; y <= 10; y++) {
+        // //     for (var x = 1; x <= 10; x++) {
+        // //         document.write(y + ' * ' + x + ' = ' + (y * x) + '<br>')
+        // //     }
+        // //     document.write('<hr>')
+        // // }
+
+        // var a = 1
+        // while (a <= 10) {
+        //     var b = 1
+        //     while (b <= 10) {
+        //         document.write(a + ' * ' + b + ' = ' + (a * b) + '<br>')
+        //         b++
+        //     }
+        //     document.write('<hr>')
+        //     a++
+        // }
+
+
+        // // 222. Funções - Trabalhando com parâmetros *************************************
+        // function soma() {
+        //     var resultado = 0
+
+        //     for(var i in arguments) {
+        //         resultado += arguments[i]
+        //     }
+
+        //     return resultado
+        // }
+
+        // console.log(soma(7, 5,  'Julio'))
+
+
+        // 223. Tratamento de erros com try, catch, throw e finally *************************************
+        var video = []
+
+        video[1] = []
+
+        video[1]['nome'] = 'Maria Fumaça'
+        video[1]['categoria'] = 'Série'
+
+        function getVideo(video) {
+            try {
+                //Lógica
+                //http
+                console.log(video[0][['nome']])
+            } catch(erro) { // essa variavel pode ter qualquer nome, e vai guardar a str do erro
+                tratarErro(erro) 
+                console.log('Agora sim, podemos tratar esse erro')
+                throw new Error('Houve um erro mais não se preocupe, Estamos trabalhando nisso!!!')
+            } finally {
+                console.log('A aplicação sempre vai passar por aq (try / catch)')
+            }
+            console.log(' A aplicação não morreu')
         }
 
+        function tratarErro(e) {
+            // Lógica para registrar erro no servidor
+            console.log(e)
+        }
+
+        getVideo(video)
+
     </script>
-        <title>211. Array - Ordenação de elementos</title>
+        <title>223. Tratamento de erros com try, catch, throw e finally</title>
   </head>
   <body>
     <div>
@@ -850,11 +1056,53 @@
         
         
         <!-- 210. Array - Método de pesquisa *************************************     -->
+        
+        
+        <!-- 211. Array - Ordenação de elementos ************************************* -->
+
+
+        <!-- 212. Atividades para fixação do conteúdo  ************************************* -->
+        <!-- <div style="margin: 100px;">
+            <input id="adicionar" type="text">
+    
+            <button onclick="verificarTexto()" type="button">Adicionar</button>
+            <button onclick="ordenarArray()" type="button">Ordebnar</button>
+        </div>
+    
+        <img src="img/212. Atividades para fixação do conteúdo.png" width="500px" alt=""> -->
+        
+        
+        <!-- 214. Estrutura de repetição parte 2 - While ************************************* -->
+        
+        
+        <!-- 215. Estrutura de repetição parte 3 - Do while ************************************* -->
+        
+        
+        <!-- 216. Estrutura de repetição parte 4 - For ************************************* -->
+        
+        
+        <!-- 217. Praticando um pouco - Percorrendo e listando itens de Arrays ************************************* -->
+        
+        
+        <!-- 218. Praticando um pouco - Criando uma tabuada de 1 a 10 (laços encadeados) ************************************* --> 
+        
+        
+        <!-- 219. Estrutura de repetição parte 5 - For in ************************************* -->  
+        
+        
+        <!-- 220. Estrutura de repetição parte 6 - Foreach ************************************* -->
+        
+        
+        <!-- 221. Atividades para fixação do conteúdo ************************************* -->
+        
+        
+        <!-- 222. Funções - Trabalhando com parâmetros ************************************* -->
     </div>
 
-    <!-- 211. Array - Ordenação de elementos ************************************* -->
-    
+    <!-- 223. Tratamento de erros com try, catch, throw e finally ************************************* -->
+    <img src="img/223. Tratamento de erros com try, catch, throw e finally.jpg" width="1000" alt="">
 
+    
     
 
     <!-- JavaScript (Opcional) -->

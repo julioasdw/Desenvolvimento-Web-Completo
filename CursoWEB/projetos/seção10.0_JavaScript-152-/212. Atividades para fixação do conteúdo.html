@@ -633,21 +633,43 @@
         // }
 
 
-        // 211. Array - Ordenação de elementos*************************************
-        var listaNome = ['Douglas', 'César', 'Baitola', 'Amanda']
+        // // 211. Array - Ordenação de elementos*************************************
+        // var listaNome = ['Douglas', 'César', 'Baitola', 'Amanda']
         
-        console.log(listaNome.sort()) // ordena em ordem alfabética
+        // console.log(listaNome.sort()) // ordena em ordem alfabética
 
-        var listaNumeros = [10, 2, 30, '10', '15']
+        // var listaNumeros = [10, 2, 30, '10', '15']
 
-        console.log(listaNumeros.sort(ordenaNumeros))  //o método sort do JavaScript vai chamar a sua função de comparação (ordenaNumeros) várias vezes, passando dois valores do array por vez (o a e o b).
+        // console.log(listaNumeros.sort(ordenaNumeros))  //o método sort do JavaScript vai chamar a sua função de comparação (ordenaNumeros) várias vezes, passando dois valores do array por vez (o a e o b).
 
-        function ordenaNumeros(a, b) {
-            return a - b
+        // function ordenaNumeros(a, b) {
+        //     return a - b
+        // }
+
+
+        // 212. Atividades para fixação do conteúdo *************************************
+        var objetos = ['Cadeira', 'Impressora', 'Garfo']
+        
+        function verificarTexto() {
+            var valor = document.getElementById('adicionar').value
+            if (valor === '') {
+                alert("Informe um valor válido")
+            } else if (objetos.indexOf(valor) != -1) {
+                    alert("Objeto já foi adicionado")
+            } else if(objetos.indexOf(valor) === -1) {
+                objetos.unshift(valor)
+            }
+            console.log(objetos)
+            document.getElementById('adicionar').value = ''
+        }
+
+        function ordenarArray() {
+            objetos.sort()
+            console.log(objetos.sort())
         }
 
     </script>
-        <title>211. Array - Ordenação de elementos</title>
+        <title>212. Atividades para fixação do conteúdo</title>
   </head>
   <body>
     <div>
@@ -850,9 +872,21 @@
         
         
         <!-- 210. Array - Método de pesquisa *************************************     -->
+        
+        
+        <!-- 211. Array - Ordenação de elementos ************************************* -->
     </div>
 
-    <!-- 211. Array - Ordenação de elementos ************************************* -->
+    <!-- 212. Atividades para fixação do conteúdo  ************************************* -->
+    <div style="margin: 100px;">
+        <input id="adicionar" type="text">
+
+        <button onclick="verificarTexto()" type="button">Adicionar</button>
+        <button onclick="ordenarArray()" type="button">Ordebnar</button>
+    </div>
+
+    <img src="img/212. Atividades para fixação do conteúdo.png" width="500px" alt="">
+
     
 
     
