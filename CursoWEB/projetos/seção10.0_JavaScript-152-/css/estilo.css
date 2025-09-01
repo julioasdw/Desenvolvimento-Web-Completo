@@ -1,3 +1,7 @@
+html {
+    cursor: url(../img/mata_mosca.png) 30 30, auto;
+}
+
 body {
     margin: 0; /* remove margens padrão */
     height: 100vh; /* faz o body ocupar 100% da altura da janela */

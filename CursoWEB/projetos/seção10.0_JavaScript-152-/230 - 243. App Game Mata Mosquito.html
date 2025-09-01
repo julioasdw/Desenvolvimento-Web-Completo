@@ -19,7 +19,20 @@
 
         var largura = 0
         var altura = 0
-        var tempo = 10
+        var tempo = 15
+
+        var nivel = window.location.search
+        nivel = nivel.replace('?', '')
+
+        console.log(nivel)
+    
+        if(nivel === 'normal') {
+            criaMosquitoTempo = 1500
+        } else if(nivel === 'dificil') {
+            criaMosquitoTempo = 1000
+        } else if(nivel === 'expert') {
+            criaMosquitoTempo = 750
+        }
 
         vidas = 1
         function ajustaTamanhoPalcoJogo() {
@@ -75,7 +88,7 @@
             mosquito.onclick = function() {
                 // this.remove()
                 mosquito.src = 'img/moscaEsmagada.png'
-                var audio = new Audio('img/som.aac')
+                var audio = new Audio('img/punch_u4LmMsr.mp3')
                 audio.play()
                 setTimeout(function() { // depois de tempo tall em ms, ele vai executar uma vez o atributo
                     document.getElementById('mosquito').remove()
@@ -87,6 +100,11 @@
             console.log(ladoAleatorio())
             document.body.appendChild(mosquito)
 
+        }
+
+        function som() {
+            var som = new Audio('img/swoosh-sound-effects.mp3')
+            som.play()
         }
 
         function tamanhoAleatorio() {
@@ -116,7 +134,7 @@
     </script>
     <title>228. BOM parte 4 - Timing</title>
   </head>
-  <body onresize="ajustaTamanhoPalcoJogo()">
+  <body onresize="ajustaTamanhoPalcoJogo()" onclick="som()">
     
     <!-- 230 - 243. App Game Mata Mosquito ************************************* -->
     
@@ -140,7 +158,7 @@
 
         var criaMosca = setInterval(function() {
             posicaoRandomica()
-        }, 1000)
+        }, criaMosquitoTempo)
     </script>
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
