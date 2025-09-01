@@ -19,6 +19,8 @@
 
         var largura = 0
         var altura = 0
+        var tempo = 10
+
         vidas = 1
         function ajustaTamanhoPalcoJogo() {
             largura = window.innerWidth
@@ -28,6 +30,17 @@
         }
 
         ajustaTamanhoPalcoJogo()
+
+        var cronometro = setInterval(function() {
+            tempo--
+            if(tempo < 0) {
+                clearInterval(cronometro)
+                clearInterval(criaMosca)
+                window.location.href = '230 - 243. App Game Mata Mosquito Vitoria.html'
+            } else {
+                document.getElementById('cronometro').innerHTML = tempo
+            }
+        }, 1000)
 
         function posicaoRandomica() {
 
@@ -101,7 +114,7 @@
         }
 
     </script>
-        <title>228. BOM parte 4 - Timing</title>
+    <title>228. BOM parte 4 - Timing</title>
   </head>
   <body onresize="ajustaTamanhoPalcoJogo()">
     
@@ -116,13 +129,17 @@
             <img id="v3" src="img/coracao_cheio.png" alt="">
         </div>
 
-        <div class="cronometro">Tempo restante: ?</div>
+        <div class="cronometro">
+            Tempo restante:
+            <span id="cronometro"></span>
+        </div>
     </div>
     
     <script>
-        setInterval(function() {
-            posicaoRandomica()
+        document.getElementById('cronometro').innerHTML = tempo
 
+        var criaMosca = setInterval(function() {
+            posicaoRandomica()
         }, 1000)
     </script>
     <!-- JavaScript (Opcional) -->
