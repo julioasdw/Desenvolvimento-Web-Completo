@@ -1,0 +1,315 @@
+h5 {
+	color: green;
+}
+
+.pazul {
+	color: blue;
+}
+
+.produto {
+	background: gray;
+	margin: 10px;
+}
+
+.formatação {
+	color: #8000FF;
+	font-size: 30px;
+	font-family: Copperplate Papyrus, serif;
+}
+
+.texto {
+	/*
+	px -> tamanho fixo
+	% -> tamnho relativo
+	em -> tamanho relativo ao container para pai
+	font-size: 32px; 
+	*/
+	font-size: 1em;
+}	
+
+.texto2 {
+	font-size: 15px;
+}
+
+.fontepai {
+	font-size: 50px;
+}
+
+.negrito {
+	/*normal = 100, blod = 900, font-weight: 100 até 900*/
+	font-weight: 900;
+}
+
+.italico {
+	font-style: italic;
+}
+
+.sublinhado {
+	/*text-decoration: underline;
+	text-decoration: pverline;*/
+	text-decoration: line-through;
+}
+
+.fonte {
+	/*font: font-style font-variant font-weight font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit;*/
+	font: bold 40px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.fundo {
+		background-color: blue;
+		
+		background-image: url('../imagens/yoshi.png');
+
+		/* repeat-x, repeat-y, no-repeat, repeat */
+		background-repeat: repeat-x;
+
+		/*scrool , fixed*/
+		background-attachment: fixed;
+
+		/* 
+		primeiro valor: left, center, right 
+		segundo valor: top, center, bottom 
+		*/
+		background-position: center center;
+}
+
+.fundo2 {
+	background: blue url(../imagens/yoshi.png) repeat-x fixed center center;
+}
+
+#background {
+	background: gray;
+}
+
+#top {
+	background: blue;
+}
+#conteudo {
+	background: red;
+	border: 1px, solid, black;
+  }
+  
+#rodape {
+	background: green;
+	border: 1px, solid, black;
+}
+
+#bordas {
+	/*border:1px 2px 4px 8px, solid dotted dashed groove, red orang yellow black;*/
+	border-color: red blue yellow black;
+	border-width: 2px 4px 8px 16px;
+	border-style: solid dotted dashed groove;
+}
+
+#testediv {
+	font-size: 80px;
+}
+
+/*
+Modelo de caixa
+
+
+.conteudo {
+	border: 1px solid red;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+
+	padding: 20px 15px 10px 5px;
+	padding: 20px;
+
+	
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	margin: 10px ;
+
+	width: 150px;
+}
+
+.conteudo2 {
+	margin: 5px;
+	width: 150px;
+	border: 1px solid red;
+}
+*/
+
+/*
+Noticia
+*/
+
+#noticia{
+	background: #f9f9f9;
+	border: 1px solid red;
+	padding: 10px;
+}
+
+#margem {
+	margin: 0px;
+}
+
+/*ELEMENTOS FLUTUANTES:*/
+
+.elemento1 {
+	background: red;
+	width: 100px;
+	height: 100px;
+	border: 1px solid white;
+	float: left;
+}
+.elemento2 {
+	background: green;
+	width: 150px;
+	height: 150px;
+	border: 1px solid white;
+	float: right;
+}
+.elemento3 {
+	background: blue;
+	width: 150px;
+	height: 150px;
+	border: 1px solid white;
+}
+.elemento4 {
+	background: red;
+	width: 300px;
+	height: 150px;
+	border: 1px solid white;
+	float: right;
+}
+
+.clear {
+	clear: both;
+	/*clear: left, rigth, both e none*/
+}
+
+/*ELEMENTOS FLUTUANTES NA PRATICA:*/
+
+#pag-noticias {
+	border: 1px solid red;
+	background: white;
+	padding: 5px;
+}
+
+#pag-imagens {
+	border: 1px solid red;
+	background: white;
+	padding: 5px;
+}
+
+.descricao {
+	width: 30%;
+	border: 1px solid blue;
+	padding: 5px;
+	margin: 5px;
+	background: gray;
+	float: left;
+}
+
+/*50. ELEMENTOS INLINE, BLOCK E INLINE-BLOCK*/
+
+.borda {
+	border: 1px solid red;
+	padding: 5px;
+	margin: 5px;
+}
+
+.linha-bloco {
+	display: inline-block;
+}
+
+/*51. POSICIONAMENTO ESTATICO E REALTIVO*/
+
+.relative {
+	border: 1px solid red;
+	position: relative;
+	background: yellow;
+	/*top, bottom, left e right;*/
+	top: 20px;
+	left: 20px;
+}
+
+/*52. POSICIONAMENTO ABSOLUTE E FIXED*/
+
+.absolute {
+	border: 5px solid blue;
+	position: absolute;
+	background: yellow;
+	/*top, bottom, left e right;*/
+	top: 0px;
+	left: px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.fixed {
+	border: 1px solid red;
+	position: fixed ;
+	/*top, bottom, left e right;*/
+	top: 0px;
+	right: 0px;
+	background: yellow;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*53. SOBREPONDO ELEMENTOS*/
+
+.sobre1 {
+	border: 1px solid red;
+	position: absolute;
+	background: yellow;
+	width: 200px;
+	height: 200px;
+	top: 0px;
+	left: 0px;
+	z-index: ;
+}
+.sobre2 {
+	border: 1px solid red;
+	position: absolute;
+	background: orange;
+	width: 200px;
+	height: 200px;
+	top: 80px;
+	left: 80px;
+	z-index: 1;
+}
+.sobre3 {
+	border: 1px solid red;
+	position: absolute;
+	background: green;
+	width: 200px;
+	height: 200px;
+	top: 160px;
+	left: 160px;
+	z-index: ;
+}
+
+/*54. FORMATANDO LINKS*/
+
+#teste {
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid red;
+	text-decoration: none;
+}
+
+/*links não visitados*/
+#teste:link {
+	color: orange;
+}
+/*links visitados*/
+#teste:visited {
+	color: yellow;
+}
+/*quando passa mouse em cima do link*/
+#teste:hover {
+	color: red;
+}
+/*links ativos com o mouse em cima e arrasta*/
+#teste:active {
+	color: green;
+}

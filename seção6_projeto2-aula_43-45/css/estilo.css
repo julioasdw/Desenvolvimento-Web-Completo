@@ -1,0 +1,40 @@
+a {
+	color: blue;
+	padding: 5px;
+	text-decoration: none;
+	font-weight: blod;
+}
+
+#fundo {
+	background: url(../imagens/fundo.png);
+	font: 16px Arial, Helvetica, sans-serif;
+}
+
+#menu {
+	background: gray;
+	/*font: font-style font-variant font-weight font-size/line-height font-family|caption|icon|menu|message-box|small-caption|status-bar|initial|inherit;*/
+	padding: 18px;
+}
+
+#conteudo {
+	background: white;
+	padding: 20px;
+	font-weight: blod;
+}
+
+#rodape {
+	font-size: 15px;
+	font-weight: 900;
+	text-align: center;
+	padding: 20px;
+}
+
+.fotoscampanhas {
+	width: 75%;
+	border: gray solid 10px;
+}
+
+.contato {
+	font-size: 14px;
+	font-weight: 900;
+}

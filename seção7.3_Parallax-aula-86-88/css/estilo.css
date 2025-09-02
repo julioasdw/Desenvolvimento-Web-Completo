@@ -1,0 +1,76 @@
+body, html, #teste {
+    margin: 0;
+    color: #777;
+    font: 16px "Lato", sans-serif;;
+    height: 100%;
+}
+
+.conteudo {
+    color: #777;
+    background: white;
+    text-align: justify;
+    padding: 50px 80px;
+}
+
+.caixa1, .caixa2, .caixa3, .caixa4{
+    position: relative;
+    height: 100%;
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+p {
+    margin-bottom: 10px;
+} 
+
+.caixa1 {
+    background-image: url(../imagens/imagem1.jpg);
+}
+
+.caixa2 {
+    background-image: url(../imagens/imagem2.jpg);
+}
+
+.caixa3 {
+    background-image: url(../imagens/imagem3.jpg);
+}
+
+.caixa4 {
+    background-image: url(../imagens/imagem4.jpg);
+}
+
+.conteudo-titulo {
+
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+}
+
+.conteudo-titulo span {
+    color: #fff;
+    background-color: #111;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+@font-face {
+    font-family: Ancient;
+	src: url("../fontes/ncient-Medium.woff");
+}
+
+@font-face {
+    font-family: Road Rage;
+    src: url("../fontes/RoadRage.woff");
+}
+
+h1 {
+    font-size: 6em;
+    font-family: Road Rage;
+}
