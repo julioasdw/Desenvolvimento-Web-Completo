@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>seção7_58-72</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body style="background: gray;">
+	<h2>58. O QUE IREI APRENDER? CSS3 INTERMEDIARIO E AVANCADO</h2>
+
+	<h2>59. MAIS SOBRE SELETORES</h2>
+
+	<div>
+		<img src="imagens/seletores.png">
+
+		<div>
+
+			<h4>Seletor de texto para a cor #363636</h4>
+
+			<hr>
+
+			<p class="verde">
+				Seletor de classe
+			</p>
+
+			<h5 class="verde">Seletor de classe</h5>
+			
+			<h4 class="verde">Seletor de classe</h4>
+
+			<hr>
+			
+			<div id="vermelho">Seletor de ID</div>
+
+			<hr>
+			
+			<div>
+				<h4>Seletor Filho</h4>
+				<p>P Seletor Filho</p>
+				<h4>Seletor Filho</h4>
+				<p>Seletor Filho</p>
+			</div>
+
+			<hr>
+
+			Seletor de descendente (p a {})
+			<p>
+				p <br>
+				<a href="">a seletor de descendente direto</a> <br>
+				<a href="">a um descendente nao direto</a>
+			</p>
+
+			<p>
+				p
+				<h4>h4 descendente n direto</h4>
+				<a href="">a descendente n direto</a>
+			</p>
+
+			<hr>
+
+			Seletor de irmao adjacente (h1+p {})
+			
+			<div>
+				<h1>H1 Seletor de irmao adjacente</h1>
+				
+				<p>P Seletor de irmao adjacente primeiro elemento 'p' depois de H1</p>
+				
+				<p>P Seletor de irmao adjacente</p>
+				
+				<p>P Seletor de irmao adjacente</p>
+
+				<h1>H1 Seletor de irmao adjacente</h1>
+				
+				<p>P Seletor de irmao adjacente</p>
+
+			</div>
+				
+			<hr>
+
+			Seletor de irmao geral (h1~a {})
+			
+			<div>
+				<h1>H1 Seletor de irmao geral</h1>
+				
+				<a>A irmao geral</a>
+				
+				<a>A irmao geral</a>
+				
+				<a>A irmao geral</a>
+
+				<p>P irmao nao geral</p>
+				
+				<a>A irmao geral</a>
+
+			</div>
+
+		</div>
+	</div>
+
+	<div class="pagina">
+
+		<h2>60. HERANÇA E ESPECIFICIDADE</h2>
+
+		<h4>teste de HERANÇA</h4>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lectus erat, viverra nec ipsum in, suscipit rhoncus elit. Nullam id pharetra nulla, ut lacinia orci. </p>
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin lectus erat, viverra nec ipsum in, suscipit rhoncus elit. Nullam id pharetra nulla, ut lacinia orci. </p>
+
+		<p>
+			BORDER E BAKGROUND NÃO SÃO HERDADOS COMO HERANÇA
+		</p>
+		<p>
+			MAS O FONTSIZE E COLOR... SÃO
+		</p>
+		
+		<div>
+			<h4 class="esp1">TESTE DE ESPECIFICIDADE de grau 3</h4>
+			<h4 class="verde">TESTE DE ESPECIFICIDADE de grau 2</h4>
+			<h4 id="amarelo">TESTE DE ESPECIFICIDADE de grau 1</h4>
+		</div>
+	</div>
+
+	<div>
+		<h2>61. CRIANDO BARRA DE NAVEGACAO VERTICAL</h2>
+
+		<img src="imagens/line-font.png">
+
+		<h4>HOME:</h4>
+		<div id="home">
+			<ul id="barraLinkPrincipal">
+				<li>
+					<a class="barraLink home" href="index.html">Home</a>
+				</li>
+
+				<li>
+					<a class="barraLink sobre" href="barraVertical/sobre.html">Sobre</a>
+				</li>
+
+				<li>
+					<a class="barraLink servicos" href="barraVertical/servicos.html">Serviços</a>
+				</li>
+
+				<li>
+					<a class="barraLink noticias" href="barraVertical/noticias.html">Noticias</a>
+				</li>
+
+				<li>
+					<a class="barraLink contato" href="barraVertical/contato.html">Contato</a>
+				</li>
+
+			</ul>
+		</div>
+		
+	</div>
+
+	<div>
+		<h2>63. CRIANDO BARRA DE NAVEGACAO HORIZONTAL</h2>
+
+		<h4>HOME:</h4>
+		<div id="home">
+			<ul id="barraLinkPrincipalHorizontal">
+				<li class="float">
+					<a class="barraLinkHorizontal home primeiro" href="index.html">Home</a>
+				</li>
+
+				<li class="float">
+					<a class="barraLinkHorizontal sobre" href="barraHorizontal/sobre.html">Sobre</a>
+				</li>
+
+				<li class="float">
+					<a class="barraLinkHorizontal servicos" href="barraHorizontal/servicos.html">Serviços</a>
+				</li>
+
+				<li class="float">
+					<a class="barraLinkHorizontal noticias" href="barraHorizontal/noticias.html">Noticias</a>
+				</li>
+
+				<li class="float">
+					<a class="barraLinkHorizontal contato" href="barraHorizontal/contato.html">Contato</a>
+				</li>
+
+			</ul>
+			<br class="clear">
+		</div>
+		
+	</div>
+
+ 	<div>
+		<h2>64. NAVEGACAO COM ABAS</h2>
+
+		<h4>HOME:</h4>
+		<div id="home">
+			<ul id="ul-abas">
+				<li class="li-abas" id="atual">
+					<a class="a-abas" href="index.html">Home</a>
+				</li>
+
+				<li class="li-abas">
+					<a class="a-abas" href="navegacaoComAbas/sobre.html">Sobre</a>
+				</li>
+
+				<li class="li-abas">
+					<a class="a-abas" href="navegacaoComAbas/servicos.html">Serviços</a>
+				</li>
+
+				<li class="li-abas">
+					<a class="a-abas" href="navegacaoComAbas/noticias.html">Noticias</a>
+				</li>
+
+				<li class="li-abas">
+					<a class="a-abas" href="navegacaoComAbas/contato.html">Contato Contato Contato Contato</a>
+				</li>
+
+			</ul>
+		</div>
+		
+	</div>
+
+	<h2 class="clear">65. LAYOUT DE LARGURA FIXA</h2>
+	<div id="la-fixo">
+		<div id="container">
+			<div id="marca">
+				Marca
+			</div>
+			<div id="conteudo">
+				<div id="conteudo-primario">
+					<h4>Conteudo-primario</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non lectus a sapien volutpat pulvinar. Nunc fermentum aliquet est, ut maximus metus tempor id. Quisque fermentum, elit sit amet vehicula feugiat, mi urna varius ipsum, sit amet hendrerit ligula le
+					</p>
+				</div>
+				<div id="conteudo-secundario">
+					<h4>Conteudo-secundario</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non lectus a sapien volutpat pulvinar. Nunc fermentum aliquet est, ut maximus metus tempor id. Quisque fermentum, elit sit amet vehicula feugiat, mi urna varius ipsum, sit amet hendrerit ligula le
+					</p>
+				</div>
+			</div>
+			<div id="navegacao">
+				<ul>
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">Sobre</a>
+					</li>
+					<li>
+						<a href="#">Conteudo</a>	
+					</li>
+					<li>
+						<a href="#">Servicos</a>	
+					</li>
+					<li>
+						<a href="#">Clientes</a>	
+					</li>
+					<li>
+						<a href="#">Contato</a>	
+					</li>
+				</ul>
+			</div>
+			<div id="rodape">
+				Rodape
+			</div>
+		</div>
+	</div>
+
+	<h2>66. LAYOUT LIQUIDO</h2>
+	<div id="la-liquido">
+		<div id="container-liquido">
+			<div id="marca-liquido">
+				Marca
+			</div>
+			<div id="conteudo-liquido">
+				<div id="conteudo-primario-liquido">
+					<h4>Conteudo-primario</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non lectus a sapien volutpat pulvinar. Nunc fermentum aliquet est, ut maximus metus tempor id. Quisque fermentum, elit sit amet vehicula feugiat, mi urna varius ipsum, sit amet hendrerit ligula le
+					</p>
+				</div>
+				<div id="conteudo-secundario-liquido">
+					<h4>Conteudo-secundario</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non lectus a sapien volutpat pulvinar. Nunc fermentum aliquet est, ut maximus metus tempor id. Quisque fermentum, elit sit amet vehicula feugiat, mi urna varius ipsum, sit amet hendrerit ligula le
+					</p>
+				</div>
+			</div>
+			<div id="navegacao-liquido">
+				<ul>
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">Sobre</a>
+					</li>
+					<li>
+						<a href="#">Conteudo</a>	
+					</li>
+					<li>
+						<a href="#">Servicos</a>	
+					</li>
+					<li>
+						<a href="#">Clientes</a>	
+					</li>
+					<li>
+						<a href="#">Contato</a>	
+					</li>
+				</ul>
+			</div>
+			<div id="rodape-liquido">
+				Rodape
+			</div>
+		</div>
+	</div>
+
+	<h2>67. IMAGENS LIQUIDAS</h2>
+	<div id="la-liquido">
+		<div id="container-liquido">
+			<div id="img-marca">
+				Marca
+			</div>
+			<div id="conteudo-liquido">
+				<div id="conteudo-primario-liquido">
+					<h4>Conteudo-primario</h4>
+
+					<img class="img-noticia" src="imagens/natureza.jpg">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non lectus a sapien volutpat pulvinar. Nunc fermentum aliquet est, ut maximus metus tempor id. Quisque fermentum, elit sit amet vehicula feugiat, mi urna varius ipsum, sit amet hendrerit ligula le
+					</p>
+				</div>
+				<div id="conteudo-secundario-liquido">
+					<h4>Conteudo-secundario</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non lectus a sapien volutpat pulvinar. Nunc fermentum aliquet est, ut maximus metus tempor id. Quisque fermentum, elit sit amet vehicula feugiat, mi urna varius ipsum, sit amet hendrerit ligula le
+					</p>
+				</div>
+			</div>
+			<div id="navegacao-liquido">
+				<ul>
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">Sobre</a>
+					</li>
+					<li>
+						<a href="#">Conteudo</a>	
+					</li>
+					<li>
+						<a href="#">Servicos</a>	
+					</li>
+					<li>
+						<a href="#">Clientes</a>	
+					</li>
+					<li>
+						<a href="#">Contato</a>	
+					</li>
+				</ul>
+			</div>
+			<div id="rodape-liquido">
+				Rodape
+			</div>
+		</div>
+	</div>
+
+	<h2>68. COLUNA FALSA</h2>
+	<div id="la-liquido">
+		<div id="container-liquido-coluna-falsa">
+			<div id="img-marca">
+				Marca
+			</div>
+			<div id="conteudo-liquido">
+				<div id="conteudo-primario-liquido">
+					<h4>Conteudo-primario</h4>
+
+					<img class="img-noticia" src="imagens/natureza.jpg">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non lectus a sapien volutpat pulvinar. Nunc fermentum aliquet est, ut maximus metus tempor id. Quisque fermentum, elit sit amet vehicula feugiat, mi urna varius ipsum, sit amet hendrerit ligula le
+					</p>
+				</div>
+				<div id="conteudo-secundario-liquido">
+					<h4>Conteudo-secundario</h4>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non lectus a sapien volutpat pulvinar. Nunc fermentum aliquet est, ut maximus metus tempor id. Quisque fermentum, elit sit amet vehicula feugiat, mi urna varius ipsum, sit amet hendrerit ligula le
+					</p>
+				</div>
+			</div>
+			<div id="mudar-cor-nav">
+				<ul>
+					<li>
+						<a href="#">Home</a>
+					</li>
+					<li>
+						<a href="#">Sobre</a>
+					</li>
+					<li>
+						<a href="#">Conteudo</a>	
+					</li>
+					<li>
+						<a href="#">Servicos</a>	
+					</li>
+					<li>
+						<a href="#">Clientes</a>	
+					</li>
+					<li>
+						<a href="#">Contato</a>	
+					</li>
+				</ul>
+			</div>
+			<div id="rodape-liquido">
+				Rodape
+			</div>
+		</div>
+	</div>
+
+	<h2>69. ESTILIZANDO TABELAS</h2>
+	<div>
+		<table>
+			<tr>
+				<th>COD</th>
+				<th>PRODUTO</th>
+				<th class="numero">PRECO</th>
+			</tr>
+			<tr>
+				<td>001</td>
+				<td>notebook</td>
+				<td class="numero">2.000</td>
+			</tr>
+			<tr>
+				<td>002</td>
+				<td>TV</td>
+				<td class="numero">1.500</td>
+			</tr>
+			<tr>
+				<td>003</td>
+				<td>monitor</td>
+				<td class="numero"	>900</td>
+			</tr>
+		</table>
+		
+	</div>
+	
+	<h2>70. ESTILIZANDO FORMULÁRIOS - PARARTE 1</h2>
+	<div style="background: white;">
+		<form>
+			<fieldset>
+				<legend>Detalhes de Contato</legend>
+
+				<div>
+					<label for="nome">Nome:</label>
+					<input type="text" name="nome" id="nome">
+				
+				</div>
+				
+				<div>
+					<label for="email">Email:</label>
+					<input type="text" name="email" id="email">
+				</div>
+				
+				<div>
+					<label for="url">Nome:</label>
+					<input type="text" name="url" id="url">
+				</div>
+
+			</fieldset>
+
+			<fieldset>
+				<legend>Comentario</legend>
+
+				<div>
+					<label for="mensagem">Mensagem:</label>
+					<textarea name="mensagem" id="mensagem"></textarea>
+				</div>
+				
+			</fieldset>
+
+			<fieldset>
+				<legend>Lembrar de mim</legend>
+
+				<div>
+					<label>
+						<input class="radio" type="radio" name="lembrar" id="sim">Sim
+					</label>
+				</div>
+
+				<div>
+					<label>
+						<input class="radio" type="radio" name="lembrar" id="sim">Não
+					</label>
+				</div>
+			</fieldset>
+		</form>
+	</div>
+
+	<h2>71. ESTILIZANDO FORMULÁRIOS - PARARTE 2</h2>
+	<div class="a72">
+		<div class="container2">
+
+			<img src="imagens/perfil.png">
+
+			<form>
+				<div>
+					<input class="email" type="text" name="email" id="email" placeholder="Digite sua email">
+				</div>
+
+				<div>
+					<input class="senha" type="text" name="senha" id="senha" placeholder="Digite sua senha">
+				</div>
+
+				<div>
+					<input class="submit3" type="submit"  value="Logar">
+				</div>
+
+			</form>
+		</div>
+	</div>
+
+	<h2>72. ARREDONDAMENTO COM IMAGENS</h2>
+
+	<div class="a72" style="background: #aba6a6; padding: 40px;">
+
+		<div class="caixa">
+			<h3>Cabecalho</h3>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent arcu turpis, pharetra nec sem ut, volutpat bibendum ex. Pellentesque tincidunt diam quis arcu commodo scelerisque. Vestibulum magna nisi, laoreet a sem eget, sodales lobortis diam. Curabitur finibus iaculis leo non accumsan. Nulla erat odio, pretium a sem et, feugiat congue diam. Integer id est blandit, vehicula libero ac, interdum turpis. Donec sit amet consectetur nulla. Quisque commodo, metus at viverra sagittis, nisi libero porttitor leo, nec gravida arcu arcu vitae erat. In vehicula interdum neque, et maximus arcu varius condimentum. Ut et ex vitae tortor semper scelerisque. Praesent in massa facilisis, laoreet nisi quis, placerat nisi. Nulla vitae arcu ut justo sagittis mollis id a libero. Etiam at erat a velit vestibulum sodales. Maecenas nec gravida sapien. Nulla id odio ut metus eleifend pretium eget vel tortor.</p>
+		</div>
+
+		<div class="caixa2">
+			<div class="cima"></div>
+
+			<div class="meio">
+
+				<div style="margin: 0px 20px -20px 20px;">
+
+					<h3>Cabecalho</h3>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent arcu turpis, pharetra nec sem ut, volutpat bibendum ex. Pellentesque tincidunt diam quis arcu commodo scelerisque. Vestibulum magna nisi, laoreet a sem eget, sodales lobortis diam. Curabitur finibus iaculis leo non accumsan. Nulla erat odio, pretium a sem et, feugiat congue diam. Integer id est blandit, vehicula libero ac, interdum turpis. Donec sit amet consectetur nulla. Quisque commodo, metus at viverra sagittis, nisi libero porttitor leo, nec gravida arcu arcu vitae erat. In vehicula interdum neque, et maximus arcu varius condimentum. Ut et ex vitae tortor semper scelerisque. Praesent in massa facilisis, laoreet nisi quis, placerat nisi. Nulla vitae arcu ut justo sagittis mollis id a libero. Etiam at erat a velit vestibulum sodales. Maecenas nec gravida sapien. Nulla id odio ut metus eleifend pretium eget vel tortor.</p>
+
+				</div>
+				
+			</div>
+
+			<div class="baixo"></div>
+
+		</div>
+
+		<div class="caixa3">
+
+			<div class=""></div>
+
+			<div class="meio1">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lobortis sapien vitae diam consequat, id hendrerit tellus fermentum. Nullam nec turpis vestibulum, venenatis felis vitae, vulputate purus. Nulla non orci sed magna cursus ullamcorper. Nulla auctor arcu ut dui hendrerit, sit amet scelerisque dui efficitur. Phasellus rhoncus lectus at auctor ultricies. In hac habitasse platea dictumst. Etiam lacus velit, porttitor a eleifend ac, sollicitudin vel nulla. Sed elementum velit quis lorem molestie, sit amet lacinia ligula facilisis. Pellentesque vitae condimentum nulla, non dapibus justo. Nulla et semper lorem, vitae tincidunt tortor. Mauris vitae nisl ultricies, dictum erat id, mattis mauris. Duis ac commodo mi. In sollicitudin metus dolor, eget sagittis nisl iaculis sed. Donec dolor ipsum, efficitur vel mauris at, egestas congue elit. In auctor ornare velit, sit amet accumsan neque fringilla mattis. Maecenas in metus sit amet arcu pellentesque pulvinar.</p>
+			</div>
+			
+			<div class="baixo1"></div>
+		</div>
+
+	</div>
+
+s</body>

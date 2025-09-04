@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+    <script>
+        
+        // // 248. Operadores de declaração de variáveis Var e Let *************************************
+        // // 3 escopos: global, função e bloco
+
+        // var serie = 'serie'
+
+        // function x() {
+        //     var serie = 'outro'
+        //     console.log('escopo da função: ' + serie)
+        //     if(true) {
+        //         console.log('escopo do bloco dentro da função: ' + serie)
+        //     }
+        // }
+        
+        // x()
+        
+        // if(true) {
+        //     console.log(serie)
+        // }
+        
+        // console.log(serie)
+
+        // //_______________________________________________________________________________________________________________________________
+
+        // function x() {
+        //     console.log('escopo da função: ' + nome)
+        //     if(true) {
+        //         console.log('escopo do bloco dentro da função: ' + nome)
+        //     }
+        // }
+        
+        // if(true) {
+        //     var nome = 'Julio' // por ter sido declarada em um escopo de bloco, ele vai sefrer uma elevação para o escopo acima, -->(global)
+        //     x()
+        //     console.log(nome)
+        // }
+        
+        // console.log(nome)
+
+        // //_______________________________________________________________________________________________________________________________
+
+        // function x() {
+        //     console.log('escopo da função: ' + nome)
+        //     if(true) {
+        //         var teste = 'teste' // por ter sido declarada em um escopo de bloco, ele vai sefrer uma elevação para o escopo acima, -->(funcao)
+        //         console.log('escopo do bloco dentro da função: ' + teste)
+        //     }
+        // }
+        
+        // if(true) {
+        //     x()
+        //     // console.log(teste) vai dar erro pois o escopo de var esta até a função
+        // }
+
+        // // console.log(teste) vai dar erro pois o escopo de var esta até a função
+
+        // //_______________________________________________________________________________________________________________________________
+
+        // function x() {
+        //     console.log('escopo da função: ' + nome)
+        //     if(true) {
+        //         var teste = 'teste' // por ter sido declarada em um escopo de bloco, ele vai sefrer uma elevação para o escopo acima, -->(global)
+        //         console.log('escopo do bloco dentro da função: ' + teste)
+        //     }
+        // }
+        
+        // x()
+
+        // if(true) {
+        //     let lista = 'lista' // por ter sido declarada em um escopo de bloco, ele vai sefrer uma elevação para o escopo acima, -->(global)
+        //     console.log(lista)
+        // }
+        
+        // // console.log(lista)  vai dar erro pois o let é visto somente no seu escopo
+
+
+        // // 249. Análise de contexto 1 - Usando Var e Let  *************************************
+        // var serie = 'serie'
+
+        // {
+        //     var serie = 'teste'
+        //     console.log(serie)
+        // }
+        
+        // console.log(serie) // O resultado vai ser 'teste', pois ele subil para o outro escopo --> (global)
+        
+
+        // // 250. Análise de contexto 2 - Usando Var e Let  *************************************
+        
+        // let serie = 'serie'
+
+        // {
+        //     let serie = 'teste'
+        //     console.log(serie)
+        // }
+
+        // // ________________________________________________________________
+
+        // let teste = 'valor1'
+
+        // {
+        //     // var teste = 'valor2' isso vai gera um erro pois essa variavel está sendo declarada 2 vezes
+        //     console.log('escopo de bloco: ' + teste)
+        // }
+        
+        // console.log('escopo de global: ' + teste) // O resultado vai ser 'teste', pois ele subil para o outro escopo --> (global)
+
+
+        // // 251. Operador de declaração de variáveis Const *************************************
+        // const TESTE = 'teste'
+
+        // function x() {
+        //     const TESTE = 'outro'
+        //     console.log('escopo da fun ' + TESTE)
+        // }
+
+        // x()
+
+        // console.log('escopo global ' + TESTE)
+
+        
+        // // 252. Template String *************************************
+        // let nome = 'Julio'
+
+        // console.log('Meu nome é: ' + nome)
+
+        // console.log(`Meu nome é ${nome}`)
+
+        // console.log(`
+        //     Meu 
+        //     nome é
+        //     ${nome}
+        // `)
+
+        // function x(x, y) {
+        //     return x * y
+        // }
+        
+        // console.log(`a multiplicação de 6 * 6 = ${x(6, 6)}`)
+
+
+        // 253. Funções - Parâmetros default *************************************
+
+        function contarUmaHistoria(personagem = 'Julio', atividade = 'jogar bola', objeto = 'tenis') { // Permite atribuir um valor para o parametro caso n tenha sido passado
+            console.log(personagem)
+            console.log(atividade)
+            console.log(objeto)
+        }
+
+        contarUmaHistoria(undefined, 'correr')
+
+        
+        </script>
+        <title>253. Funções - Parâmetros default</title>
+  </head>
+  <body>
+    <div>
+        <!-- 248. Operadores de declaração de variáveis Var e Let ************************************* -->
+        
+        
+        <!-- 249. Análise de contexto 1 - Usando Var e Let ************************************* -->
+        
+        
+        <!-- 250. Análise de contexto 2 - Usando Va r e Let ************************************* -->
+        
+        
+        <!-- 251. Operador de declaração de variáveis Const -->
+        
+        
+        <!-- 252. Template String ************************************* -->
+    </div>
+
+    <!-- 253. Funções - Parâmetros default ************************************* -->
+    
+    
+    
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

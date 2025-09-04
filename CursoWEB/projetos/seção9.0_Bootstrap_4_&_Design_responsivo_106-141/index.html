@@ -1,0 +1,2271 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <title>Bootstrap</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap-4.1.3/css/bootstrap.min.css">
+
+  <!-- Iconic CSS -->
+  <link href="iconic/font/css/open-iconic-bootstrap.css" rel=" stylesheet">
+
+  <!-- Fontawesome CSS -->
+  <script src="https://kit.fontawesome.com/e1b86b0aaa.js" crossorigin="anonymous"></script>
+
+  <style type="text/css">
+    .marcador {
+      background: #df8282;
+      border: 1px solid #f94646;
+    }
+    .marcadorh {
+      background: #df8282;
+      border: 1px solid #f94646;
+      height: 120px;
+    }
+    .marcador-container {
+      background: #5bf946;
+      border: 1px solid #36ae26;
+    }
+    .borda{
+        border: 1px solid blue;
+      }
+      .caixa {
+        background: #f5f5f5;
+        height: 200px;
+      }
+      .item {
+        border:1px solid black;
+        padding: 5px;
+      }
+  </style>
+
+</head>
+
+<body style="padding: 16px; background: rgb(221, 209, 209);">
+
+  <h2 class="text-primary">111. Formatações de textos: </h2>
+  <br>
+
+  <h1>Cabecalho</h1>
+  <h2>Cabecalho</h2>
+  <h3>Cabecalho</h3>
+  <h4>Cabecalho</h4>
+  <h5 class="h1">Cabecalho</h5>
+
+  <br>
+  <br>
+
+  <!-- Display Classes - Maior destaque -->
+  <h1 class="display-1">Display1</h1>
+  <h1 class="display-2">Display2</h1>
+  <h1 class="display-3">Display3</h1>
+  <h1 class="display-4">Display4</h1>
+
+  <br>
+  <br>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, consectetur quia. Eos repudiandae ut hic odio
+    numquam eum sequi totam ullam maiores libero illum obcaecati nemo laudantium aperiam, dicta commodi?</p>
+
+  <p class="lead">UTILIZANDO A CLASS LEAD: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi soluta eum
+    excepturi rerum, nisi quidem blanditiis asperiores minima eaque, voluptatem laboriosam saepe eligendi enim omnis
+    maxime similique optio voluptate reprehenderit.</p>
+
+  <p class="text-monospace">UTILIZANDO A CLASS MONOSPACE: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Quibusdam corrupti expedita ipsum. Provident, similique repudiandae. Voluptate officia nobis, odit eum numquam sed.
+    Eaque fuga fugiat quas doloremque tempore eos dignissimos.</p>
+
+  <img src="img/monospace.png" width="300px">
+
+  <br>
+  <br>
+
+  <!-- Classes de estilo -->
+  <p class="font-weight-bold">Negrito</p>
+  <p class="font-weight-normal">Normal</p>
+  <p class="font-italic">Itálico</p>
+
+  <br>
+  <br>
+
+  <!-- Transformacao de Textos -->
+  <p class="text-upercase">Maiúsculas</p>
+  <p class="text-lowercase">Minúsculas</p>
+  <p class="text-capitalize">primeira maiúscula</p>
+
+  <br>
+  <br>
+
+  <!-- Alinhamento -->
+  <p class="text-right">Direita</p>
+  <p class="text-left">Esquerda</p>
+  <p class="text-center">Centralizado</p>
+
+  <br>
+  <br>
+
+  <!-- Bloco de citacao -->
+  <blockquote>
+    <p class="blockquote">Esse é um bloco de citação usando blockquote</p>
+  </blockquote>
+
+  <br>
+  <br>
+
+  <!-- Bloco de citacao com rodapé -->
+  <blockquote class="blockquote text-right">
+    <h4>Bloco de citacao com rodapé:</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam omnis, architecto officia odit, rerum praesentium
+      laborum sequi, nihil sed nesciunt suscipit? Inventore deserunt similique laborum veniam quas nemo reiciendis? Eos?
+    </p>
+    <footer class="blockquote-footer">por
+      <cite>Júlio César</cite>
+    </footer>
+  </blockquote>
+
+  <br>
+  <br>
+
+  <!-- Trucate -->
+  <p class="text-truncate">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis illo voluptate ducimus,
+    dolores nesciunt vel illum, maiores non omnis veritatis obcaecati, ea vero laboriosam quasi corporis quisquam velit
+    eos eius?</p>
+
+  <br>
+  <br>
+
+  <!-- Lista sem estilo -->
+  <h4>Lista sem estilo:</h4>
+  <ul class="list-unstyled">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <!-- Lista inline -->
+  <h4>Lista inline:</h4>
+  <ul class="list-inline">
+    <li class="list-inline-item">Item 1</li>
+    <li class="list-inline-item">Item 2</li>
+    <li class="list-inline-item">Item 3</li>
+  </ul>
+
+  <br>
+
+  <h2 class="text-primary">112. Alinhamento de textos:</h2>
+  <br>
+
+  <!-- Parágrafo justificado -->
+
+  <p>Texto normal sem o text-justify: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur doloremque
+    perspiciatis soluta adipisci cum veritatis nesciunt, recusandae aspernatur? Odit rerum corporis similique ipsum
+    quasi facilis quam sint tenetur maiores error!</p>
+
+  <p class="text-justify">Utiliozando o text-justify para não quebrar o texto nas laterais: Lorem ipsum dolor sit amet,
+    consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula fringilla tempus. Ut tempor, dui
+    eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel lorem.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula
+    fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel
+    lorem.</p>
+
+  <br>
+  <br>
+
+  <img src="img/sufixos_dispositivos.png" width="600px">
+  <br><br>
+  <!-- 
+        Alinhamento responsivo - 
+        text-<tela>-<alinhamento>
+            tela: sm, md, lg, xl
+            alinhamento: left, center, right
+     -->
+  <h3>Diminua o tamnho da tela para perceber a diferença</h3>
+
+  <p class="text-sm-right">tela &gt;= 576px</p><!--Small-->
+  <p class="text-md-right">tela &gt;= 768px</p><!--Medium-->
+  <p class="text-lg-right">tela &gt;= 992px</p><!--Large-->
+  <p class="text-xl-right">tela &gt;= 1200px</p><!--Extra Large-->
+
+  <br>
+  <br>
+
+  <!-- Elemento Block para inline -->
+  <h1 class="bg-success d-inline">Elemento Block para inline</h1>
+  <p class="bg-success d-inline">Elemento Block para inline usando a class "d-inline"</p>
+
+  <br>
+  <br>
+
+  <!-- Elemento Inline para Block -->
+  <span class="d-block">Convertendo sapan para block usando o "d-block"</span>
+
+  <span class="d-block">Convertendo sapan para block usando o "d-block"</span>
+
+  <br>
+  <br>
+
+  <!-- Elemento Inline para Block -->
+  <div class="bg-warning"> <!--class para colocar um fundo amarelo -->
+    <h3 class="bg-success d-inline-block">Elemento Inline para Block usando o "d-inline-block"</h3>
+    <h3 class="bg-success d-inline-block" style="margin-top: 50px;">Só é possivel aplicar margin pading... no
+      inline-block </h3>
+
+  </div>
+
+  <br><br>
+
+  <!-- Elementos flutuantes -->
+  <h2 class="text-primary">113. Elementos flutuantes:</h2>
+
+  <div style="border: 1px solid red;" class="clearfix">
+    <div class="bg-success float-left">Float-Left</div>
+    <div class="bg-success float-right">Float-Right</div>
+    <div class="bg-warning float-none">Float-None</div>
+    <h4>e utilizando o clearfix para aplicar o clear:="both" na div</h4>
+  </div>
+
+  <!-- Posicionamento fixo - top e bottom -->
+  <div>
+    <h1 class="fixed-top" style="border: 1px solid red; font-size: 1.5em;">Título do conteúdo fixo</h1>
+    <h4>O elemento está fixo no topo</h4>
+  </div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula
+    fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel
+    lorem.</p>
+
+  <!-- 
+        Float responsivo - float-<tela>-<direcao>
+            tela: sm, md, lg, xl
+            alinhamento: left, right
+     -->
+  <div class="float-sm-right">tela &gt;= 576px * </div><!--Small-->
+  <div class="float-md-right">tela &gt;= 768px * </div><!--Medium-->
+  <div class="float-lg-right">tela &gt;= 992px * </div><!--Large-->
+  <div class="float-xl-right">tela &gt;= 1200px * </div><!--Extra Large-->
+
+  <br><br>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula
+    fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel
+    lorem.
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula
+    fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna vel
+    lorem.</p>
+
+  <!-- Colar no topo (sticky) -->
+
+  <ul class="list-inline bg-warning sticky-top float-right">
+    <li class="list-inline-item">list-inline bg-warning sticky-top float-right</li>
+    <li class="list-inline-item">Item 2</li>
+    <li class="list-inline-item">Item 3</li>
+  </ul>
+
+  <h1 class="clearfix">Título do conteúdo</h1>
+
+  <br><br>
+
+  <h2 class="text-primary">114. Cores & Backgrounds</h2>
+  <br>
+
+  <!-- Classes para formatação de textos -->
+  <h4 class="text-primary">Texto primary</h4>
+  <h4 class="text-secondary">Texto secondary</h4>
+  <h4 class="text-success">Texto success</h4>
+  <h4 class="text-info">Texto info</h4>
+  <h4 class="text-warning">Texto warning</h4>
+  <h4 class="text-danger">Texto danger</h4>
+  <h4 class="text-light">Texto light</h4>
+  <h4 class="text-dark">Texto dark</h4>
+  <h4 class="text-black-50">Texto black 50</h4>
+  <h4 class="text-white-50">Texto white</h4>
+
+  <br>
+  <br>
+
+
+  <!-- Formatação de links -->
+  <a href="#" class="text-primary">Link primary</a><br>
+  <a href="#" class="text-secondary">link secondary</a><br>
+  <a href="#" class="text-primary">link primary</a><br>
+  <a href="#" class="text-success">link success</a><br>
+  <a href="#" class="text-info">link info</a><br>
+  <a href="#" class="text-warning">link warning</a><br>
+  <a href="#" class="text-danger">link danger</a><br>
+  <a href="#" class="text-light">link light</a><br>
+  <a href="#" class="text-dark">link dark</a><br>
+  <a href="#" class="text-black-50">link black-50</a><br>
+  <a href="#" class="text-white-50">link white-50</a><br>
+
+  <br>
+  <br>
+
+  <!-- Backgrounds -->
+  <div class="bg-primary">Background primary
+
+  </div>
+  <div class="bg-secondary">Background secondary
+
+  </div>
+  <div class="bg-success">Background success
+
+  </div>
+  <div class="bg-info">Background info
+
+  </div>
+  <div class="bg-warning">Background warning
+
+  </div>
+  <div class="bg-danger">Background danger
+
+  </div>
+  <div class="bg-light">Background light
+
+  </div>
+  <div class="bg-dark">Background dark
+
+  </div>
+  <div class="bg-white">Background white
+
+  </div>
+  <div class="bg-transparent">Background transparent
+
+  </div>
+
+  <br><br>
+
+  <h2 class="text-primary">115. Margin & Padding:</h2><br>
+  <!-- Aplicação de Margin
+    mt -> Margin Top
+    mb -> Margin Bottom
+    ml -> Margin Left
+    mr -> Margin Right
+    mx -> Margin no eixo x (horizontal) esquerda/direita
+    my -> Margin no eixo y (vertical) top/bottom
+    m  -> Margin em todos os lados
+    Valor a definir (0 até 5)
+    -->
+  <div style="width: 300px; border: 1px solid red;">
+    <h1 class="bg-success mt-1 ml-2 mb-3 mr-4">Margin</h1>
+  </div>
+  <div style="width: 300px; border: 1px solid red;">
+    <p class="bg-success mx-3 my-5">Conteúdo principal< /p>
+  </div>
+  <div style="width: 300px; border: 1px solid red;">
+    <h1 class="bg-success m-3">Margin</h1>
+  </div>
+
+  <br>
+  <br>
+
+  <!-- Aplicação de Padding
+    pt -> Padding Top
+    pb -> Padding Bottom
+    pl -> Padding Left
+    pr -> Padding Right
+    px -> Padding no eixo x (horizontal) esquerda/direita
+    py -> Padding no eixo y (vertical) top/bottom
+    p  -> Padding em todos os lados
+    Valor a definir (0 até 5)
+    -->
+  <div style="width: 300px;">
+    <h1 style="border: 1px solid red;" class="bg-success pt-1 pl-2 pb-3 pr-4">padding</h1>
+  </div>
+  <div style="width: 300px;">
+    <p style="border: 1px solid red;" class="bg-success px-3 py-5">Conteúdo principal</p>
+  </div>
+  <div style="width: 300px;">
+    <h1 style="border: 1px solid red;" class="bg-success p-3">padding</h1>
+  </div>
+
+  <br>
+  <br>
+
+  <div style="margin-bottom: 200px; width: 600px; margin: 0 auto;">
+
+    <h2 class="text-primary">116. Tamanhos & Bordas</h2><br>
+
+    <!-- classes de largura em %-->
+    <div class="bg-primary w-25">width 25%</div>
+    <div class="bg-primary w-50">width 50%</div>
+    <div class="bg-primary w-75">width 75%</div>
+    <div class="bg-primary w-100">width 100%</div>
+    <div class="bg-primary w-auto">width auto</div>
+
+    <br>
+    <br>
+
+    <!-- classes de altura -->
+    <div style="height: 300px;border: 1px solid gray;">
+      <div class="bg-warning d-inline-block h-25">height 25%</div>
+      <div class="bg-warning d-inline-block h-50">height 50%</div>
+      <div class="bg-warning d-inline-block h-75">height 75%</div>
+      <div class="bg-warning d-inline-block h-100">height 100%</div>
+      <div class="bg-warning d-inline-block h-auto">height auto</div>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Bordas
+      border        -> todas as bordas
+      border-top    -> borda superior
+      border-bottom -> borda inferior
+      border-right  -> bordar direita
+      border-left   -> borda esquerda
+  
+      Cores de bordas
+      border-<cor>: primary, secondary, success, 
+          info, warning, danger, light, , white
+      -->
+    <div class="bg-white mb-2 border border-dark">todas as bordas</div>
+    <div class="bg-white mb-2 border-top border-danger">borda superior</div>
+    <div class="bg-white mb-2 border-bottom">borda inferior</div>
+    <div class="bg-white mb-2 border-right">borda direita</div>
+    <div class="bg-white mb-2 border-left">borda esquerda</div>
+
+    <br>
+    <br>
+
+    <!-- Border Radius 
+      opções: rounded, rounded-top, rounded-right, 
+              rounded-right, rounded-left, rounded-circle
+      -->
+    <div class="bg-light mb-2 border border-primary rounded">rounded</div>
+    <div class="bg-light mb-2 border border-primary rounded-top">rounded top</div>
+    <div class="bg-light mb-2 border border-primary rounded-bottom">rounded bottom</div>
+    <div class="bg-light mb-2 border border-primary  rounded-right">rounded right</div>
+    <div class="bg-light mb-2 border border-primary rounded-left">rounded left</div>
+    <div class="bg-light mb-2 p-5 border border-primary w-25 rounded-circle">rounded circle</div>
+
+    <br>
+    <br>
+  </div>
+
+  <div>
+    <h2 class="text-primary">118. Media queries - parte 1</h2>
+
+    <div>
+      <a href="breakpoints.html">Entre aqui para ver o arquivo dessa aula de breakpoints</a>
+    </div>
+
+    <br>
+    <br>
+  </div>
+
+  <div style="padding-bottom: 200px; width: 600px; margin: 0 auto;">
+    <h2 class="text-primary">120. Botões</h2>
+
+    <!-- Botoes 
+      formatação padrao: btn
+      formatação específicas:
+      btn-primary, btn-secondary, btn-success, btn-info,
+      btn-warning, btn-danger, btn-light, btn-dark, btn-link
+      -->
+    <button class="btn btn-primary" type="button">Clique</button>
+    <button class="btn btn-secondary" type="button">Clique</button>
+    <button class="btn btn-success" type="button">Clique</button>
+    <button class="btn btn-info" type="button">Clique</button>
+    <button class="btn btn-warning" type="button">Clique</button>
+    <button class="btn btn-danger" type="button">Clique</button>
+    <button class="btn btn-light" type="button">Clique</button>
+    <button class="btn btn-dark" type="button">Clique</button>
+    <button class="btn btn-link" type="button">Clique</button>
+
+    <h3>Botões com diferentes tags</h3>
+    <a class="btn btn-dark" href="#">Link</a>
+    <button class="btn btn-info" type="submit">Submit</button>
+    <input class="btn btn-info" type="button" value="Button">
+    <input class="btn btn-info" type="submit" value="Input Submit">
+    <input class="btn btn-info" type="reset" value="Reset">
+
+    <!-- Botoes com contorno
+      btn-outline-<formato>
+      -->
+    <h3>Botões com contorno</h3>
+    <button class="btn btn-outline-primary" type="button">Clique</button>
+    <button class="btn btn-outline-secondary" type="button">Clique</button>
+    <button class="btn btn-outline-success" type="button">Clique</button>
+    <button class="btn btn-outline-info" type="button">Clique</button>
+    <button class="btn btn-outline-warning" type="button">Clique</button>
+    <button class="btn btn-outline-danger" type="button">Clique</button>
+    <button class="btn btn-outline-light" type="button">Clique</button>
+    <button class="btn btn-outline-dark" type="button">Clique</button>
+    <button class="btn btn-outline-link" type="button">Clique</button>
+
+    <!-- Tamanhos de botões
+      opções: btn-lg, btn-sm, btn-block
+      -->
+    <h3>Tamanhos dos botões</h3>
+    <button class="btn btn-danger btn-lg" type="button">Grande</button>
+    <button class="btn btn-danger" type="button">Normal</button>
+    <button class="btn btn-danger btn-sm" type="button">Pequeno</button>
+    <br><br>
+    <button class="btn btn-danger btn-block" type="button">Bloco</button>
+
+    <!-- Estados dos botões
+      opções: active, disabled
+      -->
+    <h3>Estados de botões</h3>
+    <button class="btn btn-success " type="button">Normal</button>
+    <button class="btn btn-success active" type="button">Ativo</button>
+    <button class="btn btn-success disabled" type="button">Inativo</button>
+    <br><br>
+    <button class="btn btn-success" type="button" data-toggle="button">Alternar</button>
+
+    <h3>Grupos de botões - horizontal</h3>
+    <div class="btn-group">
+      <button class="btn btn-info" type="button">Esquerda</button>
+      <button class="btn btn-info" type="button">Centro</button>
+      <button class="btn btn-info" type="button">Direita</button>
+    </div>
+
+    <h3>Grupos de botões - vertical</h3>
+    <div class="btn-group-vertical">
+      <button class="btn btn-info" type="button">Topo</button>
+      <button class="btn btn-info" type="button">Meio</button>
+      <button class="btn btn-info" type="button">Fundo</button>
+    </div>
+
+    <h3>Toolbar de botões</h3>
+    <div class="btn-toolbar">
+      <div class="btn-group">
+        <button class="btn btn-danger" type="button">1</button>
+        <button class="btn btn-danger" type="button">2</button>
+        <button class="btn btn-danger" type="button">3</button>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-danger" type="button">4</button>
+        <button class="btn btn-danger" type="button">5</button>
+      </div>
+    </div>
+
+    <h3>Botões dropdown</h3>
+    <div class="dropdown">
+      <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" type="button">
+        Clique
+      </button>
+      <div class="dropdown-menu">
+        <a href="#" class="dropdown-item bg-primary">Link 1</a>
+        <div class="dropdown-divider"></div>
+        <a href="#" class="dropdown-item bg-secondary">Link 2</a>
+        <a href="#" class="dropdown-item bg-dark">Link 3</a>
+      </div>
+    </div>
+  </div>
+
+  <div>
+    <h2 class="text-primary">121. Introdução - barra de navegação</h2>
+    <!-- Navegação
+      Tipos de navegação:
+          nav-pills
+          nav-tabs
+      opções de alinhamento: 
+          justify-content-center 
+          justify-content-end
+          flex-column
+      Desabilitar o link
+          disabled-->
+    <h2>Navegação simples / abas</h2>
+    <ul class="nav nav-pills justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" href="">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">Sobre</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">Serviços</a>
+      </li>
+    </ul>
+
+    <ul class="nav nav-tabs justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link " href="">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="">Sobre</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">Serviços</a>
+      </li>
+    </ul>
+
+    <ul class="nav nav-tabs flex-column">
+      <li class="nav-item">
+        <a class="nav-link " href="">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="">Sobre</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="">Serviços</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="">Serviços</a>
+      </li>
+    </ul>
+
+    <br>
+
+    <h2>Barra de navegação simples</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> <!-- sm - md - lg - xg -->
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="">Chalé Hotel</a>
+
+      <!-- Navegacao -->
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Serviços</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h2>Barra de navegação com menu responsivo</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> <!-- sm - md - lg - xg -->
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="">Chalé Hotel</a>
+
+      <!-- Menu Hamburger -->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navegacao -->
+      <div class="collapse navbar-collapse" id="nav-target">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Serviços</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <h2>Barra de navegação com formulário</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> <!-- sm - md - lg - xg -->
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="">Chalé Hotel</a>
+
+      <!-- Menu Hamburger -->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navegacao -->
+      <div class="collapse navbar-collapse" id="nav-target">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Serviços</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Formulario -->
+      <form class="form-inline">
+        <input type="text" class="form-control" placeholder="pesquisar...">
+        <button class="btn btn-outline-success">ok</button>
+      </form>
+    </nav>
+
+
+    <h2>Barra de navegação com menu dropdown</h2>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> <!-- sm - md - lg - xg -->
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="">Chalé Hotel</a>
+
+      <!-- Menu Hamburger -->
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navegacao -->
+      <div class="collapse navbar-collapse" id="nav-target">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Sobre</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown">Serviços</a>
+
+            <div class="dropdown-menu">
+              <a class="dropdown-item">Serviço 1</a>
+              <a class="dropdown-item">Serviço 2</a>
+              <a class="dropdown-item">Serviço 2</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <!--Cores
+      opções: bg-primary, bg-secondary, bg-success, bg-info,
+      bg-warning, bg-danger, bg-light, bg-dark
+      -->
+    <h2>Cores</h2>
+    <nav class="navbar navbar-expand-sm navbar-success bg-warning"> <!-- sm - md - lg - xg -->
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="">Chalé Hotel</a>
+
+      <!-- Navegacao -->
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Serviços</a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <!--Alinhamentos
+      opções: fixed-top, fixed-bottom, sticky
+      -->
+    <h2>Alinhamentos</h2>
+    <nav class="navbar sticky-top navbar-expand-sm navbar-info bg-success"> <!-- sm - md - lg - xg -->
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="">Chalé Hotel</a>
+
+      <!-- Navegacao -->
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Serviços</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut quas cupiditate quae iste commodi nam? Fugit
+      ducimus consequuntur odit voluptatem laboriosam officia, exercitationem eligendi molestiae quas reprehenderit
+      dignissimos delectus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut quas cupiditate quae iste commodi nam? Fugit
+      ducimus consequuntur odit voluptatem laboriosam officia, exercitationem eligendi molestiae quas reprehenderit
+      dignissimos delectus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut quas cupiditate quae iste commodi nam? Fugit
+      ducimus consequuntur odit voluptatem laboriosam officia, exercitationem eligendi molestiae quas reprehenderit
+      dignissimos delectus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ut quas cupiditate quae iste commodi nam? Fugit
+      ducimus consequuntur odit voluptatem laboriosam officia, exercitationem eligendi molestiae quas reprehenderit
+      dignissimos delectus.</p>
+
+  </div>
+  <div style="margin-bottom: 200px;padding: 16px;">
+    <h2 class="text-primary">124. Listas</h2>
+    <!-- Listas -->
+    <ul class="list-group">
+      <li class="list-group-item active">Meu item de lista 1</li>
+      <li class="list-group-item">Meu item de lista 2</li>
+      <li class="list-group-item">Meu item de lista 3</li>
+      <li class="list-group-item">Meu item de lista 4</li>
+    </ul>
+    <br><br>
+
+    <!-- Listas com classe flush -->
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Meu item de lista 1</li>
+      <li class="list-group-item active">Meu item de lista 2</li>
+      <li class="list-group-item">Meu item de lista 3</li>
+      <li class="list-group-item">Meu item de lista 4</li>
+    </ul>
+    <br><br>
+
+    <!-- Listas com links -->
+    <ul class="list-group">
+      <a class="list-group-item" href="#">Meu item de lista 1</a>
+      <a class="list-group-item" href="#">Meu item de lista 2</a>
+      <a class="list-group-item active" href="#">Meu item de lista 3</a>
+      <a class="list-group-item" href="#">Meu item de lista 4</a>
+    </ul>
+    <br><br>
+
+    <!-- Listas com classes contextuais 
+          classe: list-group-item-<opcoes>
+          opções: primary, secondary, success, info,
+                  warning, danger, light, dark
+      -->
+    <ul class="list-group">
+      <li class="list-group-item">Lista normal</li>
+      <li class="list-group-item list-group-item-primary">Lista primary</li>
+      <li class="list-group-item list-group-item-secondary">Lista secondary</li>
+      <li class="list-group-item list-group-item-success">Lista success</li>
+      <li class="list-group-item list-group-item-info">Lista info</li>
+      <li class="list-group-item list-group-item-warning">Lista warning</li>
+      <li class="list-group-item list-group-item-danger">Lista danger</li>
+      <li class="list-group-item list-group-item-light">Lista light</li>
+      <li class="list-group-item list-group-item-dark">Lista dark</li>
+    </ul>
+    <br><br>
+
+    <!-- Badge 
+          classe: badge-<opcoes>
+          opções: primary, secondary, success, info,
+                  warning, danger, light, dark
+      -->
+    <ul class="list-group">
+      <li class="list-group-item">Meu item de lista 1</li>
+      <li class="list-group-item">Meu item de lista 2</li>
+      <li class="list-group-item">
+        Caixa de entrada
+        <span class="badge badge-warning">120</span>
+      </li>
+      <li class="list-group-item">
+        Rascunhos
+        <span class="badge badge-info">5</span>
+      </li>
+    </ul>
+    <br><br>
+
+    <!-- Breadcrumb -->
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">Home</li>]
+    </ol>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="">Home</a>
+      </li>
+      <li class="breadcrumb-item active">Notícias</li>
+    </ol>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="#">Home</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="#">Usuários</a>
+      </li>
+      <li class="breadcrumb-item">Júlio César</li>
+    </ol>
+  </div>
+
+
+
+  <div>
+    <!-- formulários 
+        classe: form-control-<opcoes>
+        opções: sm, lg
+      -->
+    <form>
+
+      <!-- caixas de texto -->
+      <div class="form-group">
+        <label for="usuario">Usuário</label>
+        <input class="form-control" type="text" id="usuario" placeholder="Digite seu usuário">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input class="form-control" type="email" id="email" placeholder="Digite seu email" readonly>
+        <small class="form-text">Email será validado</small>
+      </div>
+
+      <!-- select -->
+      <div>
+        <label for="estados">Estados</label>
+        <select class="form-control" id="estados">
+          <option>Acre</option>
+          <option>Alagoas</option>
+          <option>Amapá</option>
+          <option>...</option>
+        </select>
+      </div>
+
+      <!-- textarea -->
+      <div>
+        <label for="mensagem">Mensagem</label>
+        <textarea class="form-control" id="mensagem" rows="3"></textarea>
+      </div>
+
+      <!-- file input -->
+      <div class="custom-group">
+        <label class="arquivo">Selecione o Arquivo</label>
+        <input class="form-control-file" type="file" id="arquivo">
+      </div>
+
+
+      <!-- custom file input -->
+      <div class="custom-file">
+        <label class="custom-file-label">Selecione o Arquivo</label>
+        <input class="custom-file-input" type="file" id="arquivo">
+      </div>
+      <br><br>
+
+      <!-- range -->
+      <div class="form-group">
+        <label id="range">Satisfação</label>
+        <input class="custom-range" type="range" id="range" min="1" max="5">
+      </div>
+
+      <!-- button -->
+      <input class="btn btn-success" type="submit" value="Salvar">
+
+    </form>
+    <br><br>
+
+    <!-- Formulário inline -->
+    <form class="form-inline">
+      <input class="form-control mr-2" type="text" placeholder="Digite seu usuário">
+      <input class="form-control mr-2" type="password" placeholder="Digite sua senha">
+      <input class="btn btn-danger" type="submit" value="Logar">
+    </form>
+    <br><br>
+
+    <!-- 
+      Validação de formulário 
+      Classes: is-valid, is-invalid, invalid-feedback
+      -->
+    <form>
+
+      <div class="form-group">
+        <label for="email-usuario">email</label>
+        <input class="form-control is-valid" type="text" id="email-usuario" placeholder="Digite seu e-mail">
+        <div class="valid-feedback">
+          Email válido
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="senha-usuario">Senha</label>
+        <input class="form-control is-invalid" type="password" id="senha-usuario" placeholder="Digite sua senha">
+        <div class="invalid-feedback">
+          Senha inválida
+        </div>
+      </div>
+
+      <input class="btn btn-info" type="submit" value="Logar">
+
+    </form>
+
+  </div>
+
+  <div style="margin-bottom: 100px;padding: 16px;"> <!--********************************************-->
+
+    <h2 class="text-primary">126. Input group</h2>
+
+    <form>
+      <h3>Grupo prepend</h3>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">@</span>
+        </div>
+        <input class="form-control" type="text" placeholder="e-mail">
+      </div>
+
+      <h3>Grupo append</h3>
+      <div class="input-group">
+        <input class="form-control" type="text" placeholder="e-mail">
+        <div class="input-group-append">
+          <span class="input-group-text">@site.com</span>
+        </div>
+      </div>
+
+      <h3>URL customizada</h3>
+      <div class="input-group">
+        <div class="input-group-append">
+          <span class="input-group-text">
+            https://site.com/usuario/
+          </span>
+        </div>
+        <input class="form-control" type="text" placeholder="Digite seu usuário">
+      </div>
+
+      <h3>Moeda</h3>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">$</span>
+        </div>
+        <input class="form-control" type="text" placeholder="Digite um valor">
+        <div class="input-group-append">
+          <span class="input-group-text">,00</span>
+        </div>
+      </div>
+
+      <!--type: checkbox / radio-->
+      <h3>Checkbox / radio</h3>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <input type="checkbox">
+          </div>
+        </div>
+        <input type="text" class="form-control">
+      </div>
+
+      <h3>Múltiplos inputs</h3>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">nome/e-mail</span>
+        </div>
+        <input class="form-control" type="text" placeholder="e-mail">
+        <input class="form-control" type="password" placeholder="senha">
+      </div>
+
+      <h3>Pesquisas</h3>
+      <div class="input-group">
+        <input class="form-control" type="text" placeholder="Pesquisar">
+        <div class="input-group-append">
+          <button class="btn btn-warning" type="button">Pesquisar</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  <div style="margin-bottom: 100px;padding: 16px;">
+    <h2 class="text-primary">127. Alertas & Barra de progresso</h2><!--*********************************-->
+
+    <h3>Alertas</h3>
+    <div class="alert alert-primary">
+      <strong>Primary</strong> você tem uma postagem pendente!
+    </div>
+    <div class="alert alert-secondary">
+      <strong>Secondary</strong> você tem uma postagem pendente!
+    </div>
+    <div class="alert alert-success">
+      <strong>Success</strong> você tem uma postagem pendente!
+    </div>
+    <div class="alert alert-danger">
+      <strong>Danger</strong> você tem uma postagem pendente!
+    </div>
+    <div class="alert alert-warning">
+      <strong>Warning</strong> você tem uma postagem pendente!
+    </div>
+    <div class="alert alert-info">
+      <strong>Info</strong> você tem uma postagem pendente!
+    </div>
+    <div class="alert alert-light">
+      <strong>Light</strong> você tem uma postagem pendente!
+    </div>
+    <div class="alert alert-dark">
+      <strong>Dark</strong> você tem uma postagem pendente!
+    </div>
+
+
+    <h3>Alerta com botão fechar</h3>
+    <div class="alert alert-danger alert-dismiss">
+      <button class="close" type="button" data-dismiss="alert">
+        &times;
+      </button>
+      <strong>Fechar</strong> Alerta com botão fechar
+    </div>
+    <br><br>
+
+    <div class="alert alert-success alert-dismiss">
+      <button class="close" type="button" data-dismiss="alert">
+        &times;
+      </button>
+      <strong>Fechar</strong> Alerta com botão fechar
+    </div>
+    <br><br>
+
+
+    <h3>Alerta com mais conteúdos</h3>
+    <div class="alert alert-dark">
+
+      <h4>Título</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a metus in purus malesuada vulputate. Sed
+        lacinia quam massa, eu consectetur tortor faucibus sed.</p>
+      <hr>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a metus in purus malesuada vulputate. Sed
+        lacinia quam massa, eu consectetur tortor faucibus sed.</p>
+
+    </div>
+    <br><br>
+
+    <h3>Barra de progresso</h3>
+    <div class="progress">
+      <div class="progress-bar w-50">50%</div>
+    </div>
+    <br>
+
+    <div class="progress">
+      <div class="progress-bar bg-success" style="width: 40%;">40%</div>
+    </div>
+    <br>
+
+    <h3>Altura</h3>
+    <div class="progress" style="height: 2px;">
+      <div class="progress-bar bg-success" style="width: 40%;">40%</div>
+    </div>
+    <br>
+
+    <h3>Listrado</h3>
+    <div class="progress">
+      <div class="progress-bar bg-warning progress-bar-striped" style="width: 70%;">70%</div>
+    </div>
+    <br>
+
+    <h3>Animado</h3>
+    <div class="progress">
+      <div class="progress-bar bg-warning progress-bar-striped  progress-bar-animated" style="width: 70%;">70%</div>
+    </div>
+    <br>
+
+    <h3>Múltiplas barras</h3>
+    <div class="progress">
+      <div class="progress-bar bg-success" style="width: 20%;">40%</div>
+      <div class="progress-bar bg-danger" style="width: 30%;">40%</div>
+      <div class="progress-bar bg-warning" style="width: 15%;">40%</div>
+    </div>
+    <br>
+  </div>
+
+  <div style="margin-bottom: 200px;padding: 16px;"> <!--************************************************-->
+    <h2 class="text-primary">128. Tabelas & Paginação - parte 1</h2>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Produto</th>
+          <th>Marca</th>
+          <th>Preço</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>00001</td>
+          <td>Iphone X</td>
+          <td>Apple</td>
+          <td>R$ 6.999</td>
+        </tr>
+        <tr>
+          <td>00002</td>
+          <td>Nexus 5</td>
+          <td>LG</td>
+          <td>R$ 999</td>
+        </tr>
+        <tr>
+          <td>00003</td>
+          <td>Notebook VAIO</td>
+          <td>Sony</td>
+          <td>R$ 1.999</td>
+        </tr>
+      </tbody>
+
+    </table>
+
+    <h3>Tabela escura: table-dark</h3>
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Produto</th>
+          <th>Marca</th>
+          <th>Preço</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>00001</td>
+          <td>Iphone X</td>
+          <td>Apple</td>
+          <td>R$ 6.999</td>
+        </tr>
+        <tr>
+          <td>00002</td>
+          <td>Nexus 5</td>
+          <td>LG</td>
+          <td>R$ 999</td>
+        </tr>
+        <tr>
+          <td>00003</td>
+          <td>Notebook VAIO</td>
+          <td>Sony</td>
+          <td>R$ 1.999</td>
+        </tr>
+      </tbody>
+
+    </table>    
+
+    <h3>Tabela com cabeçalho escuro: thead-dark</h3>
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th>#</th>
+          <th>Produto</th>
+          <th>Marca</th>
+          <th>Preço</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>00001</td>
+          <td>Iphone X</td>
+          <td>Apple</td>
+          <td>R$ 6.999</td>
+        </tr>
+        <tr>
+          <td>00002</td>
+          <td>Nexus 5</td>
+          <td>LG</td>
+          <td>R$ 999</td>
+        </tr>
+        <tr>
+          <td>00003</td>
+          <td>Notebook VAIO</td>
+          <td>Sony</td>
+          <td>R$ 1.999</td>
+        </tr>
+      </tbody>
+
+    </table> 
+
+    <h3>Tabela com formatações: table-striped, 
+      table-bordered, table-borderless</h3>
+      <table class="table table-bordered">
+        <thead></thead>
+          <tr>
+            <th>#</th>
+            <th>Produto</th>
+            <th>Marca</th>
+            <th>Preço</th>
+          </tr>
+        </thead>
+  
+        <tbody>
+          <tr>
+            <td>00001</td>
+            <td>Iphone X</td>
+            <td>Apple</td>
+            <td>R$ 6.999</td>
+          </tr>
+          <tr>
+            <td>00002</td>
+            <td>Nexus 5</td>
+            <td>LG</td>
+            <td>R$ 999</td>
+          </tr>
+          <tr>
+            <td>00003</td>
+            <td>Notebook VAIO</td>
+            <td>Sony</td>
+            <td>R$ 1.999</td>
+          </tr>
+        </tbody>
+  
+      </table>     
+
+    <h3>Classes contextuais: table-success, table-danger, table...</h3>
+    <table class="table">
+      <thead></thead>
+        <tr>
+          <th>#</th>
+          <th>Produto</th>
+          <th>Marca</th>
+          <th>Preço</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class="table-success">
+          <td>00001</td>
+          <td>Iphone X</td>
+          <td>Apple</td>
+          <td>R$ 6.999</td>
+        </tr>
+        <tr>
+          <td>00002</td>
+          <td>Nexus 5</td>
+          <td>LG</td>
+          <td>R$ 999</td>
+        </tr>
+        <tr class="table-danger">
+          <td>00003</td>
+          <td>Notebook VAIO</td>
+          <td>Sony</td>
+          <td>R$ 1.999</td>
+        </tr>
+      </tbody>
+
+    </table>     
+
+    <h3>Tabela pequena: table-sm</h3>
+    <table class="table table-sm">
+      <thead></thead>
+        <tr>
+          <th>#</th>
+          <th>Produto</th>
+          <th>Marca</th>
+          <th>Preço</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr >
+          <td>00001</td>
+          <td>Iphone X</td>
+          <td>Apple</td>
+          <td>R$ 6.999</td>
+        </tr>
+        <tr>
+          <td>00002</td>
+          <td>Nexus 5</td>
+          <td>LG</td>
+          <td>R$ 999</td>
+        </tr>
+        <tr >
+          <td>00003</td>
+          <td>Notebook VAIO</td>
+          <td>Sony</td>
+          <td>R$ 1.999</td>
+        </tr>
+      </tbody>
+
+    </table>    
+
+    <h3>Tabela responsiva: table-responsive</h3>
+    <table class="table">
+      <thead></thead>
+        <tr>
+          <th>#</th>
+          <th>Produto</th>
+          <th>Marca</th>
+          <th>Preço</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class="table-success">
+          <td>00001</td>
+          <td>Iphone X</td>
+          <td>Apple</td>
+          <td>R$ 6.999</td>
+        </tr>
+        <tr>
+          <td>00002</td>
+          <td>Nexus 5</td>
+          <td>LG</td>
+          <td>R$ 999</td>
+        </tr>
+        <tr class="table-danger">
+          <td>00003</td>
+          <td>Notebook VAIO</td>
+          <td>Sony</td>
+          <td>R$ 1.999</td>
+        </tr>
+      </tbody>
+
+    </table>     
+
+    <h3>Tabela pequena: table-sm</h3>
+    <table class="table table-sm">
+      <thead></thead>
+        <tr>
+          <th>#</th>
+          <th>Produto</th>
+          <th>Marca</th>
+          <th>Preço</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr >
+          <td>00001</td>
+          <td>Iphone X</td>
+          <td>Apple</td>
+          <td>R$ 6.999</td>
+        </tr>
+        <tr>
+          <td>00002</td>
+          <td>Nexus 5</td>
+          <td>LG</td>
+          <td>R$ 999</td>
+        </tr>
+        <tr >
+          <td>00003</td>
+          <td>Notebook VAIO</td>
+          <td>Sony</td>
+          <td>R$ 1.999</td>
+        </tr>
+      </tbody>
+
+    </table>     
+
+    <h3>Tabela responsiva: table-responsive</h3>
+    <div>
+        <table class="table">
+      <thead></thead>
+        <tr>
+          <th>#</th>
+          <th>Produto</th>
+          <th>Marca</th>
+          <th>Preço</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr class="table-success">
+          <td>00001</td>
+          <td>Iphone X</td>
+          <td>Apple</td>
+          <td>R$ 6.999</td>
+        </tr>
+        <tr>
+          <td>00002</td>
+          <td>Nexus 5</td>
+          <td>LG</td>
+          <td>R$ 999</td>
+        </tr>
+        <tr class="table-danger">
+          <td>00003</td>
+          <td>Notebook VAIO</td>
+          <td>Sony</td>
+          <td>R$ 1.999</td>
+        </tr>
+      </tbody>
+
+    </table>     
+
+    <h3>Tabela pequena: table-sm</h3>
+    <div class="table-responsive">
+      <table class="table">
+        <thead></thead>
+          <tr>
+            <th>#</th>
+            <th>Produto</th>
+            <th>Descrição</th>
+            <th>Marca</th>
+            <th>Preço</th>
+          </tr>
+        </thead>
+  
+        <tbody>
+          <tr >
+            <td>00001</td>
+            <td>Iphone X</td>
+            <td>Iphone X</td>
+            <td>Apple</td>
+            <td>R$ 6.999</td>
+          </tr>
+          <tr>
+            <td>00002</td>
+            <td>Nexus 5</td>
+            <td>Nexus 5</td>
+            <td>LG</td>
+            <td>R$ 999</td>
+          </tr>
+          <tr >
+            <td>00003</td>
+            <td>Notebook VAIO</td>
+            <td>Notebook VAIO</td>
+            <td>Sony</td>
+            <td>R$ 1.999</td>
+          </tr>
+        </tbody>
+  
+      </table> 
+    </div>
+    
+    <h2 class="text-primary">129. Tabelas & Paginação - parte 2</h2>
+
+    <h3>Paginação: pagination, page-item, page-link - active, disabled</h3>
+    <nav>
+      <ul class="pagination">
+        <li class="page-item active">
+          <a class="page-link" href="">Anterior</a>
+        </li>
+        <li class="page-item disabled">
+          <a class="page-link" href="">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="">2</a>
+        </li>
+        <li class="page-item  active">
+          <a class="page-link" href="">3</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="">Próximo</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h3>Alinhamento: justify-content-ALINHAMENTO(center, end) </h3>
+    <nav>
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a class="page-link" href="">Anterior</a>
+        </li>
+        <li class="page-item active">
+          <a class="page-link" href="">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="">Próximo</a>
+        </li>
+      </ul>
+    </nav>
+    <h3>Alinhamento: justify-content-ALINHAMENTO(center, end) </h3>
+    <nav>
+      <ul class="pagination justify-content-end">
+        <li class="page-item">
+          <a class="page-link" href="">Anterior</a>
+        </li>
+        <li class="page-item active">
+          <a class="page-link" href="">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="">Próximo</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h3>Tamanho: pagination-TAMANHO(sm) </h3>
+    <nav>
+      <ul class="pagination pagination-sm">
+        <li class="page-item">
+          <a class="page-link" href="">Anterior</a>
+        </li>
+        <li class="page-item active">
+          <a class="page-link" href="">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="">Próximo</a>
+        </li>
+      </ul>
+    </nav>  
+
+    <h3>Tamanho: pagination-TAMANHO(, lg) </h3>
+    <nav>
+      <ul class="pagination pagination-lg">
+        <li class="page-item">
+          <a class="page-link" href="">Anterior</a>
+        </li>
+        <li class="page-item active">
+          <a class="page-link" href="">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="">Próximo</a>
+        </li>
+      </ul>
+    </nav>  
+
+    <h3>Setas </h3>
+    <nav>
+      <ul class="pagination">
+        <li class="page-item">
+          <a class="page-link" href="">
+            <span>&laquo</span>
+            <span class="sr">Anterior</span>
+          </a>
+        </li>
+        <li class="page-item active">
+          <a class="page-link" href="">1</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="">2</a>
+        </li>
+        <li class="page-item">
+          <a class="page-link" href="">
+            <span>&raquo</span>
+            <span class="sr">Próximo</span>
+          </a>
+        </li>
+      </ul>
+    </nav>  
+  </div>
+
+  <div style="margin-bottom: 200px;padding: 16px;">
+    <h2 class="text-primary">130. Cards - parte 1</h2> <!--*********************************************-->
+    
+    <h3 class="border-bottom">Cartão simples</h3>
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a class="btn btn-outline-primary" href="">Leia mais</a>
+      </div>
+    </div> 
+
+    <br><br>
+
+    <h3 class="border-bottom">Cartão com imagem</h3>
+    <div class="card">
+      <img class="card-img-top" src="https://picsum.photos/600/100">
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a class="btn btn-outline-primary" href="">Leia mais</a>
+      </div>
+      <img class="card-img-bottom" src="https://picsum.photos/600/200">
+    </div> 
+
+    <br><br>
+
+    <h3 class="border-bottom">Cartão com imagem sobreposta</h3>
+    <div class="card text-white">
+      <img class="card-img" src="https://picsum.photos/600/100">
+      <div class="card-img-overlay text-white">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a class="btn btn-outline-light" href="">Leia mais</a>
+      </div>
+    </div> 
+
+    <br><br>
+
+    <h3 class="border-bottom">Cartão com cabeçalho</h3>
+    <div class="card">
+      <div class="card-header">
+        Cabeçalho do cartão
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a class="btn btn-outline-danger" href="">Leia mais</a>
+      </div>
+    </div> 
+
+    <br><br>
+
+    <h3 class="border-bottom">Cartão com cabeçalho e rodapé / Alinhamento</h3>
+    <div class="card text-center">
+      <div class="card-header">
+        Cabeçalho do cartão
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a class="btn btn-outline-danger" href="">Leia mais</a>
+      </div>
+      <div class="card-footer">
+        Cabeçalho do cartão
+      </div>
+
+    </div>     
+
+    <h3 class="border-bottom">Cartão com navegação</h3>
+    <div class="card">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+            <a class="nav-link active">Link 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Link 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Link 3</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <h4>Título do cartão</h4>
+        <h6>Subtítulo do cartão</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a href="">Leia mais</a>
+      </div>
+      <a class="btn btn-outline-danger" href="">Leia mais</a>
+    </div>
+
+    <h3 class="border-bottom">Cartão com cores de fundo</h3>
+    <div class="card bg-primary text-white md-2">
+      <div class="card-header">
+        Cabeçalho do cartão
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a class="btn btn-outline-light" href="">Leia mais</a>
+      </div>
+    </div> 
+
+    <br>
+    <div class="card bg-danger text-white md-2">
+      <div class="card-header">
+        Cabeçalho do cartão
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a class="btn btn-outline-light" href="">Leia mais</a>
+      </div>
+    </div> 
+
+    <br>
+
+    <h3 class="border-bottom">Cartão com bordas</h3>
+    <div class="card border-primary md-2">
+      <div class="card-header">
+        Cabeçalho do cartão
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Título do cartão</h4>
+        <h6 class="card-subtitle">Subtítulo do cartão</h6>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <a class="btn btn-outline-light" href="">Leia mais</a>
+      </div>
+    </div> 
+
+    <br>
+
+    <h3 class="border-bottom">Cartão com colunas</h3>
+    <div class="card-columns">
+      <!--Começo do cartão-->
+      <div class="card text-white">
+        <img class="card-img" src="https://picsum.photos/600/400">
+        <div class="card-img-overlay text-white">
+          <h4 class="card-title">Título do cartão</h4>
+          <h6 class="card-subtitle">Subtítulo do cartão</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+          <a class="btn btn-outline-light" href="">Leia mais</a>
+        </div>
+      </div> 
+      <!--Fim do cartão-->
+
+      <!--Início do cartão-->
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Título do cartão</h4>
+          <h6 class="card-subtitle">Subtítulo do cartão</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+          <a class="btn btn-outline-primary" href="">Leia mais</a>
+        </div>
+      </div> 
+      <!--Fim do cartão-->
+
+      <!--Começo do cartão-->
+      <div class="card bg-primary text-white">
+        <div class="card-header">
+          Cabeçalho do cartão
+        </div>
+        <div class="card-body">
+          <h4 class="card-title">Título do cartão</h4>
+          <h6 class="card-subtitle">Subtítulo do cartão</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui,   feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit. </p>
+          <a class="btn btn-outline-light" href="">Leia mais</a>
+        </div>
+      </div> 
+      <!--Fim do cartão-->
+
+      <!--Começo do cartão-->
+      <div class="card">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link active">Link 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Link 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Link 3</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <h4>Título do cartão</h4>
+          <h6>Subtítulo do cartão</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+          <a href="">Leia mais</a>
+        </div>
+        <a class="btn btn-outline-danger" href="">Leia mais</a>
+      </div>
+      <!--Fim do cartão-->
+
+      <!--Começo do cartão-->
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Título do cartão</h4>
+          <h6 class="card-subtitle">Subtítulo do cartão</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+          <a class="btn btn-outline-primary" href="">Leia mais</a>
+        </div>
+      </div> 
+      <!--Fim do cartão-->
+
+      <!--Começo do cartão-->
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">Título do cartão</h4>
+          <h6 class="card-subtitle">Subtítulo do cartão</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+          <a class="btn btn-outline-primary" href="">Leia mais</a>
+        </div>
+      </div> 
+      <!--Fim do cartão-->
+
+  </div>
+
+    <div style="margin-bottom: 50px;padding: 16px;"> <!--*************************************************-->
+
+    <h3 class="border-bottom">Jumbotron</h3>
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-4">Música para todos.</h1>
+        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiatet lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <a class="btn btn-primary btn-lg" href="">Leia mais</a>
+      </div>
+    </div>
+
+    <h3 class="border-bottom">Estrutura para imagens</h3>
+    <div class="media">
+      <img class="mr-3" src="https://picsum.photos/60/60" alt="Imagem aleatória">
+      <div class="media-body">
+        <h5>Título do conteúdo</h5>
+        <p>Lorem ipsum dolor sit duaiduaioamet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+      </div>
+    </div>
+
+    <br><br>
+
+    <h3 class="border-bottom">Alinhamentos: align-self-ALINHAMENTO (start, center, end) </h3>
+    <div class="media">
+      <img class="mr-3 align-self-center" src="https://picsum.photos/60/60" alt="Imagem aleatória">
+      <div class="media-body border">
+        <h5>Título do conteúdo</h5>
+        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl. Vivamus sed est pulvinar, aliquet purus ut, dictum elit.</p>
+      </div>
+    </div>
+
+
+    <h3 class="border-bottom">Listas com imagens</h3>
+    <ul class="list-unstyled">
+      
+      <li class="media border-bottom pb-2">
+        <img class="mr-3 align-self-center" src="https://picsum.photos/60/60" alt="Imagem aleatória">
+        <div class="media-body">
+          <h5>Título do conteúdo</h5>
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl.</p>
+        </div>
+      </li>
+
+      <li class="media border-bottom pb-2 pt-2">
+        <img class="mr-3 align-self-center" src="https://picsum.photos/60/60" alt="Imagem aleatória">
+        <div class="media-body">
+          <h5>Título do conteúdo</h5>
+          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sapien dui, feugiat et lorem quis, fringilla maximus nisl.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+
+  <div style="margin-bottom: 100px;padding: 16px;"> <!--***************************************************-->
+    <h2 class="text-primary">133. Ícones</h2>
+
+    <h3 class="border-bottom">Font awesome</h3>
+    <i class="fas fa-battery-half display-3 text-danger"></i>
+    <span class="fas fa-bomb display-3 text-warning"></span>
+
+    <button class="btn btn-danger btn-lg">
+      <i class="fas fa-bomb"></i>
+      Clique aqui
+    </button>
+
+    <button class="btn btn-danger btn-lg">
+      <i class="fa-solid fa-users fa-bounce fa-2xs" style="color: #2b166a;"></i>
+      Clique aqui
+    </button>
+
+    <i class="fa-solid fa-circle-user fa-fade fa-2xl" style="color: #74C0FC;"></i>
+
+    <h3 class="border-bottom">Iconic</h3>
+    <span class="oi oi-bell display-3 text-danger"></span>
+    <i class="oi oi-clock display-3 text-success"></i>
+
+    <button class="btn btn-dark btn-lg">
+      <i class="oi oi-clock"></i>
+      Clique aqui
+    </button>
+
+    
+  </div>
+
+  <div style="margin-bottom: 100px;"> <!--**********************************************-->
+    <h2 class="text-primary">135. Sistema de grid - parte 1/2/3</h2>
+
+    <img src="img/1-grid-bootstrap.jpg" width="900px" alt="">
+
+    <img class="mt-2" src="img/2-grid-exemplo.png" width="900px" alt="">
+
+    <img class="mt-2 mb-5" src="img/img_grid.png" width="900px" alt="">
+
+    <div class="container marcador-container mb-4">
+      <div class="row">
+        <div class="marcador col-6 col-sm-2 col-md-10 col-lg-2 col-xl-10">
+          área 1
+        </div>
+        <div class="marcador col-6 col-sm-10 col-md-2 col-lg-10 col-xl-2">
+          área 2
+        </div>
+      </div>
+    </div>
+
+    <div class="container marcador-container">
+      <div class="row">
+        <div class="marcador col-sm-6 col-xl-4">
+            <h2>Lorem ipsum dolorem sit amet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper ullamcorper lorem eu tempor. Mauris ut ultricies diam, eu vestibulum lectus.</p>
+            <button class="btn btn-warning">Leia mais</button>
+        </div>
+
+        <div class="marcador col-sm-6 col-xl-4">
+          <h2>Lorem ipsum dolorem sit amet</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper ullamcorper loremeu tempor. Mauris ut ultricies diam, eu vestibulum lectus.</p>
+          <button class="btn btn-warning">Leia mais</button>
+        </div>
+
+        <div class="marcador col-sm-6 col-xl-4">
+          <h2>Lorem ipsum dolorem sit amet</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper ullamcorper loremeu tempor. Mauris ut ultricies diam, eu vestibulum lectus.</p>
+          <button class="btn btn-warning">Leia mais</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mb-4"> <!--**************************************************-->
+    <h2 class="text-primary">138. Configurações do grid</h2>
+        
+    <div class="container-fluid marcador-container" >
+    
+      <h3>Largura fixa</h3>
+      <div class="row" style="border: 1px solid red;">
+        <div class="marcador col">ÁREA 1</div>
+        <div class="marcador col">ÁREA 2</div>
+        <div class="marcador col">ÁREA 3</div>
+        <div class="marcador col">ÁREA 4</div>
+      </div>
+
+      <h3>Largura automática (auto-layout)</h3>
+      <div class="row">
+        <div class="marcador col">ÁREA 1</div>
+        <div class="marcador col">ÁREA 2</div>
+        <div class="marcador col-6">ÁREA 3 com COL-6</div>
+      </div>
+
+      <h3>Largura igual empilhada</h3>
+      <div class="row">
+        <div class="marcador col-sm">ÁREA 1</div>
+        <div class="marcador col-sm">ÁREA 2</div>
+        <div class="marcador col-sm">ÁREA 3</div>
+      </div>
+
+      <h3>Ordenando</h3>
+      <div class="row">
+        <div class="marcador col-md-4 order-3">ÁREA 1</div>
+        <div class="marcador col-md-4 order-1">ÁREA 2</div>
+        <div class="marcador col-md-4 order-2">ÁREA 3</div>
+      </div>
+      
+      <h3>offset</h3>
+      <div class="row">
+        <div class="marcador col-md-6 offset-md-3">Login...</div>
+      </div>
+      
+      <h3>offset múltiplos alinhamentos</h3>
+      <div class="row">
+        <div class="marcador col-md-3 offset-md-3">Conteúdo 1</div>
+        <div class="marcador col-md-3 offset-md-3">Conteúdo 2</div>
+      </div>
+      
+      <h3>Aninhamento</h3>
+      <div class="row">
+        <div class="marcador col-md-6">
+          marcador col-md-6
+          <div class="row">
+            <div class="marcador col-md-6">
+              marcador col-md-6
+              <div class="row">
+                <div class="marcador col-md-6">
+                  marcador col-md-6
+                </div>
+                <div class="marcador col-md-6">
+                  marcador col-md-6
+                </div>
+              </div>
+            </div>
+            <div class="marcador col-md-6">
+              marcador col-md-6
+            </div>
+          </div>
+          
+        </div>
+        <div class="marcador col-md-6">
+          marcador col-md
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="mb-4"> <!--**************************************************-->
+    <h2 class="text-primary">139. Alinhamento no grid</h2>
+
+    <div class="container">
+
+      <h3 class="mt-5 text-info">Alinhamento vertical (align-items-ALINHAMENTO: start, center, end)</h3>
+      <div class="marcadorh row align-items-center">
+        <div class="col borda">Área 1</div>
+        <div class="col borda">Área 2</div>
+        <div class="col borda">Área 3</div>
+      </div>
+
+      <h3 class="mt-5 text-info">Alinhamento vertical individual (align-self-ALINHAMENTO: start, center, end)</h3>
+      <div class="row marcadorh ">
+        <div class="col borda align-self-start">Área 1</div>
+        <div class="col borda align-self-center">Área 2</div>
+        <div class="col borda align-self-end">Área 3</div>
+      </div>
+
+      <h3 class="mt-5 text-info">Alinhamento horizontal colunas (justify-content-ALINHAMENTO: start, center, end)</h3>
+      <div class="row justify-content-center">
+        <div class="marcadorh col-2">Área 1</div>
+        <div class="marcadorh col-2">Área 2</div>
+        <div class="marcadorh col-2">Área 3</div>
+      </div>
+
+
+
+      <h3 class="mt-5 text-info">Distribuição (justify-content-ALINHAMENTO: around, between, end)</h3>
+      <div class="row borda justify-content-around">
+        <div class="marcadorh col-2">Área 1</div>
+        <div class="marcadorh col-2">Área 2</div>
+        <div class="marcadorh col-2">Área 3</div>
+      </div>
+      <h3 class="mt-5 text-info">Distribuição (justify-content-ALINHAMENTO: around, between, end)</h3>
+      <div class="row borda justify-content-between">
+        <div class="marcadorh col-2">Área 1</div>
+        <div class="marcadorh col-2">Área 2</div>
+        <div class="marcadorh col-2">Área 3</div>
+      </div>
+      <h3 class="mt-5 text-info">Distribuição (justify-content-ALINHAMENTO: around, between, end)</h3>
+      <div class="row borda justify-content-end">
+        <div class="marcadorh col-2">Área 1</div>
+        <div class="marcadorh col-2">Área 2</div>
+        <div class="marcadorh col-2">Área 3</div>
+      </div>
+
+
+
+      <h3 class="mt-5 text-info">Removendo espaçamento</h3>
+      <div class="row">
+        <div class="borda col-2 mb-4">Área 1</div>
+        <div class="borda col-2 mb-4">Área 2</div>
+        <div class="borda col-2 mb-4">Área 3</div>
+      </div>
+
+      <div class="row no-gutters">
+        <div class="borda col-2">Área 1</div>
+        <div class="borda col-2">Área 2</div>
+        <div class="borda col-2">Área 3</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div> <!--**************************************************-->
+    <h2 class="text-primary">140. Classes do Flexbox</h2>
+
+    <div class="container">
+
+      <h3>Flex container e flex itens (d-flex, flex-row, flex-column, flex-row-reverse)</h3>
+      <div class="caixa d-flex flex-row">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+      </div>
+      <br><br>
+      <div class="caixa d-flex flex-row-reverse">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+      </div>
+      <br><br>
+
+      <h3>Alinhamento horizontal: justify-content-ALINHAMENTO (start, center, end, around e between)</h3>
+      <div class="caixa d-flex justify-content-center">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+      </div>
+      <br><br>
+      <div class="caixa d-flex justify-content-around">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+      </div>
+      <br><br>
+      <div class="caixa d-flex justify-content-between">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+      </div>
+      <br><br>
+
+      <h3>Colunas (d-flex, flex-column, flex-column-reverse)</h3>
+      <div class="caixa d-flex flex-column-reverse">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+      </div>
+      <br><br>
+
+      <h3>Alinhamento vertical: align-items-ALINHAMENTO (start, center, end, baseline e stretch)</h3>
+      <div class="caixa d-flex align-items-center">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+      </div>
+      <br><br>
+      <div class="caixa d-flex align-items-end">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+      </div>
+      <br><br>
+      <div class="caixa d-flex align-items-baseline">
+        <div class="item pt-4">Julio</div>
+        <div class="item">Cesar</div>
+        <div class="item pb-4">Xavier</div>
+      </div>
+      <br><br>
+      <div class="caixa d-flex align-items-stretch">
+        <div class="item pt-4">Julio</div>
+        <div class="item">Cesar</div>
+        <div class="item pb-4">Xavier</div>
+      </div>
+      <br><br>
+
+      <h3>Alinhamento self: align-self-ALINHAMENTO (start, center, end, baseline e stretch)</h3>
+      <div class="caixa d-flex">
+        <div class="item align-self-start">Flex item 1</div>
+        <div class="item align-self-center">Flex item 2</div>
+        <div class="item align-self-end">Flex item 3</div>
+        <div class="item align-self-baseline">Flex item 4</div>
+        <div class="item align-self-stretch">Flex item 5</div>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+  <div> <!--**************************************************-->
+    <h2 class="text-primary">141. Margin & Wrap</h2>
+
+    <div class="container">
+
+      <h2>Margin right/left auto (mr-auto, ml-auto)</h2>
+      <div class="caixa d-flex">
+        <div class="item mr-auto ml-auto">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+      </div>
+      <br><br>
+
+      <h2>Margin bottom/top auto (mt-auto, mb-auto)</h2>
+      <div class="caixa d-flex flex-column">
+        <div class="item mt-auto mb-auto">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+      </div>
+      <br><br>
+
+      <h2>Wrap (flex-wrap, flex-nowrap)</h2>
+      <div class="caixa d-flex flex-wrap">
+        <div class="item">Flex item 1</div>
+        <div class="item">Flex item 2</div>
+        <div class="item">Flex item 3</div>
+        <div class="item">Flex item 4</div>
+        <div class="item">Flex item 5</div>
+        <div class="item">Flex item 6</div>
+        <div class="item">Flex item 7</div>
+        <div class="item">Flex item 8</div>
+        <div class="item">Flex item 9</div>
+        <div class="item">Flex item 10</div>
+        <div class="item">Flex item 11</div>
+        <div class="item">Flex item 12</div>
+        <div class="item">Flex item 13</div>
+        <div class="item">Flex item 14</div>
+        <div class="item">Flex item 15</div>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+
+
+   <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="bootstrap-4.1.3/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
