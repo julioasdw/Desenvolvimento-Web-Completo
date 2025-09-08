@@ -205,38 +205,125 @@
 
         // 256. Introdução a Orientação a Objetos  *************************************
         
+
+        // // 257. OO - Pilar da Abstração  *************************************
+        // // Modelo do objeto
+        // class ContaBancaria {
+        //   constructor() {
+        //     this.agencia = 1000
+        //     this.numeroConta = 86283
+        //     this.saldo = 50
+        //     this.agencia = 450
+        //   }           
+        //   // METODOS
+        //   depositar(valorDeposito) {
+        //     this.saldo += valorDeposito
+        //   }
+        //   sacar(valorSaque) {
+        //     this.saldo -= valorSaque
+        //   }
+        //   consultarSaldo() {
+        //     return this.saldo
+        //   }
+        // }
+
+        // let x = new ContaBancaria()
+        // let y = new ContaBancaria()
+        // console.log(x.consultarSaldo())
+        // console.log(x.depositar(150))
+        // console.log(x.consultarSaldo())
+        // console.log(x.sacar(20))
+        // console.log(x.consultarSaldo())
     </script>
     <script>
-      // 257. OO - Pilar da Abstração  *************************************
-      // Modelo do objeto
-      class ContaBancaria {
-        constructor() {
-          this.agencia = 1000
-          this.numeroConta = 86283
-          this.saldo = 50
-          this.agencia = 450
-        }           
+      // 258. Reflexão - Da abstração a entidade
+      // var cadeiras = []
+      // cadeiras[0] = []
+      // cadeiras[0]['qtd_pernas'] = 4
+      // cadeiras[0]['giratoria'] = false
+      // cadeiras[0]['cor'] = 'azul'
+      // cadeiras[1] = []
+      // cadeiras[1]['qtd_pernas'] = 1
+      // cadeiras[1]['giratoria'] = true
+      // cadeiras[1]['cor'] = 'vermelha'
+      
+      // function girar_cadeira(indice) {
+      //     if(cadeiras[indice]['giratoria']) {
+      //         console.log('A cadeira é giratória')
+      //         console.log(cadeiras[indice][giratoria])
+      //     } else {
+      //         console.log('A cadeira não é giratória')
+      //     }
+      // }
+      // girar_cadeira(0)
+      // function add_cadeira(qtdPernas, giratoria, cor) {
+      //     let cadeira = []
+      //     cadeira['qtd_pernas'] = qtdPernas
+      //     cadeira['giratoria'] = giratoria
+      //     cadeira['cor'] = cor
+      //     cadeiras.push(cadeira)
+      // }
+      // add_cadeira(3, false, 'rosa')
+      // add_cadeira(1, true, 'verde')
+      // console.log(cadeiras)
+      // girar_cadeira(3)
+      
+      
+      class Cadeira {
+          constructor(qtdPernas, giratoria, cor) {
+              this.qtdPernas = qtdPernas
+              this.giratoria = giratoria
+              this.cor = cor
+          }
+          girar_cadeira() {
+              if(this.giratoria) {
+                  console.log('A cadeira é giratória')
+              } else {
+                  console.log('A cadeira não é giratória')
+              }
+          }
+      }
+      let cadeira1 = new Cadeira(3, false, 'rosa')
+      let cadeira2 = new Cadeira(1, true, 'verde')
+      
+      console.log(cadeira1)
+      console.log(cadeira2)
+      cadeira1.girar_cadeira()
+      cadeira2.girar_cadeira()
+      // usando um array
+      let cadeiras = []
+      cadeiras.push(new Cadeira(3, false,  'marrom'))
+      cadeiras.push(new Cadeira(1, true, 'vermelha'))
+      console.log(cadeiras)
+      cadeiras[1].girar_cadeira()
 
-        // METODOS
-        depositar(valorDeposito) {
-          this.saldo += valorDeposito
+      // Class Sofa ____________________________________
+      class Sofa {
+        constructor(cor, qtdLugares, inclinavel) {
+          this.cor = cor
+          this.qtdLugares = qtdLugares
+          this.inclinavel = inclinavel
         }
-        sacar(valorSaque) {
-          this.saldo -= valorSaque
-        }
-        consultarSaldo() {
-          return this.saldo
+        inclinarSofa() {
+          if(this.inclinavel) {
+            console.log('Inclinou!')
+          } else {
+            console.log('Não é inclinavel!')
+          }
         }
       }
 
-      let x = new ContaBancaria()
-      let y = new ContaBancaria()
-      console.log(x.consultarSaldo())
-      console.log(x.depositar(150))
-      console.log(x.consultarSaldo())
-      console.log(x.sacar(20))
-      console.log(x.consultarSaldo())
-        
+      let sofas = []
+
+      sofas.push(new Sofa('red', 2, true))
+      sofas.push(new Sofa('blue', 4, false))
+
+      sofas[0].inclinarSofa()
+      sofas[1].inclinarSofa()
+
+      console.log(sofas)
+      console.log(sofas[0].cor)
+
     </script>
 
         
@@ -267,13 +354,15 @@
 
         <!-- 256. Introdução a Orientação a Objetos  ************************************* -->
         <!-- <img src="img/256. Introdução a Orientação a Objetos.jpg" width="1000" alt=""> -->
+
+        <!-- 257. OO - Pilar da Abstração   *************************************  -->
+        <!-- <img src="img/257. OO - Pilar da Abstração.jpg" width="1000" alt=""> -->
     </div>
 
-    <!-- 257. OO - Pilar da Abstração   *************************************  -->
-    <img src="img/257. OO - Pilar da Abstração.jpg" width="1000" alt="">
-    
+    <!-- 258. Reflexão - Da abstração a entidade -->
 
     
+
     
 
     <!-- JavaScript (Opcional) -->

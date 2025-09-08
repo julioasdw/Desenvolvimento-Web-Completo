@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+    <script> // AULAS ANTERIORES
+        
+        // // 248. Operadores de declaração de variáveis Var e Let *************************************
+        // // 3 escopos: global, função e bloco
+
+        // var serie = 'serie'
+
+        // function x() {
+        //     var serie = 'outro'
+        //     console.log('escopo da função: ' + serie)
+        //     if(true) {
+        //         console.log('escopo do bloco dentro da função: ' + serie)
+        //     }
+        // }
+        
+        // x()
+        
+        // if(true) {
+        //     console.log(serie)
+        // }
+        
+        // console.log(serie)
+
+        // //_______________________________________________________________________________________________________________________________
+
+        // function x() {
+        //     console.log('escopo da função: ' + nome)
+        //     if(true) {
+        //         console.log('escopo do bloco dentro da função: ' + nome)
+        //     }
+        // }
+        
+        // if(true) {
+        //     var nome = 'Julio' // por ter sido declarada em um escopo de bloco, ele vai sefrer uma elevação para o escopo acima, -->(global)
+        //     x()
+        //     console.log(nome)
+        // }
+        
+        // console.log(nome)
+
+        // //_______________________________________________________________________________________________________________________________
+
+        // function x() {
+        //     console.log('escopo da função: ' + nome)
+        //     if(true) {
+        //         var teste = 'teste' // por ter sido declarada em um escopo de bloco, ele vai sefrer uma elevação para o escopo acima, -->(funcao)
+        //         console.log('escopo do bloco dentro da função: ' + teste)
+        //     }
+        // }
+        
+        // if(true) {
+        //     x()
+        //     // console.log(teste) vai dar erro pois o escopo de var esta até a função
+        // }
+
+        // // console.log(teste) vai dar erro pois o escopo de var esta até a função
+
+        // //_______________________________________________________________________________________________________________________________
+
+        // function x() {
+        //     console.log('escopo da função: ' + nome)
+        //     if(true) {
+        //         var teste = 'teste' // por ter sido declarada em um escopo de bloco, ele vai sefrer uma elevação para o escopo acima, -->(global)
+        //         console.log('escopo do bloco dentro da função: ' + teste)
+        //     }
+        // }
+        
+        // x()
+
+        // if(true) {
+        //     let lista = 'lista' // por ter sido declarada em um escopo de bloco, ele vai sefrer uma elevação para o escopo acima, -->(global)
+        //     console.log(lista)
+        // }
+        
+        // // console.log(lista)  vai dar erro pois o let é visto somente no seu escopo
+
+
+        // // 249. Análise de contexto 1 - Usando Var e Let  *************************************
+        // var serie = 'serie'
+
+        // {
+        //     var serie = 'teste'
+        //     console.log(serie)
+        // }
+        
+        // console.log(serie) // O resultado vai ser 'teste', pois ele subil para o outro escopo --> (global)
+        
+
+        // // 250. Análise de contexto 2 - Usando Var e Let  *************************************
+        
+        // let serie = 'serie'
+
+        // {
+        //     let serie = 'teste'
+        //     console.log(serie)
+        // }
+
+        // // ________________________________________________________________
+
+        // let teste = 'valor1'
+
+        // {
+        //     // var teste = 'valor2' isso vai gera um erro pois essa variavel está sendo declarada 2 vezes
+        //     console.log('escopo de bloco: ' + teste)
+        // }
+        
+        // console.log('escopo de global: ' + teste) // O resultado vai ser 'teste', pois ele subil para o outro escopo --> (global)
+
+
+        // // 251. Operador de declaração de variáveis Const *************************************
+        // const TESTE = 'teste'
+
+        // function x() {
+        //     const TESTE = 'outro'
+        //     console.log('escopo da fun ' + TESTE)
+        // }
+
+        // x()
+
+        // console.log('escopo global ' + TESTE)
+
+        
+        // // 252. Template String *************************************
+        // let nome = 'Julio'
+
+        // console.log('Meu nome é: ' + nome)
+
+        // console.log(`Meu nome é ${nome}`)
+
+        // console.log(`
+        //     Meu 
+        //     nome é
+        //     ${nome}
+        // `)
+
+        // function x(x, y) {
+        //     return x * y
+        // }
+        
+        // console.log(`a multiplicação de 6 * 6 = ${x(6, 6)}`)
+
+
+        // // 253. Funções - Parâmetros default *************************************
+
+        // function contarUmaHistoria(personagem = 'Julio', atividade = 'jogar bola', objeto = 'tenis') { // Permite atribuir um valor para o parametro caso n tenha sido passado
+        //     console.log(personagem)
+        //     console.log(atividade)
+        //     console.log(objeto)
+        // }
+
+        // contarUmaHistoria(undefined, 'correr')
+
+
+        // // 254. Funções - Arrow function *************************************
+        // // Função tradicional
+        // // var quadrado = function(x) {
+        // //     return x * x
+        // // }  
+
+        // // document.write(quadrado(2))
+        
+        // // // Função arrow
+        // // let quadrado = x => {
+        // //     return x * x
+        // // }
+        // // document.write(quadrado(2))
+        
+        // // Função arrow simplificada
+        // let quadrado = x => x * x          // caso dentro da fun tenha somente 1 linha, vc pode simplificar assim
+        
+        // document.write(`${quadrado(2)}<br>`)
+
+        // // // Modo tradicional:
+        // // let parOuImpar = function(n) {
+        // //     if(n % 2 === 0) {
+        // //         return 'par'
+        // //     } else {
+        // //         return 'ímpar'
+        // //     }
+        // // }
+
+        // // document.write(parOuImpar(19))
+        
+        // // Modo fun arraw simplificado:
+        // let parOuImpar = n => n % 2 === 0 ? 'par' : 'ímpar'               // Return implícito
+        
+        // document.write(parOuImpar(283748921))
+
+
+        // 256. Introdução a Orientação a Objetos  *************************************
+        
+
+        // // 257. OO - Pilar da Abstração  *************************************
+        // // Modelo do objeto
+        // class ContaBancaria {
+        //   constructor() {
+        //     this.agencia = 1000
+        //     this.numeroConta = 86283
+        //     this.saldo = 50
+        //     this.agencia = 450
+        //   }           
+        //   // METODOS
+        //   depositar(valorDeposito) {
+        //     this.saldo += valorDeposito
+        //   }
+        //   sacar(valorSaque) {
+        //     this.saldo -= valorSaque
+        //   }
+        //   consultarSaldo() {
+        //     return this.saldo
+        //   }
+        // }
+
+        // let x = new ContaBancaria()
+        // let y = new ContaBancaria()
+        // console.log(x.consultarSaldo())
+        // console.log(x.depositar(150))
+        // console.log(x.consultarSaldo())
+        // console.log(x.sacar(20))
+        // console.log(x.consultarSaldo())
+
+
+        // // 258. Reflexão - Da abstração a entidade  *************************************
+        // // var cadeiras = []
+        // // cadeiras[0] = []
+        // // cadeiras[0]['qtd_pernas'] = 4
+        // // cadeiras[0]['giratoria'] = false
+        // // cadeiras[0]['cor'] = 'azul'
+        // // cadeiras[1] = []
+        // // cadeiras[1]['qtd_pernas'] = 1
+        // // cadeiras[1]['giratoria'] = true
+        // // cadeiras[1]['cor'] = 'vermelha'
+        
+        // // function girar_cadeira(indice) {
+        // //     if(cadeiras[indice]['giratoria']) {
+        // //         console.log('A cadeira é giratória')
+        // //         console.log(cadeiras[indice][giratoria])
+        // //     } else {
+        // //         console.log('A cadeira não é giratória')
+        // //     }
+        // // }
+        // // girar_cadeira(0)
+        // // function add_cadeira(qtdPernas, giratoria, cor) {
+        // //     let cadeira = []
+        // //     cadeira['qtd_pernas'] = qtdPernas
+        // //     cadeira['giratoria'] = giratoria
+        // //     cadeira['cor'] = cor
+        // //     cadeiras.push(cadeira)
+        // // }
+        // // add_cadeira(3, false, 'rosa')
+        // // add_cadeira(1, true, 'verde')
+        // // console.log(cadeiras)
+        // // girar_cadeira(3)
+        
+        
+        // class Cadeira {
+        //     constructor(qtdPernas, giratoria, cor) {
+        //         this.qtdPernas = qtdPernas
+        //         this.giratoria = giratoria
+        //         this.cor = cor
+        //     }
+        //     girar_cadeira() {
+        //         if(this.giratoria) {
+        //             console.log('A cadeira é giratória')
+        //         } else {
+        //             console.log('A cadeira não é giratória')
+        //         }
+        //     }
+        // }
+        // let cadeira1 = new Cadeira(3, false, 'rosa')
+        // let cadeira2 = new Cadeira(1, true, 'verde')
+        
+        // console.log(cadeira1)
+        // console.log(cadeira2)
+        // cadeira1.girar_cadeira()
+        // cadeira2.girar_cadeira()
+        // // usando um array
+        // let cadeiras = []
+        // cadeiras.push(new Cadeira(3, false,  'marrom'))
+        // cadeiras.push(new Cadeira(1, true, 'vermelha'))
+        // console.log(cadeiras)
+        // cadeiras[1].girar_cadeira()
+  
+        // // Class Sofa ____________________________________
+        // class Sofa {
+        //   constructor(cor, qtdLugares, inclinavel) {
+        //     this.cor = cor
+        //     this.qtdLugares = qtdLugares
+        //     this.inclinavel = inclinavel
+        //   }
+        //   inclinarSofa() {
+        //     if(this.inclinavel) {
+        //       console.log('Inclinou!')
+        //     } else {
+        //       console.log('Não é inclinavel!')
+        //     }
+        //   }
+        // }
+  
+        // let sofas = []
+  
+        // sofas.push(new Sofa('red', 2, true))
+        // sofas.push(new Sofa('blue', 4, false))
+  
+        // sofas[0].inclinarSofa()
+        // sofas[1].inclinarSofa()
+  
+        // console.log(sofas)
+        // console.log(sofas[0].cor)
+
+
+        // // 259. OO - Pilar do Encapsulamento *************************************
+        // class Tv {
+        //     constructor() {
+        //         this._relacaoCanais = [2, 4, 5, 7, 10]
+        //         this._canalAtivo = 7
+        //         this._volume = 10
+        //     }
+        //     // getters setters
+        //     get canalAtivo() {
+        //         return this._canalAtivo
+        //     }
+        //     set canalAtivo(canal) {
+        //         console.log(`índice[${this._relacaoCanais.indexOf(canal)}]`)
+        //         if(this._relacaoCanais.indexOf(canal) !== -1) {  // verifica se o canal existe, caso n, ele retorna -1 e o canal continua send o "this._canalAtivo = 7"
+        //             this._canalAtivo = canal
+        //         }
+        //     }
+
+        // }
+
+        // let tv = new Tv()
+        // console.log(tv._canalAtivo)
+        // console.log(tv.canalAtivo)
+        
+        // tv.canalAtivo = 4 // Atraves disso, ele vai usar o 10 como parametro no set
+        // console.log(tv.canalAtivo)
+
+
+        // // 260. OO - Pilar da Herança  *************************************
+
+        // class Animal {
+        //     constructor() {
+        //         this._cor = ''
+        //         this._tamanho = null   
+        //         this.peso = null             
+        //     }
+        //                 get cor() {
+        //         return this._cor
+        //     }
+        //     set cor(cor) {
+        //         this._cor = cor
+        //     }
+
+        //     get tamanho() {
+        //         return this._tamanho
+        //     }
+        //     set tamanho(tamanho) {
+        //         this._tamanho = tamanho
+        //     }
+        //     get cor() {
+        //         return this._cor
+        //     }
+        //     set cor(cor) {
+        //         this._cor = cor
+        //     }
+
+        //     get tamanho() {
+        //         return this._tamanho
+        //     }
+        //     set tamanho(tamanho) {
+        //         this._tamanho = tamanho
+        //     }
+
+        //     dormir() {
+        //         console.log('Dormir')
+        //     }
+        // }
+
+        // class Cachorro extends Animal {
+        //     constructor() {
+        //         super()
+        //         this._orelhas = 'Grandes e caídas'
+        //     }
+
+        //     get orelhas() {
+        //         return this._orelhas
+        //     }
+        //     set orelhas(orelhas) {
+        //         this._orelhas = orelhas
+        //     }
+
+        //     correr() {
+        //         console.log('Correu')
+        //     }
+        //     dormir() {
+        //         console.log('dormiu')
+        //     }
+        //     rosnar() {
+        //         console.log('Rosnou')
+        //     }
+
+        // }
+
+        // class Passaro extends Animal {
+        //     constructor() {
+        //         super()
+        //         this._bico = 'Curto'
+        //     }
+
+        //     get bico() {
+        //         return this._bico
+        //     }
+        //     set bico(bico) {
+        //         this._bico = bico
+        //     }
+
+        //     voar(){
+        //         console.log('voando')
+        //     }
+        //     dormir(){
+        //         console.log('dormindo')
+        //     }
+        // }
+
+        // class Papagaio extends Passaro {  // Ele vai herdar todos atributos e metodos do passaro até os q o passaro herdou
+        //     constructor() {
+        //         super()
+        //         this._saberFalar = true
+        //     }
+        //     get saberFalar() {
+        //         return this._saberFalar
+        //     }
+        //     set saberFalar(saberFalar) {
+        //         this._saberFalar = saberFalar
+        //     }
+        //     falar() {
+        //         if(this._saberFalar) {
+        //             console.log('Falar')
+        //         }
+        //     }
+        // }
+
+        // let cachorro = new Cachorro()
+        // cachorro.cor = 'red'
+        // console.log(cachorro)
+        // console.log(cachorro.cor)
+        // console.log(cachorro.correr())
+        // console.log(cachorro.dormir())
+        
+        // let passaro = new Passaro()
+        // passaro.cor = 'black'
+        // console.log(passaro)
+        // console.log(passaro.cor)
+        // console.log(passaro.voar())
+        // console.log(passaro.dormir())
+
+        // let papagaio = new Papagaio()
+        // papagaio.cor = 'yellow' 
+        // console.log(papagaio)
+        // console.log(papagaio.cor)
+        // console.log(papagaio.voar())
+        // console.log(papagaio.dormir())
+        // papagaio.saberFalar = true
+        // console.log(papagaio.falar()) 
+
+
+        // // 261. Operador Super *************************************
+        // class Animal {
+        //     constructor(cor, tamanho, peso) {
+        //         this.cor = cor
+        //         this.tamanho = tamanho
+        //         this.peso = peso
+        //     }
+
+        //     dormir() {
+        //         console.log('dormir')
+        //     }
+        // }
+
+        // class Passaro extends Animal {
+        //     constructor(bico, cor, tamanho, peso) {
+        //         super(cor, tamanho, peso)
+        //         this.bico = bico
+        //     }
+
+        //     voar() {
+        //         console.log('voar')
+        //     }
+        // }
+
+        // class Papagaio extends Passaro {
+        //     constructor(saberFalar, bico, cor, tamanho, peso) {
+        //         super(bico, cor, tamanho, peso)
+        //         this.saberFalar = saberFalar
+        //     }
+
+        //     falar() {
+        //         console.log('falar')
+        //     }
+        // }
+
+        // let papagaio = new Papagaio(true, 'Médio', 'Blue', 25, 85)
+        // console.log(papagaio)
+
+
+        // // 262. OO - Pilar do Polimorfismo *************************************
+        // class Animal {
+        //     constructor(cor, tamanho, peso) {
+        //         this.cor = cor
+        //         this.tamanho = tamanho
+        //         this.peso = peso
+        //     }
+
+        //     dormir() {
+        //         console.log('dormir')
+        //     }
+        // }
+
+        // class Passaro extends Animal {
+        //     constructor(bico, cor, tamanho, peso) {
+        //         super(cor, tamanho, peso)
+        //         this.bico = bico
+        //     }
+
+        //     voar() {
+        //         console.log('voar')
+        //     }
+        // }
+
+        // class Papagaio extends Passaro {
+        //     constructor(saberFalar, bico, cor, tamanho, peso) {
+        //         super(bico, cor, tamanho, peso)
+        //         this.saberFalar = saberFalar
+        //     }
+
+        //     falar() {
+        //         console.log('falar')
+        //     }
+        // }
+
+        // class Avestrus extends Passaro {
+        //     constructor(bico, cor, tamanho, peso) {
+        //         super(bico, cor, tamanho, peso)
+        //     }
+        //     enterrarCabeca() {
+        //         console.log('enterrar cabeça')
+        //     }
+        //     voar() {
+        //         console.log('Não sabe voar')
+        //     }
+        // }
+
+        // let papagaio = new Papagaio(true, 'Médio', 'Blue', 25, 85)
+        // console.log(papagaio)
+        
+        // let avestrus = new Avestrus('Médio', 'Blue', 25, 85)
+        // console.log(avestrus)
+        // console.log(avestrus.voar())
+
+
+        // // 263. Objetos literais / estáticos *************************************
+        // class Produto {
+        //     constructor(descricao, preco) {
+        //         this.descricao = descricao
+        //         this.preco = preco
+        //     }
+        //     verDescricao() {
+        //         console.log(`O produto: ${this.descricao} vale: ${this.preco}`)
+        //     }
+        // }
+
+        // let ProdutoLiteral = {
+        //     descricao: 'teste',
+        //     preco: '2500',
+        //     verDescricao: function() {
+        //         console.log(`O produto: ${this.descricao} vale: ${this.preco}`)
+        //     }
+        // }
+
+        // let produto = new Produto('Carro', 34000)
+        // produto.verDescricao()
+        
+        // ProdutoLiteral.descricao = 'Notebook'
+        // console.log(ProdutoLiteral)
+        // ProdutoLiteral.verDescricao()
+
+
+        // // 264. Objetos literais - Melhorias de notação *************************************
+        // let nome = 'Júlio'
+        // let idade = 24
+        // let sexo = 'Masculino'
+        // let profissao = 'Programador'
+
+        // let objeto = {
+        //     nome: nome,
+        //     idade: idade,
+        //     sexo: sexo,
+        //     profissao: profissao,
+        //     exibirResumo: function() {
+        //         console.log(`${this.nome}, ${this.idade}, ${this.sexo}, ${this.profissao}`)
+        //     }
+        // }
+
+        // let objeto2 = {
+        //     nome, // Caso o nome seja igual o da valor, pode abreviar!
+        //     idadeTeste: idade,  // Pode ficar a vontade para escolher um nome se quiser
+        //     sexo,
+        //     profissao,
+        //     exibirResumo() { // mais ebxuto q  exibirResumo: function()
+        //         console.log(`${this.nome}, ${this.idadeTeste}, ${this.sexo}, ${this.profissao}`)
+        //     }
+        // }
+
+        // console.log(objeto)
+        // objeto.exibirResumo()
+        
+        // console.log(objeto2)
+        // objeto2.exibirResumo()
+
+
+        // // 265. Objetos literais - Modificando valores *************************************
+        // let pessoa = {
+        //     nome: 'Júlio',
+        //     idade: 24
+        // }
+
+        // console.log(pessoa.nome)
+        // console.log(pessoa.idade)
+        
+        // pessoa.nome = 'César'
+        // pessoa.idade = 10
+    
+        // console.log(pessoa.nome)
+        // console.log(pessoa.idade)
+
+
+        // // 266. Objetos literais - Criação dinâmica de pares nome/valor *************************************
+        // let pessoa = {
+        //     nome: 'Júlio',
+        //     idade: 24
+        // }
+
+        // console.log(pessoa)
+        
+        // pessoa.nome = 'César'
+        
+        // pessoa.dizerOi = () => console.log(`Olá tudo bem ${pessoa.nome}`)
+        // pessoa.cargo = 'Programador'
+        // pessoa.dizerOi()
+        // console.log(pessoa)
+    </script>
+    <script>
+        // 267. Objetos literais - Objetos únicos *************************************
+        let assinatura = {
+            idCliente: 1000,
+            descricao: 'Acesso a Internet',
+            status() {
+                console.log('Ativo')
+            }
+        }
+
+        console.log(assinatura)
+
+        let y = assinatura // Isso é apênas uma variavel aponrando para o objeto
+
+        console.log(y)
+        
+        y.descricao = 'Internet + TV + Telefônia'  // Como ele apênas está aprontando para o OBJ, ele vai apênas modificar os atributos do OBJ "assinatura"
+        
+        console.log(y.descricao)
+        console.log(assinatura.descricao)
+        
+
+    </script>
+    
+    <title>267. Objetos literais - Objetos únicos</title>
+  </head>
+  <body>
+    <div>
+        <!-- 248. Operadores de declaração de variáveis Var e Let ************************************* -->
+        
+        
+        <!-- 249. Análise de contexto 1 - Usando Var e Let ************************************* -->
+        
+        
+        <!-- 250. Análise de contexto 2 - Usando Va r e Let ************************************* -->
+        
+        
+        <!-- 251. Operador de declaração de variáveis Const -->
+        
+        
+        <!-- 252. Template String ************************************* -->
+        
+        
+        <!-- 253. Funções - Parâmetros default ************************************* -->
+        
+        
+        <!-- 254. Funções - Arrow function  ************************************* -->
+        
+
+        <!-- 256. Introdução a Orientação a Objetos  ************************************* -->
+        <!-- <img src="img/256. Introdução a Orientação a Objetos.jpg" width="1000" alt=""> -->
+
+        <!-- 257. OO - Pilar da Abstração   *************************************  -->
+        <!-- <img src="img/257. OO - Pilar da Abstração.jpg" width="1000" alt=""> -->
+        
+        
+        <!-- 258. Reflexão - Da abstração a entidade -->
+        
+        
+        <!-- 259. OO - Pilar do Encapsulamento  ************************************* -->
+        
+        
+        <!-- 260. OO - Pilar da Herança ************************************* -->
+        
+        
+        <!-- 261. Operador Super  ************************************* -->
+        
+        
+        <!-- 262. OO - Pilar do Polimorfismo ************************************* -->
+        
+        
+        <!-- 263. Objetos literais / estáticos ************************************* -->
+        
+        
+        <!-- 264. Objetos literais - Melhorias de notação ************************************* -->
+        
+        
+        <!-- 265. Objetos literais - Modificando valores ************************************* -->
+        
+        
+        <!-- 266. Objetos literais - Criação dinâmica de pares nome/valor ************************************* -->
+    </div>
+    <!-- 267. Objetos literais - Objetos únicos ************************************* -->
+    
+    
+
+    
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

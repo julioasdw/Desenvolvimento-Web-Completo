@@ -20,6 +20,7 @@
         var largura = 0
         var altura = 0
         var tempo = 15
+        var acertos = 1
 
         var nivel = window.location.search
         nivel = nivel.replace('?', '')
@@ -56,6 +57,9 @@
         }, 1000)
 
         function posicaoRandomica() {
+
+            document.getElementById('acertos').value = acertos
+            console.log('acertos: ' + acertos)
 
             if (document.getElementById('mosquito')) {
                 document.getElementById('mosquito').remove()
@@ -95,6 +99,8 @@
                 }, 100)  
                 mosquito.style.height = "100px"   
                 mosquito.style.width = "100px"   
+                document.getElementById('acertos').innerHTML = 'Pontuação: ' + acertos
+                acertos++
             }
 
             console.log(ladoAleatorio())
@@ -130,6 +136,7 @@
                     return 'ladoB'
             }
         }
+        
 
     </script>
     <title>228. BOM parte 4 - Timing</title>
@@ -145,6 +152,7 @@
             <img id="v1" src="img/coracao_cheio.png" alt="">
             <img id="v2" src="img/coracao_cheio.png" alt="">
             <img id="v3" src="img/coracao_cheio.png" alt="">
+            <h2 id="acertos">Pontuação: 0</h2>
         </div>
 
         <div class="cronometro">
