@@ -30,7 +30,7 @@
         // }
         
         // x()
-        
+
         // if(true) {
         //     console.log(serie)
         // }
@@ -716,90 +716,131 @@
         // console.log(carro)
 
         // console.log(`Velocidade atual é: ${carro.getVelocidadeAtual()}`)
+
+
+        // // 269. Funções construtoras - Encapsulando atributos e métodos *************************************
+        // let Carro = function() {
+        //   this.cor = 'Laranja'
+        //   this.modelo = 'Fiat'
+        //   this.velocidadeAtual = 0
+        //   this.velocidadeMaxima = 200          
+        //   this.acelerar = function() {
+        //     let velocidade = this.getVelocidadeAtual() + 50
+        //     if(velocidade > this.velocidadeMaxima) {
+        //       velocidade = this.velocidadeMaxima
+        //     }
+        //     this.setVelocidadeAtual(velocidade)
+        //   }
+        //   this.getVelocidadeAtual = function() {
+        //     return this.velocidadeAtual
+        //   }
+        //   this.setVelocidadeAtual = function(velocidadeAtual) {
+        //     this.velocidadeAtual = velocidadeAtual
+        //   }
+          
+        // } 
+  
+        // let carro = new Carro()
+        // console.log(carro)
+        // carro.acelerar()
+        // carro.acelerar()
+        // carro.acelerar()
+        // carro.acelerar()
+        // carro.acelerar()
+        // carro.acelerar()
+        // carro.acelerar()
+        // carro.acelerar()
+        // carro.acelerar()
+        // carro.acelerar()
+        // console.log(carro)
+        
+        // let Carro2 = function() {
+        //   var velocidadeMaxima = 180 // Essas variaveis não são públicas
+        //   var quilometrosRodados = 0 // Essas variaveis não são públicas
+        //   this.cor = 'Blue'
+        //   this.modelo = 'Fiat'
+        //   this.velocidadeAtual = 0
+        //   // this.velocidadeMaxima = 200    No caso agr velocidadeMaxima é uma var = velocidadeMaxima 
+        //   this.acelerar = function() {
+        //     let velocidade = this.getVelocidadeAtual() + 50
+        //     if(velocidade > velocidadeMaxima) {
+        //       velocidade = velocidadeMaxima
+        //     }
+        //     this.setVelocidadeAtual(velocidade)
+        //     setQuilometrosRodados(0.7)
+        //     console.log(quilometrosRodados + ' Km rodados')
+        //   }
+        //   this.getVelocidadeAtual = function() {
+        //     return this.velocidadeAtual
+        //   }
+        //   this.setVelocidadeAtual = function(velocidadeAtual) {
+        //     this.velocidadeAtual = velocidadeAtual
+        //   }
+        //   var setQuilometrosRodados = function(q) {
+        //     quilometrosRodados += q
+        //   }
+        // } 
+  
+        // let carro2 = new Carro2()
+        // console.log("Primeiro está assim: ")
+        // console.log(carro2)
+        // carro2.acelerar()
+        // carro2.acelerar()
+        // carro2.acelerar()
+        // carro2.acelerar()
+        // carro2.acelerar()
+        // carro2.acelerar()
+        // carro2.acelerar()
+        // carro2.acelerar()
+        // carro2.acelerar()
+        // carro2.acelerar()
+        // console.log("Depois vai ficar assim no qual a velocidade maxima n vai ficar exposta para ser modificada: ")
+        // console.log(carro2)
     </script>
     <script>
-      // 269. Funções construtoras - Encapsulando atributos e métodos *************************************
-      let Carro = function() {
-        this.cor = 'Laranja'
-        this.modelo = 'Fiat'
-        this.velocidadeAtual = 0
-        this.velocidadeMaxima = 200          
-        this.acelerar = function() {
-          let velocidade = this.getVelocidadeAtual() + 50
-          if(velocidade > this.velocidadeMaxima) {
-            velocidade = this.velocidadeMaxima
-          }
-          this.setVelocidadeAtual(velocidade)
+        // 270. Funções Factory *************************************
+        let bicicleta = {
+            cor: 'orange',
+            marcha: 'unica',
+            aro: 29,
+            pedalar: function() {
+                console.log('pedalar')
+            }
         }
-        this.getVelocidadeAtual = function() {
-          return this.velocidadeAtual
-        }
-        this.setVelocidadeAtual = function(velocidadeAtual) {
-          this.velocidadeAtual = velocidadeAtual
-        }
-        
-      } 
-
-      let carro = new Carro()
-      console.log(carro)
-      carro.acelerar()
-      carro.acelerar()
-      carro.acelerar()
-      carro.acelerar()
-      carro.acelerar()
-      carro.acelerar()
-      carro.acelerar()
-      carro.acelerar()
-      carro.acelerar()
-      carro.acelerar()
-      console.log(carro)
-      
-      let Carro2 = function() {
-        var velocidadeMaxima = 180 // Essas variaveis não são públicas
-        var quilometrosRodados = 0 // Essas variaveis não são públicas
-        this.cor = 'Blue'
-        this.modelo = 'Fiat'
-        this.velocidadeAtual = 0
-        // this.velocidadeMaxima = 200    No caso agr velocidadeMaxima é uma var = velocidadeMaxima 
-        this.acelerar = function() {
-          let velocidade = this.getVelocidadeAtual() + 50
-          if(velocidade > velocidadeMaxima) {
-            velocidade = velocidadeMaxima
-          }
-          this.setVelocidadeAtual(velocidade)
-          setQuilometrosRodados(0.7)
-          console.log(quilometrosRodados + ' Km rodados')
-        }
-        this.getVelocidadeAtual = function() {
-          return this.velocidadeAtual
-        }
-        this.setVelocidadeAtual = function(velocidadeAtual) {
-          this.velocidadeAtual = velocidadeAtual
-        }
-        var setQuilometrosRodados = function(q) {
-          quilometrosRodados += q
-        }
-      } 
     
-      let carro2 = new Carro2()
-      console.log("Primeiro está assim: ")
-      console.log(carro2)
-      carro2.acelerar()
-      carro2.acelerar()
-      carro2.acelerar()
-      carro2.acelerar()
-      carro2.acelerar()
-      carro2.acelerar()
-      carro2.acelerar()
-      carro2.acelerar()
-      carro2.acelerar()
-      carro2.acelerar()
-      console.log("Depois vai ficar assim no qual a velocidade maxima n vai ficar exposta para ser modificada: ")
-      console.log(carro2)
+        let bicicleta2 = {
+            cor: 'blue',
+            marcha: 'unic',
+            aro: 26,
+            pedalar: function() {
+                console.log('pedalar')
+            }
+        }
+
+        console.log(bicicleta)
+        console.log(bicicleta2)
+        console.log(bicicleta2.pedalar())
+
+        let bicicletaFactory = function(cor, marcha, aro){
+            return {
+                cor,
+                marcha,
+                aro,
+                pedalar() {
+                    console.log('pedalar')
+                }
+            }
+        }
+
+        bicicleta3 = bicicletaFactory('black', '6 marchas', 29)
+        console.log(bicicleta3)
+    
+        bicicleta4 = bicicletaFactory('teste', 'teste', 30)
+        console.log(bicicleta4)
 
     </script>
     
-    <title>269. Funções construtoras - Encapsulando atributos e métodos</title>
+    <title>270. Funções Factory</title>
   </head>
   <body>
     <div>
@@ -862,10 +903,13 @@
         
         
         <!-- 268. Funções construtoras - Criando objetos  ************************************* -->
+        
+        
+        <!-- 269. Funções construtoras - Encapsulando atributos e métodos ************************************* -->
+        <!-- <img src="img/269. Funções construtoras - Encapsulando atributos e métodos.jpg" width="650" alt=""> -->
     </div>
-    <!-- 269. Funções construtoras - Encapsulando atributos e métodos ************************************* -->
-    <img src="img/269. Funções construtoras - Encapsulando atributos e métodos.jpg" width="650" alt="">
-    
+    <!-- 270. Funções Factory ************************************* -->
+    <img src="img/270. Funções Factory.jpg" width="700" alt="">
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
