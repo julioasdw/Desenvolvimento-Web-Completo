@@ -30,7 +30,7 @@
         // }
         
         // x()
-        
+
         // if(true) {
         //     console.log(serie)
         // }
@@ -630,7 +630,7 @@
 
         // console.log(objeto)
         // objeto.exibirResumo()
-        dadafe
+        
         // console.log(objeto2)
         // objeto2.exibirResumo()
 
@@ -780,7 +780,7 @@
         //     quilometrosRodados += q
         //   }
         // } 
-      
+  
         // let carro2 = new Carro2()
         // console.log("Primeiro está assim: ")
         // console.log(carro2)
@@ -796,13 +796,87 @@
         // carro2.acelerar()
         // console.log("Depois vai ficar assim no qual a velocidade maxima n vai ficar exposta para ser modificada: ")
         // console.log(carro2)
+
+
+        // // 270. Funções Factory *************************************
+        // let bicicleta = {
+        //     cor: 'orange',
+        //     marcha: 'unica',
+        //     aro: 29,
+        //     pedalar: function() {
+        //         console.log('pedalar')
+        //     }
+        // }
+    
+        // let bicicleta2 = {
+        //     cor: 'blue',
+        //     marcha: 'unic',
+        //     aro: 26,
+        //     pedalar: function() {
+        //         console.log('pedalar')
+        //     }
+        // }
+
+        // console.log(bicicleta)
+        // console.log(bicicleta2)
+        // console.log(bicicleta2.pedalar())
+
+        // let bicicletaFactory = function(cor, marcha, aro){
+        //     return {
+        //         cor,
+        //         marcha,
+        //         aro,
+        //         pedalar() {
+        //             console.log('pedalar')
+        //         }
+        //     }
+        // }
+
+        // bicicleta3 = bicicletaFactory('black', '6 marchas', 29)
+        // console.log(bicicleta3)
+    
+        // bicicleta4 = bicicletaFactory('teste', 'teste', 30)
+        // console.log(bicicleta4)
     </script>
     <script>
-      // 272. Prototype - Herança  *************************************
+        // 271. Prototype - Introdução *************************************
+        // Objeto literal
+        let a1 = {
+            cor: 'branco',
+            modelo: 'modelo1',
+            levantarVoo: function() {
+                console.log('Levantar Voo')
+            }
+        } 
 
+        // Objeto Literal
+        let AviaoF = function() {
+            this.cor = 'blue'
+            this.modelo = 'modelo2'
+            this.levantarVoo = function() {
+                console.log('Levantar Voo')
+            }
+        }
+        let a2 = new AviaoF()
+        
+        // Class
+        class AviaoC {
+            constructor() {
+                this.cor = 'red'
+                this.modelo = 'modelo3'
+            }
+            levantarVoo() {
+                console.log('Levantar Voo')            
+            }
+        }
+        let a3 = new AviaoC()
+        
+        console.log(a1)
+        console.log(a2)
+        console.log(a3)
     </script>
-
-    <title>269. Funções construtoras - Encapsulando atributos e métodos</title>
+    
+    <title>271. Prototype - Introdução</title>
   </head>
   <body>
     <div>
@@ -868,9 +942,15 @@
         
         
         <!-- 269. Funções construtoras - Encapsulando atributos e métodos ************************************* -->
-        <img src="img/269. Funções construtoras - Encapsulando atributos e métodos.jpg" width="650" alt="">
+        <!-- <img src="img/269. Funções construtoras - Encapsulando atributos e métodos.jpg" width="650" alt=""> -->
+
+
+        <!-- 270. Funções Factory ************************************* -->
+        <img src="img/270. Funções Factory.jpg" width="700" alt="">
     </div>
-    
+    <!-- 271. Prototype - Introdução ************************************* -->
+    <img src="img/272. Prototype - Herança.jpg" width="700" alt="">
+
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
