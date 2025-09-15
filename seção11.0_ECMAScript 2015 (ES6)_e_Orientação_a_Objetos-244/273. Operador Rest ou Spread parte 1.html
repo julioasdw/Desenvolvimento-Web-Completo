@@ -837,46 +837,60 @@
     
         // bicicleta4 = bicicletaFactory('teste', 'teste', 30)
         // console.log(bicicleta4)
+
+
+        // // 271. Prototype - Introdução *************************************
+        // // Objeto literal
+        // let a1 = {
+        //     cor: 'branco',
+        //     modelo: 'modelo1',
+        //     levantarVoo: function() {
+        //         console.log('Levantar Voo')
+        //     }
+        // }
+
+        // // Objeto Literal
+        // let AviaoF = function() {
+        //     this.cor = 'blue'
+        //     this.modelo = 'modelo2'
+        //     this.levantarVoo = function() {
+        //         console.log('Levantar Voo')
+        //     }
+        // }
+        // let a2 = new AviaoF()
+        
+        // // Class
+        // class AviaoC {
+        //     constructor() {
+        //         this.cor = 'red'
+        //         this.modelo = 'modelo3'
+        //     }
+        //     levantarVoo() {
+        //         console.log('Levantar Voo')            
+        //     }
+        // }
+        // let a3 = new AviaoC()
+        
+        // console.log(a1)
+        // console.log(a2)
+        // console.log(a3)
+
+
+        // // 272. Prototype - Herança  *************************************
+        // Object.prototype.attr50 = 'X' //Todos Obj vão herdar esse atribut
+  
+        // let animal = { attr1: 'a'}
+        // let vertebrado = { __proto__: animal, attr2: 'b'}
+        // let ave = { __proto__: vertebrado, attr3: 'c', attr2: 'x'}
+  
+        // console.log(ave.attr3, ave.attr2, ave.attr1, ave.attr50)
     </script>
     <script>
-        // 271. Prototype - Introdução *************************************
-        // Objeto literal
-        let a1 = {
-            cor: 'branco',
-            modelo: 'modelo1',
-            levantarVoo: function() {
-                console.log('Levantar Voo')
-            }
-        } 
-
-        // Objeto Literal
-        let AviaoF = function() {
-            this.cor = 'blue'
-            this.modelo = 'modelo2'
-            this.levantarVoo = function() {
-                console.log('Levantar Voo')
-            }
-        }
-        let a2 = new AviaoF()
+        // 273. Operador Rest/Spread parte 1 *************************************
         
-        // Class
-        class AviaoC {
-            constructor() {
-                this.cor = 'red'
-                this.modelo = 'modelo3'
-            }
-            levantarVoo() {
-                console.log('Levantar Voo')            
-            }
-        }
-        let a3 = new AviaoC()
-        
-        console.log(a1)
-        console.log(a2)
-        console.log(a3)
     </script>
     
-    <title>271. Prototype - Introdução</title>
+    <title>273. Operador Rest/Spread parte 1  *************************************</title>
   </head>
   <body>
     <div>
@@ -947,10 +961,17 @@
 
         <!-- 270. Funções Factory ************************************* -->
         <img src="img/270. Funções Factory.jpg" width="700" alt="">
+        
+        <div>
+          <!-- 271. Prototype - Introdução ************************************* -->
+          <img src="img/272. Prototype - Herança.jpg" width="700" alt="">
+        </div>
+        
+        
+        <!-- 272. Prototype - Herança.  ************************************* -->
     </div>
-    <!-- 271. Prototype - Introdução ************************************* -->
-    <img src="img/272. Prototype - Herança.jpg" width="700" alt="">
-
+    <!-- 273. Operador Rest/Spread parte 1 -->
+    
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
