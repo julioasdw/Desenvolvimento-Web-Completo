@@ -884,38 +884,69 @@
         // let ave = { __proto__: vertebrado, attr3: 'c', attr2: 'x'}
   
         // console.log(ave.attr3, ave.attr2, ave.attr1, ave.attr50)
+
+
+        // // 273. Operador Rest/Spread parte 1 *************************************
+        // // Contexto Spread
+
+        // // String
+        // let nome = 'Julio Cesar Xavier Dutra'
+
+        // console.log(nome)
+        // console.log(...nome)
+        // console.log([...nome])
+
+        // let vetor = [...nome]   // aqui o array ganhou um nome
+
+        // console.log(vetor)      // imprime o array com os caracteres
+        // console.log(vetor[0])   // "J"
+        // console.log(vetor[6])   // "C"
+
+        // let nome1 = ['Julio', 'Cesar']
+        // let nome2 = ['Xavier', 'Dutra']
+        // let nome3 = ['Teste', 'Outro', ...nome1, ...nome2]
+
+        // console.log(nome3)
+
+        // // Objetos
+        // let animal = {nome: 'cachorro', cor: 'black'}
+        // let clone = {endereco: 'Rua Teste', ...animal}
+
+        // console.log(clone)
     </script>
     <script>
-        // 273. Operador Rest/Spread parte 1 *************************************
-        // Contexto Spread
+        // 274. Operador Rest/Spread parte 2  *************************************
+        // Contexto Rest
 
-        // String
-        let nome = 'Julio Cesar Xavier Dutra'
+        function soma(...param) {
+            let resultado = 0
+            console.log(param)
+            param.forEach(v => resultado += v)        // Equivale a      param.forEach(    function(v) { resultado += v; } );
+            return resultado
+        }
 
-        console.log(nome)
-        console.log(...nome)
-        console.log([...nome])
+        console.log(soma    (3, 4, 5, 3, -2, 342))
 
-        let vetor = [...nome]   // aqui o array ganhou um nome
+        function multiplicacao(m, ...p) {
+            let resultado = 0            
+            console.log('M: ' + m) 
+            console.log('P: ' + p)
+            console.log(p)
 
-        console.log(vetor)      // imprime o array com os caracteres
-        console.log(vetor[0])   // "J"
-        console.log(vetor[6])   // "C"
+            p.forEach(v => {
+                                console.log(v) 
+                                resultado += m * v   // vai multiplicar todos resultados por 2 o somar eles
+                            }     
+                    )                 
 
-        let nome1 = ['Julio', 'Cesar']
-        let nome2 = ['Xavier', 'Dutra']
-        let nome3 = ['Teste', 'Outro', ...nome1, ...nome2]
+            return resultado
+        }
 
-        console.log(nome3)
+        console.log(multiplicacao(2, 4, 5, 6, 7))   // nesse caso o m = 2 e o restante vai ser p
 
-        // Objetos
-        let animal = {nome: 'cachorro', cor: 'black'}
-        let clone = {endereco: 'Rua Teste', ...animal}
-
-        console.log(clone)
     </script>
     
-    <title>273. Operador Rest/Spread parte 1  *************************************</title>
+    <title>274. Operador Rest/Spread parte 2  *************************************</title>
   </head>
   <body>
     <div>
@@ -994,10 +1025,16 @@
         
         
         <!-- 272. Prototype - Herança.  ************************************* -->
+
+
+        <div>
+          <!-- 273. Operador Rest/Spread parte 1 -->
+          <img src="img/273. Operador RestSpread parte 1.jpg" width="700" alt="">
+        </div>
     </div>
     <div>
-      <!-- 273. Operador Rest/Spread parte 1 -->
-      <img src="img/273. Operador RestSpread parte 1.jpg" width="700" alt="">
+        <!-- 274. Operador Rest/Spread parte 2 ************************************* -->
+
     </div>
     
 
