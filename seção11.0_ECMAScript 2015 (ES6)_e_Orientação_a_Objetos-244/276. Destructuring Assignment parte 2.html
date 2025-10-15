@@ -913,40 +913,81 @@
         // let clone = {endereco: 'Rua Teste', ...animal}
 
         // console.log(clone)
+
+
+        // // 274. Operador Rest/Spread parte 2  *************************************
+        // // Contexto Rest
+
+        // function soma(...param) {
+        //     let resultado = 0
+        //     console.log(param)
+        //     param.forEach(v => resultado += v)        // Equivale a      param.forEach(    function(v) { resultado += v; } );
+        //     return resultado
+        // }
+
+        // console.log(soma    (3, 4, 5, 3, -2, 342))
+
+        // function multiplicacao(m, ...p) {
+        //     let resultado = 0            
+        //     console.log('M: ' + m) 
+        //     console.log('P: ' + p)
+        //     console.log(p)
+
+        //     p.forEach(v => {
+        //                         console.log(v) 
+        //                         resultado += m * v   // vai multiplicar todos resultados por 2 o somar eles
+        //                     }     
+        //             )                 
+
+        //     return resultado
+        // }
+
+        // console.log(multiplicacao(2, 4, 5, 6, 7))   // nesse caso o m = 2 e o restante vai ser p
+
+
+        // // 275. Destructuring Assignment parte 1  *************************************
+        
+        // let nomes = ['Julio', 'Cesar', 'Xavier', 'Dutra']
+
+        // let [a, b, , c, d = 'Teste'] = nomes // a = julio,  b=Cesar c=Dutra d=undefined
+        // console.log(a, b, c, d)
+
+        // let coisas = [['julio', 'cesar', 'xavier'], ['teste', 'outro']]
+
+        // let [,[,x]] = coisas
+        // console.log(x)
+        // let [[ , , y], ] = coisas
+        // console.log(y)
     </script>
     <script>
-        // 274. Operador Rest/Spread parte 2  *************************************
-        // Contexto Rest
-
-        function soma(...param) {
-            let resultado = 0
-            console.log(param)
-            param.forEach(v => resultado += v)        // Equivale a      param.forEach(    function(v) { resultado += v; } );
-            return resultado
+        // 276. Destructuring Assignment parte 2 *************************************
+        let produto = {
+            nome: 'Notebook',
+            preco: 2000,
+            descricao: {
+                fabricante: 'Dell',
+                modelo: 'dell g15 3500'
+            }
         }
 
-        console.log(soma    (3, 4, 5, 3, -2, 342))
+        let { nome, preco } = produto    // tem que ter o mesmo nome dos atributos dos obijetos
+        console.log(nome, preco)
+        
+        let { nome: a, preco: b } = produto
+        console.log(a, b)
 
-        function multiplicacao(m, ...p) {
-            let resultado = 0            
-            console.log('M: ' + m) 
-            console.log('P: ' + p)
-            console.log(p)
+        let { nome: h, preco: g = 1000, desconto = 5} = produto
+        console.log(h, g, desconto)
 
-            p.forEach(v => {
-                                console.log(v) 
-                                resultado += m * v   // vai multiplicar todos resultados por 2 o somar eles
-                            }     
-                    )                 
+        let { descricao: {fabricante, modelo}} = produto
+        console.log(fabricante, modelo)
+        console.log(produto.descricao.fabricante)
 
-            return resultado
-        }
 
-        console.log(multiplicacao(2, 4, 5, 6, 7))   // nesse caso o m = 2 e o restante vai ser p
 
     </script>
     
-    <title>274. Operador Rest/Spread parte 2  *************************************</title>
+    <title>276. Destructuring Assignment parte 2  *************************************</title>
   </head>
   <body>
     <div>
@@ -1031,12 +1072,25 @@
           <!-- 273. Operador Rest/Spread parte 1 -->
           <img src="img/273. Operador RestSpread parte 1.jpg" width="700" alt="">
         </div>
+        
+        
+        <div>
+            <!-- 274. Operador Rest/Spread parte 2 ************************************* -->
+    
+        </div>
+
+
+        <div>
+            <!-- 275. Destructuring Assignment parte 1 ************************************* -->
+            <img src="img/273. Operador RestSpread parte 1.jpg" width="700" alt="">
+        </div>
+
     </div>
+      
     <div>
-        <!-- 274. Operador Rest/Spread parte 2 ************************************* -->
+        <!-- 276. Destructuring Assignment parte 2 ************************************* -->
         
     </div>
-    
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->

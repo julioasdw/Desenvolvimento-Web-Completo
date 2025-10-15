@@ -947,6 +947,18 @@
     <script>
         // 275. Destructuring Assignment parte 1  *************************************
         
+        let nomes = ['Julio', 'Cesar', 'Xavier', 'Dutra']
+
+        let [a, b, , c, d = 'Teste'] = nomes // a = julio,  b=Cesar c=Dutra d=undefined
+        console.log(a, b, c, d)
+
+        let coisas = [['julio', 'cesar', 'xavier'], ['teste', 'outro']]
+
+        let [,[,x]] = coisas
+        console.log(x)
+        let [[ , , y], ] = coisas
+        console.log(y)
+
     </script>
     
     <title>275. Destructuring Assignment parte 1  *************************************</title>
@@ -1042,12 +1054,12 @@
         </div>
 
 
-        <div>
-            <!-- 275. Destructuring Assignment parte 1 -->
-            <img src="img/273. Operador RestSpread parte 1.jpg" width="700" alt="">
-        </div>
     </div>
-    
+      
+    <div>
+        <!-- 275. Destructuring Assignment parte 1 -->
+        <img src="img/273. Operador RestSpread parte 1.jpg" width="700" alt="">
+    </div>
 
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
