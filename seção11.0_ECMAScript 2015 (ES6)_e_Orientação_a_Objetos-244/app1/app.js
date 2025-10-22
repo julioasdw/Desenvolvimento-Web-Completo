@@ -58,6 +58,9 @@ class Bd {
         return despesas
     }
     
+    pesquisar(despesa) {
+        console.log(despesa)
+    }
 }
 
 let bd = new Bd()
@@ -97,21 +100,33 @@ function cadastrarDespesa() {
         $('#registroDespesa').modal('show')
 
         document.getElementById('cor_titulo_modal').className = 'modal-header text-success'
-        document.getElementById('exampleModalLabel1').innerText = 'Registro inserido com sucesso!'
-        document.getElementById('infoModal').innerText = 'Despesa cadastrada com sucesso!'
+        document.getElementById('exampleModalLabel1').innerHTML = 'Registro inserido com sucesso!'
+        document.getElementById('infoModal').innerHTML = 'Despesa cadastrada com sucesso!'
         document.getElementById('corBtnModal').className = ('btn btn-success')
-        document.getElementById('corBtnModal').innerText = 'Voltar'
+        document.getElementById('corBtnModal').innerHTML = 'Voltar'
+
+        //dialog de sucesso
+        $('#modalRegistraDespesa').modal('show') 
+        
+        ano.value = '' 
+        mes.value = ''
+        dia.value = ''
+        tipo.value = ''
+        descricao.value = ''
+        valor.value = ''
         
     } else {
         console.log('Dados invalidos!')
-        $('#registroDespesa').modal('show')
-
+        
         document.getElementById('cor_titulo_modal').className = 'modal-header text-danger'
-        document.getElementById('exampleModalLabel1').innerText = 'Erro Gravação'
-        document.getElementById('infoModal').innerText = 'Existem campos brigatórios que não foram preenchidos!'
+        document.getElementById('exampleModalLabel1').innerHTML = 'Erro Gravação'
+        document.getElementById('infoModal').innerHTML = 'Existem campos brigatórios que não foram preenchidos!'
         document.getElementById('corBtnModal').className = ('btn btn-danger')
-        document.getElementById('corBtnModal').innerText = 'Voltar e corrigir'
+        document.getElementById('corBtnModal').innerHTML = 'Voltar e corrigir'
+        
+        $('#registroDespesa').modal('show')
     }
+    
 }
 
 function carregaListaDespesas() {
@@ -150,6 +165,17 @@ function carregaListaDespesas() {
         linha.insertCell(2).innerHTML = d.descricao
         linha.insertCell(3).innerHTML = d.valor
     })
-    
-    
+}
+
+function pesquisarDespesa() {
+    let ano = document.getElementById('ano').value
+    let mes = document.getElementById('mes').value
+    let dia = document.getElementById('dia').value
+    let tipo = document.getElementById('tipo').value
+    let descricao = document.getElementById('descricao').value
+    let valor = document.getElementById('valor').value
+
+    let despesa = new Despesa(ano, mes, dia, tipo, descricao, valor)
+
+    bd.pesquisar(despesa)
 }
