@@ -46,10 +46,16 @@ class Bd {
         let id = localStorage.getItem('id')
 
         for(let i = 0; i <= id; i++) {
-            despesas.push(JSON.parse(localStorage.getItem(i)))
+            let despesa = JSON.parse(localStorage.getItem(i))
+
+            if(despesa === null) {
+                continue
+            }
+
+            despesas.push(despesa)
         }
 
-        console.log(despesas)
+        return despesas
     }
     
 }
@@ -109,5 +115,41 @@ function cadastrarDespesa() {
 }
 
 function carregaListaDespesas() {
-    bd.recuperarTodosRegistros()
+    let despesas = Array()
+    
+    despesas = bd.recuperarTodosRegistros()
+
+    console.log(despesas)
+
+    var listaDespesas = document.getElementById('listaDespesas')
+    console.log(listaDespesas)       
+    
+    despesas.forEach(function(d) {
+        // console.log(d)
+        let linha = listaDespesas.insertRow()
+        linha.insertCell(0).innerHTML = `${d.dia}/${d.mes}/${d.ano}`
+
+        switch(d.tipo) { 
+            case '1':
+                linha.insertCell(1).innerHTML = 'Alimentação'
+                break 
+            case '2':
+                linha.insertCell(1).innerHTML = 'Educação'
+                break
+            case '3':
+                linha.insertCell(1).innerHTML = 'Lazer'
+                break 
+            case '4':
+                linha.insertCell(1).innerHTML = 'Saúde'
+                break
+            case '5':
+                linha.insertCell(1).innerHTML = 'Transporte'
+                break 
+        }            
+
+        linha.insertCell(2).innerHTML = d.descricao
+        linha.insertCell(3).innerHTML = d.valor
+    })
+    
+    
 }
