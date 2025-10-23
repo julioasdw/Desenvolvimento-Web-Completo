@@ -52,6 +52,7 @@ class Bd {
                 continue
             }
 
+            despesa.id = i
             despesas.push(despesa)
         }
 
@@ -59,8 +60,52 @@ class Bd {
     }
     
     pesquisar(despesa) {
-        console.log(despesa)
+        let despesasFiltradas = Array()
+        despesasFiltradas = this.recuperarTodosRegistros()
+
+        // console.log(despesasFiltradas)
+        // console.log(despesa)
+        
+        //ano
+        if(despesa.ano != '') {
+            despesasFiltradas = despesasFiltradas.filter(d => d.ano == despesa.ano)
+        }
+        
+        //mes
+        if(despesa.mes != '') {
+            despesasFiltradas = despesasFiltradas.filter(function(d) {
+                return d.mes == despesa.mes
+            })
+        }
+
+        //dia
+        if(despesa.dia != '') {
+            despesasFiltradas = despesasFiltradas.filter(d => d.dia == despesa.dia)
+        }
+
+        //tipo
+        if(despesa.tipo != '') {
+            despesasFiltradas = despesasFiltradas.filter(d => d.tipo == despesa.tipo)
+        }
+
+        //descricao
+        if(despesa.descricao != '') {
+            despesasFiltradas = despesasFiltradas.filter(d => d.descricao == despesa.descricao)
+        }
+
+        //valor
+        if(despesa.valor != '') {
+            despesasFiltradas = despesasFiltradas.filter(d => d.valor == despesa.valor)
+        }
+
+        // console.log(despesasFiltradas)
+        return despesasFiltradas
     }
+
+    remover(id) {
+        localStorage.removeItem(id)
+    }
+
 }
 
 let bd = new Bd()
@@ -129,16 +174,17 @@ function cadastrarDespesa() {
     
 }
 
-function carregaListaDespesas() {
-    let despesas = Array()
+function carregaListaDespesas(despesas = [], filter = false) {
     
-    despesas = bd.recuperarTodosRegistros()
+    if(despesas.length == 0 && filter == false  ) {
+        despesas = bd.recuperarTodosRegistros()
+    }
 
-    console.log(despesas)
+    // console.log(despesas)
 
-    var listaDespesas = document.getElementById('listaDespesas')
-    console.log(listaDespesas)       
-    
+    let listaDespesas = document.getElementById('listaDespesas')
+    listaDespesas.innerHTML = ''      
+
     despesas.forEach(function(d) {
         // console.log(d)
         let linha = listaDespesas.insertRow()
@@ -164,6 +210,24 @@ function carregaListaDespesas() {
 
         linha.insertCell(2).innerHTML = d.descricao
         linha.insertCell(3).innerHTML = d.valor
+
+        //Criar btn de excluir
+        let btn = document.createElement("button")
+        btn.className = "btn btn-danger"
+        btn.innerHTML = '<i class="fas fa-times"></i>'
+        btn.id = `id_despesa_${d.id}` // isso vai criar um id=1,2,3... no elemento do botão criado
+        btn.onclick = function() {
+            // alert(this.id)
+            let id = this.id.replace('id_despesa_', '')
+
+            bd.remover(id)
+            
+            window.location.reload()
+        }
+        linha.insertCell(4).append(btn)
+        
+        
+        console.log(d)
     })
 }
 
@@ -177,5 +241,18 @@ function pesquisarDespesa() {
 
     let despesa = new Despesa(ano, mes, dia, tipo, descricao, valor)
 
-    bd.pesquisar(despesa)
+    // Despesas filtradas
+    let despesas = bd.pesquisar(despesa)
+
+    // "listaDespesas" é o lemento <tbody id="listaDespesas"> do consulta.html
+    let listaDespesas = document.getElementById('listaDespesas')
+
+    carregaListaDespesas(despesas, true)
+    
+    // Vai limpar a tabela
+    // listaDespesas.innerHTML = '' 
+
+
+    
+
 }
